@@ -1,5 +1,40 @@
 [
   {
+    "name": "VeriTeknik/pluggedin-app",
+    "repo": "https://github.com/VeriTeknik/pluggedin-app",
+    "description": "The Crossroads for AI Data Exchanges. A unified, self-hostable web interface for discovering, configuring, and managing Model Context Protocol (MCP) servers—bringing together AI tools, workspaces, prompts, and logs from multiple MCP sources (Claude, Cursor, etc.) under one roof.",
+    "stars": 93,
+    "updatedAt": "2026-02-27T20:28:49Z"
+  },
+  {
+    "name": "PSPDFKit/nutrient-dws-mcp-server",
+    "repo": "https://github.com/PSPDFKit/nutrient-dws-mcp-server",
+    "description": "A Model Context Protocol (MCP) server implementation that integrates with the Nutrient Document Web Service (DWS) Processor API, providing powerful PDF processing capabilities for AI assistants.",
+    "stars": 63,
+    "updatedAt": "2026-02-27T20:03:08Z"
+  },
+  {
+    "name": "PSPDFKit/nutrient-document-engine-mcp-server",
+    "repo": "https://github.com/PSPDFKit/nutrient-document-engine-mcp-server",
+    "description": "A Model Context Protocol (MCP) server implementation exposes document processing capabilities through natural language, supporting both direct human interaction and AI agent tool calling.",
+    "stars": 59,
+    "updatedAt": "2026-02-27T20:04:37Z"
+  },
+  {
+    "name": "modelcontextprotocol/modelcontextprotocol",
+    "repo": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+    "description": "Specification and documentation for the Model Context Protocol",
+    "stars": 7326,
+    "updatedAt": "2026-02-27T20:46:43Z"
+  },
+  {
+    "name": "mongodb-js/mongodb-mcp-server",
+    "repo": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "description": "A Model Context Protocol server to connect to MongoDB databases and MongoDB Atlas Clusters.",
+    "stars": 927,
+    "updatedAt": "2026-02-26T21:51:57Z"
+  },
+  {
     "name": "freee/freee-mcp",
     "repo": "https://github.com/freee/freee-mcp",
     "description": "Model Context Protocol (MCP) server for freee API integration",
