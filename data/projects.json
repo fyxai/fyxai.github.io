@@ -31,5 +31,38 @@
       "Visualization"
     ],
     "description": "Tracks emerging AI skills and maps them to practical project use-cases."
+  },
+  {
+    "name": "Agent Arena Live",
+    "status": "active",
+    "url": "https://github.com/fyxai/agent-arena-live",
+    "stack": [
+      "Next.js",
+      "Eval",
+      "Multi-Agent"
+    ],
+    "description": "Live leaderboard where multiple AI agents compete on real engineering tasks."
+  },
+  {
+    "name": "Vibe Product Studio",
+    "status": "active",
+    "url": "https://github.com/fyxai/vibe-product-studio",
+    "stack": [
+      "LLM",
+      "Product Discovery",
+      "Automation"
+    ],
+    "description": "Autonomous studio that turns trends into micro-SaaS concepts and MVP specs."
+  },
+  {
+    "name": "AI Launch Radar",
+    "status": "active",
+    "url": "https://github.com/fyxai/ai-launch-radar",
+    "stack": [
+      "Crawler",
+      "NLP",
+      "Dashboard"
+    ],
+    "description": "Tracks daily AI releases and scores market impact signals."
   }
 ]
