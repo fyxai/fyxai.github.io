@@ -1,16 +1,72 @@
 [
   {
-    "title": "Open models keep narrowing performance gaps",
-    "source": "Synthetic Wire",
-    "url": "https://example.com/news/open-models-gap",
-    "summary": "Independent benchmarks show open models improving rapidly on coding and agentic tasks.",
-    "publishedAt": "2026-02-26"
+    "title": "Semantic Layers in the Wild: Lessons from Early Adopters",
+    "url": "https://www.oreilly.com/radar/semantic-layers-in-the-wild-lessons-from-early-adopters/",
+    "summary": "My first post made the case for what a semantic layer can bring to the modern enterprise: a single source of truth accessible to everyone who needs it—BI teams in Tableau and Power BI, Excel-loving analysts, application ",
+    "publishedAt": "Thu, 26 Feb 2026 12:16:01 +0000",
+    "source": "OReilly Radar"
   },
   {
-    "title": "Edge AI chips accelerate local inference",
-    "source": "Tech Feed",
-    "url": "https://example.com/news/edge-ai-chips",
-    "summary": "New NPUs target on-device multimodal assistants with lower power draw.",
-    "publishedAt": "2026-02-25"
+    "title": "Why Multi-Agent Systems Need Memory Engineering",
+    "url": "https://www.oreilly.com/radar/why-multi-agent-systems-need-memory-engineering/",
+    "summary": "Most multi-agent AI systems fail expensively before they fail quietly. The pattern is familiar to anyone who&#8217;s debugged one: Agent A completes a subtask and moves on. Agent B, with no visibility into A&#8217;s work",
+    "publishedAt": "Wed, 25 Feb 2026 12:12:13 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "Control Planes for Autonomous AI: Why Governance Has to Move Inside the System",
+    "url": "https://www.oreilly.com/radar/control-planes-for-autonomous-ai-why-governance-has-to-move-inside-the-system/",
+    "summary": "For most of the past decade, AI governance lived comfortably outside the systems it was meant to regulate. Policies were written. Reviews were conducted. Models were approved. Audits happened after the fact. As long as A",
+    "publishedAt": "Tue, 24 Feb 2026 12:16:14 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "The Hidden Cost of Agentic Failure",
+    "url": "https://www.oreilly.com/radar/the-hidden-cost-of-agentic-failure/",
+    "summary": "Agentic AI has clearly moved beyond buzzword status. McKinsey’s November 2025 survey shows that 62% of organizations are already experimenting with AI agents, and the top performers are pushing them into core workflows i",
+    "publishedAt": "Mon, 23 Feb 2026 12:17:47 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "How to Write a Good Spec for AI Agents",
+    "url": "https://www.oreilly.com/radar/how-to-write-a-good-spec-for-ai-agents/",
+    "summary": "This post first appeared on Addy Osmani’s Elevate Substack newsletter and is being republished here with the author’s permission. TL;DR: Aim for a clear spec covering just enough nuance (this may include structure, style",
+    "publishedAt": "Fri, 20 Feb 2026 12:01:32 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "Packaging Expertise: How Claude Skills Turn Judgment into Artifacts",
+    "url": "https://www.oreilly.com/radar/packaging-expertise-how-claude-skills-turn-judgment-into-artifacts/",
+    "summary": "Think about what happens when you onboard a new employee. First, you provision them tools. Email access. Slack. CRM. Office software. Project management software. Development environment. Connecting a person to the syste",
+    "publishedAt": "Thu, 19 Feb 2026 12:01:11 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "What Developers Actually Need to Know Right Now",
+    "url": "https://www.oreilly.com/radar/what-developers-actually-need-to-know-right-now/",
+    "summary": "The following article includes clips from a recent Live with Tim O&#8217;Reilly interview. You can watch the full version on the O&#8217;Reilly Media learning platform. Addy Osmani is one of my favorite people to talk wi",
+    "publishedAt": "Thu, 19 Feb 2026 11:00:09 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "AI Is Not a Library: Designing for Nondeterministic Dependencies",
+    "url": "https://www.oreilly.com/radar/ai-is-not-a-library-designing-for-nondeterministic-dependencies/",
+    "summary": "For most of the history of software engineering, we’ve built systems around a simple and comforting assumption: Given the same input, a program will produce the same output. When something went wrong, it was usually beca",
+    "publishedAt": "Wed, 18 Feb 2026 11:43:54 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "AI, A2A, and the Governance Gap",
+    "url": "https://www.oreilly.com/radar/ai-a2a-and-the-governance-gap/",
+    "summary": "Over the past six months, I&#8217;ve watched the same pattern repeat across enterprise AI teams. A2A and ACP light up the room during architecture reviews—the protocols are elegant, the demos impressive. Three weeks into",
+    "publishedAt": "Tue, 17 Feb 2026 12:11:29 +0000",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "Conductors to Orchestrators: The Future of Agentic Coding",
+    "url": "https://www.oreilly.com/radar/conductors-to-orchestrators-the-future-of-agentic-coding/",
+    "summary": "This post first appeared on Addy Osmani’s Elevate Substack newsletter and is being republished here with the author’s permission. AI coding assistants have quickly moved from novelty to necessity, where up to 90% of soft",
+    "publishedAt": "Fri, 13 Feb 2026 12:01:07 +0000",
+    "source": "OReilly Radar"
   }
 ]

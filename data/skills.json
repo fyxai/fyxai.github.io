@@ -1,5 +1,17 @@
 [
   {
+    "name": "Autonomous agent coordination",
+    "category": "AI Capability",
+    "description": "Emergent capability inferred from active OSS signal: pydantic/pydantic-ai.",
+    "signal": "GitHub repo activity (https://github.com/pydantic/pydantic-ai)"
+  },
+  {
+    "name": "Realtime multimodal voice interfaces",
+    "category": "AI Capability",
+    "description": "Emergent capability inferred from active OSS signal: TEN-framework/ten-framework.",
+    "signal": "GitHub repo activity (https://github.com/TEN-framework/ten-framework)"
+  },
+  {
     "name": "Long-context planning",
     "category": "AI Capability",
     "description": "Long-context planning applied to production copilots and autonomous systems.",
