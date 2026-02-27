@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Long-context planning",
+    "category": "AI Capability",
+    "description": "Long-context planning applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Tool orchestration",
+    "category": "AI Capability",
+    "description": "Tool orchestration applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Codebase refactoring",
+    "category": "AI Capability",
+    "description": "Codebase refactoring applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Autonomous QA generation",
+    "category": "AI Capability",
+    "description": "Autonomous QA generation applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Synthetic data curation",
+    "category": "AI Capability",
+    "description": "Synthetic data curation applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Vision-language grounding",
+    "category": "AI Capability",
+    "description": "Vision-language grounding applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Realtime voice agents",
+    "category": "AI Capability",
+    "description": "Realtime voice agents applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Multi-agent negotiation",
+    "category": "AI Capability",
+    "description": "Multi-agent negotiation applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Retrieval augmentation tuning",
+    "category": "AI Capability",
+    "description": "Retrieval augmentation tuning applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Policy-safe execution",
+    "category": "AI Capability",
+    "description": "Policy-safe execution applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Graph memory synthesis",
+    "category": "AI Capability",
+    "description": "Graph memory synthesis applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Workflow self-healing",
+    "category": "AI Capability",
+    "description": "Workflow self-healing applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Browser automation robustness",
+    "category": "AI Capability",
+    "description": "Browser automation robustness applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Prompt compression",
+    "category": "AI Capability",
+    "description": "Prompt compression applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Reasoning trace distillation",
+    "category": "AI Capability",
+    "description": "Reasoning trace distillation applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Adaptive evaluation harnesses",
+    "category": "AI Capability",
+    "description": "Adaptive evaluation harnesses applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Edge deployment optimization",
+    "category": "AI Capability",
+    "description": "Edge deployment optimization applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Structured extraction",
+    "category": "AI Capability",
+    "description": "Structured extraction applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Data drift detection",
+    "category": "AI Capability",
+    "description": "Data drift detection applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  },
+  {
+    "name": "Cross-modal summarization",
+    "category": "AI Capability",
+    "description": "Cross-modal summarization applied to production copilots and autonomous systems.",
+    "signal": "GitHub + arXiv + product release activity"
+  }
+]

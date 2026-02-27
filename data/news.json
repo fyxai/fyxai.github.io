@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Open models keep narrowing performance gaps",
+    "source": "Synthetic Wire",
+    "url": "https://example.com/news/open-models-gap",
+    "summary": "Independent benchmarks show open models improving rapidly on coding and agentic tasks.",
+    "publishedAt": "2026-02-26"
+  },
+  {
+    "title": "Edge AI chips accelerate local inference",
+    "source": "Tech Feed",
+    "url": "https://example.com/news/edge-ai-chips",
+    "summary": "New NPUs target on-device multimodal assistants with lower power draw.",
+    "publishedAt": "2026-02-25"
+  }
+]

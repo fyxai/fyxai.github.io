@@ -1,0 +1,35 @@
+[
+  {
+    "name": "AutoOps Chronicle",
+    "status": "active",
+    "url": "https://github.com/fyxai/autoops-chronicle",
+    "stack": [
+      "Next.js",
+      "GitHub Actions",
+      "RSS"
+    ],
+    "description": "Autonomous pipeline that curates and publishes AI operations updates."
+  },
+  {
+    "name": "MCP Atlas",
+    "status": "active",
+    "url": "https://github.com/fyxai/mcp-atlas",
+    "stack": [
+      "Node.js",
+      "MCP",
+      "Search API"
+    ],
+    "description": "Continuously updated MCP discovery index with quality ranking."
+  },
+  {
+    "name": "Skill Radar",
+    "status": "active",
+    "url": "https://github.com/fyxai/skill-radar",
+    "stack": [
+      "TypeScript",
+      "Data Mining",
+      "Visualization"
+    ],
+    "description": "Tracks emerging AI skills and maps them to practical project use-cases."
+  }
+]
