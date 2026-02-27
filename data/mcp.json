@@ -1,5 +1,40 @@
 [
   {
+    "name": "freee/freee-mcp",
+    "repo": "https://github.com/freee/freee-mcp",
+    "description": "Model Context Protocol (MCP) server for freee API integration",
+    "stars": 167,
+    "updatedAt": "2026-02-27T15:46:45Z"
+  },
+  {
+    "name": "Softeria/ms-365-mcp-server",
+    "repo": "https://github.com/Softeria/ms-365-mcp-server",
+    "description": "A Model Context Protocol (MCP) server for interacting with Microsoft 365 and Office services through the Graph API",
+    "stars": 492,
+    "updatedAt": "2026-02-27T16:39:23Z"
+  },
+  {
+    "name": "qlitre/japan-tariff-mcp",
+    "repo": "https://github.com/qlitre/japan-tariff-mcp",
+    "description": "日本の関税率をキーワードから検索できるMCP (Model Context Protocol) サーバーです。",
+    "stars": 8,
+    "updatedAt": "2026-02-27T14:05:45Z"
+  },
+  {
+    "name": "modelcontextprotocol/typescript-sdk",
+    "repo": "https://github.com/modelcontextprotocol/typescript-sdk",
+    "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
+    "stars": 11695,
+    "updatedAt": "2026-02-27T15:04:27Z"
+  },
+  {
+    "name": "edicarloslds/businessmap-mcp",
+    "repo": "https://github.com/edicarloslds/businessmap-mcp",
+    "description": "Model Context Protocol server for BusinessMap (Kanbanize) integration",
+    "stars": 7,
+    "updatedAt": "2026-02-27T11:39:17Z"
+  },
+  {
     "name": "contentful/contentful-mcp-server",
     "repo": "https://github.com/contentful/contentful-mcp-server",
     "description": "MCP (Model Context Protocol) server for the Contentful Management API",
