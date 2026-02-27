@@ -15,120 +15,140 @@
     "name": "Long-context planning",
     "category": "AI Capability",
     "description": "Long-context planning applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Long-context%20planning%20ai&type=repositories"
   },
   {
     "name": "Tool orchestration",
     "category": "AI Capability",
     "description": "Tool orchestration applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Tool%20orchestration%20ai&type=repositories"
   },
   {
     "name": "Codebase refactoring",
     "category": "AI Capability",
     "description": "Codebase refactoring applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Codebase%20refactoring%20ai&type=repositories"
   },
   {
     "name": "Autonomous QA generation",
     "category": "AI Capability",
     "description": "Autonomous QA generation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Autonomous%20QA%20generation%20ai&type=repositories"
   },
   {
     "name": "Synthetic data curation",
     "category": "AI Capability",
     "description": "Synthetic data curation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Synthetic%20data%20curation%20ai&type=repositories"
   },
   {
     "name": "Vision-language grounding",
     "category": "AI Capability",
     "description": "Vision-language grounding applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Vision-language%20grounding%20ai&type=repositories"
   },
   {
     "name": "Realtime voice agents",
     "category": "AI Capability",
     "description": "Realtime voice agents applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Realtime%20voice%20agents%20ai&type=repositories"
   },
   {
     "name": "Multi-agent negotiation",
     "category": "AI Capability",
     "description": "Multi-agent negotiation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Multi-agent%20negotiation%20ai&type=repositories"
   },
   {
     "name": "Retrieval augmentation tuning",
     "category": "AI Capability",
     "description": "Retrieval augmentation tuning applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Retrieval%20augmentation%20tuning%20ai&type=repositories"
   },
   {
     "name": "Policy-safe execution",
     "category": "AI Capability",
     "description": "Policy-safe execution applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Policy-safe%20execution%20ai&type=repositories"
   },
   {
     "name": "Graph memory synthesis",
     "category": "AI Capability",
     "description": "Graph memory synthesis applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Graph%20memory%20synthesis%20ai&type=repositories"
   },
   {
     "name": "Workflow self-healing",
     "category": "AI Capability",
     "description": "Workflow self-healing applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Workflow%20self-healing%20ai&type=repositories"
   },
   {
     "name": "Browser automation robustness",
     "category": "AI Capability",
     "description": "Browser automation robustness applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Browser%20automation%20robustness%20ai&type=repositories"
   },
   {
     "name": "Prompt compression",
     "category": "AI Capability",
     "description": "Prompt compression applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Prompt%20compression%20ai&type=repositories"
   },
   {
     "name": "Reasoning trace distillation",
     "category": "AI Capability",
     "description": "Reasoning trace distillation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Reasoning%20trace%20distillation%20ai&type=repositories"
   },
   {
     "name": "Adaptive evaluation harnesses",
     "category": "AI Capability",
     "description": "Adaptive evaluation harnesses applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Adaptive%20evaluation%20harnesses%20ai&type=repositories"
   },
   {
     "name": "Edge deployment optimization",
     "category": "AI Capability",
     "description": "Edge deployment optimization applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Edge%20deployment%20optimization%20ai&type=repositories"
   },
   {
     "name": "Structured extraction",
     "category": "AI Capability",
     "description": "Structured extraction applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Structured%20extraction%20ai&type=repositories"
   },
   {
     "name": "Data drift detection",
     "category": "AI Capability",
     "description": "Data drift detection applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Data%20drift%20detection%20ai&type=repositories"
   },
   {
     "name": "Cross-modal summarization",
     "category": "AI Capability",
     "description": "Cross-modal summarization applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity"
+    "signal": "GitHub + arXiv + product release activity",
+    "url": "https://github.com/search?q=Cross-modal%20summarization%20ai&type=repositories"
   }
 ]

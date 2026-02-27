@@ -148,6 +148,7 @@ async function updateSkills() {
       category: 'AI Capability',
       description: `Emergent capability inferred from active OSS signal: ${repo.full_name}.`,
       signal: `GitHub repo activity (${repo.html_url})`,
+      url: repo.html_url,
     });
     existing.add(skillName);
     if (additions.length >= 3) break;

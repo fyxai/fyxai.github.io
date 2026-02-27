@@ -3,13 +3,23 @@ import { CardGrid, InfoCard } from '../../components/Cards';
 
 export const metadata = { title: 'Skills | FYXAI' };
 
+const extractUrl = (text = '') => {
+  const match = text.match(/https?:\/\/\S+/);
+  return match ? match[0].replace(/[),.;]$/, '') : '';
+};
+
 export default function SkillsPage() {
   return (
     <section>
       <h1 className="mb-6 text-3xl font-bold text-cyan-200">Emerging AI Skills</h1>
       <CardGrid>
         {skills.map((item) => (
-          <InfoCard key={item.name} title={item.name} subtitle={item.category}>
+          <InfoCard
+            key={item.name}
+            title={item.name}
+            subtitle={item.category}
+            href={item.url || extractUrl(item.signal)}
+          >
             <p>{item.description}</p>
             <p className="mt-3 text-xs text-slate-400">Signal: {item.signal}</p>
           </InfoCard>
