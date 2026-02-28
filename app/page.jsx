@@ -5,6 +5,7 @@ import mcp from '../data/mcp.json';
 import skills from '../data/skills.json';
 import projects from '../data/projects.json';
 import prompts from '../data/prompts.json';
+import clawhub from '../data/clawhub.json';
 
 const quickLinks = [
   ['/news', 'AI News'],
@@ -92,6 +93,33 @@ export default function HomePage() {
                 Explore <ArrowRight size={12} />
               </span>
             </Link>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-cyan-100">
+          <Flame size={18} className="text-orange-300" /> This Week on ClawHub
+        </h2>
+        <p className="mb-4 text-xs text-slate-400">Updated: {new Date(clawhub.updatedAt).toLocaleString('en-US', { timeZone: 'UTC' })} UTC</p>
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+          {clawhub.sections.map((sec) => (
+            <article key={sec.name} className="card">
+              <h3 className="mb-3 font-semibold text-cyan-100">{sec.name}</h3>
+              <ul className="space-y-2">
+                {sec.items.map((it) => (
+                  <li key={it.slug} className="text-sm">
+                    <a href={it.url} target="_blank" rel="noreferrer" className="text-cyan-300 hover:text-cyan-200">{it.title || it.slug}</a>
+                    <span className="ml-2 text-xs text-slate-400">score {it.score ?? '-'}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {clawhub.buzzwords.map((w) => (
+            <span key={w} className="rounded-full border border-slate-700 px-2 py-1 text-xs text-slate-300">#{w}</span>
           ))}
         </div>
       </div>

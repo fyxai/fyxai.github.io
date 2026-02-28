@@ -1,4 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
+import { execSync } from 'node:child_process';
 
 const DATA_DIR = new URL('../data/', import.meta.url);
 
@@ -176,6 +177,81 @@ async function loadReferencePrompt(url) {
   return text.replace(/\r/g, '').trim().slice(0, 900);
 }
 
+function parseClawhubSearch(raw, category) {
+  return raw
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith('- ') || /^[a-z0-9]/i.test(line))
+    .map((line) => line.replace(/^-\s*/, ''))
+    .filter((line) => !line.toLowerCase().startsWith('searching'))
+    .map((line) => {
+      const m = line.match(/^([^\s]+)\s+(.*?)\s+\(([-0-9.]+)\)$/);
+      if (!m) return null;
+      return {
+        slug: m[1],
+        title: m[2].trim(),
+        score: Number(m[3]),
+        category,
+        url: `https://clawhub.ai/skills/${m[1]}`,
+      };
+    })
+    .filter(Boolean);
+}
+
+async function updateClawhubWeekly() {
+  const queries = [
+    { q: 'automation', category: 'Hot Skills' },
+    { q: 'monitoring', category: 'New & Rising' },
+    { q: 'productivity', category: 'Builder Picks' },
+  ];
+
+  const all = [];
+  for (const item of queries) {
+    try {
+      const raw = execSync(`clawhub --registry https://clawhub.ai search "${item.q}" --limit 8`, {
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'pipe'],
+      });
+      all.push(...parseClawhubSearch(raw, item.category));
+    } catch (e) {
+      console.warn(`clawhub search failed for ${item.q}:`, e.message);
+    }
+  }
+
+  const merged = [];
+  const seen = new Set();
+  for (const row of all) {
+    if (seen.has(row.slug)) continue;
+    seen.add(row.slug);
+    merged.push(row);
+  }
+
+  const out = {
+    updatedAt: new Date().toISOString(),
+    sections: [
+      {
+        name: 'Hot Skills',
+        items: merged.filter((x) => x.category === 'Hot Skills').slice(0, 5),
+      },
+      {
+        name: 'New & Rising',
+        items: merged.filter((x) => x.category === 'New & Rising').slice(0, 5),
+      },
+      {
+        name: 'Builder Picks',
+        items: merged.filter((x) => x.category === 'Builder Picks').slice(0, 5),
+      },
+    ],
+    buzzwords: ['agentic workflows', 'mcp', 'automation', 'monitoring', 'productivity'],
+  };
+
+  const hasData = out.sections.some((s) => s.items.length > 0);
+  if (hasData) {
+    await writeFile(new URL('clawhub.json', DATA_DIR), `${JSON.stringify(out, null, 2)}\n`);
+    console.log('clawhub.json refreshed');
+  }
+}
+
 async function updatePrompts() {
   const tools = [
     {
@@ -248,3 +324,4 @@ await updateNews();
 await updateMcp();
 await updateSkills();
 await updatePrompts();
+await updateClawhubWeekly();

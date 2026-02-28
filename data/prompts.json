@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T08:30:11.371Z",
+    "updatedAt": "2026-02-28T08:32:08.102Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -29,8 +29,8 @@
       {
         "title": "gsd-build/get-shit-done",
         "url": "https://github.com/gsd-build/get-shit-done",
-        "stars": 21936,
-        "updatedAt": "2026-02-28T08:29:55Z"
+        "stars": 21939,
+        "updatedAt": "2026-02-28T08:31:50Z"
       },
       {
         "title": "Piebald-AI/tweakcc",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T08:30:11.585Z",
+    "updatedAt": "2026-02-28T08:32:08.259Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -65,7 +65,7 @@
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T08:30:11.868Z",
+    "updatedAt": "2026-02-28T08:32:08.478Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
