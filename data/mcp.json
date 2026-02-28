@@ -1,5 +1,40 @@
 [
   {
+    "name": "vinkius-labs/mcp-fusion",
+    "repo": "https://github.com/vinkius-labs/mcp-fusion",
+    "description": "Create your MCP server at lightspeed - AI-First DX for the Model Context Protocol. Build production-grade MCP servers with type safety, behavioral governance, and zero boilerplate.",
+    "stars": 195,
+    "updatedAt": "2026-02-28T04:08:50Z"
+  },
+  {
+    "name": "SeeYangZhi/lucide-icons-mcp",
+    "repo": "https://github.com/SeeYangZhi/lucide-icons-mcp",
+    "description": "A Model Context Protocol (MCP) server exposing Lucide icons as resources and tools for LLMs and agentic applications. Built with Bun and the MCP TypeScript SDK.",
+    "stars": 25,
+    "updatedAt": "2026-02-28T03:59:55Z"
+  },
+  {
+    "name": "WebMCP-org/npm-packages",
+    "repo": "https://github.com/WebMCP-org/npm-packages",
+    "description": "NPM packages for MCP-B: Transport layers, React hooks, and browser tools for the Model Context Protocol",
+    "stars": 22,
+    "updatedAt": "2026-02-28T03:36:03Z"
+  },
+  {
+    "name": "pulsemcp/mcp-servers",
+    "repo": "https://github.com/pulsemcp/mcp-servers",
+    "description": "MCP (Model Context Protocol) Servers authored and maintained by the PulseMCP team. We build reliable servers thoughtfully designed specifically for MCP Client-powered workflows.",
+    "stars": 60,
+    "updatedAt": "2026-02-28T02:43:21Z"
+  },
+  {
+    "name": "cursor/mcp-servers",
+    "repo": "https://github.com/cursor/mcp-servers",
+    "description": "A list of MCP (Model Context Protocol) servers for developer tools and services",
+    "stars": 203,
+    "updatedAt": "2026-02-27T23:45:31Z"
+  },
+  {
     "name": "VeriTeknik/pluggedin-app",
     "repo": "https://github.com/VeriTeknik/pluggedin-app",
     "description": "The Crossroads for AI Data Exchanges. A unified, self-hostable web interface for discovering, configuring, and managing Model Context Protocol (MCP) servers—bringing together AI tools, workspaces, prompts, and logs from multiple MCP sources (Claude, Cursor, etc.) under one roof.",
