@@ -15,16 +15,20 @@ const dayKey = (t) => {
   return d.toISOString().slice(0, 10);
 };
 
-const cleanSummary = (s = '') =>
-  s
-    .replace(/&lt;[^&]*&gt;/g, ' ')
-    .replace(/<[^>]*>/g, ' ')
-    .replace(/https?:\/\/\S+/g, ' ')
+const cleanSummary = (s = '') => {
+  const decoded = s
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
     .replace(/&amp;/g, '&')
     .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
+    .replace(/&#39;/g, "'");
+
+  return decoded
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/https?:\/\/\S+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+};
 
 export default function NewsPage() {
   const latest = news.slice(0, 10);
