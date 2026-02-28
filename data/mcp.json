@@ -1,5 +1,26 @@
 [
   {
+    "name": "chrisleekr/mcp-server-playground",
+    "repo": "https://github.com/chrisleekr/mcp-server-playground",
+    "description": "A playground for Model Context Protocol (MCP) server built with TypeScript and Streamable HTTP transport with an OAuth Proxy for 3rd party authorization servers like Auth0",
+    "stars": 7,
+    "updatedAt": "2026-02-28T22:06:21Z"
+  },
+  {
+    "name": "modelcontextprotocol/servers",
+    "repo": "https://github.com/modelcontextprotocol/servers",
+    "description": "Model Context Protocol Servers",
+    "stars": 79719,
+    "updatedAt": "2026-02-28T21:50:46Z"
+  },
+  {
+    "name": "local-falcon/mcp",
+    "repo": "https://github.com/local-falcon/mcp",
+    "description": "MCP server for Local Falcon's local SEO and AI visibility platform: geo-grid rank tracking, campaign management, and competitor analysis via Model Context Protocol",
+    "stars": 15,
+    "updatedAt": "2026-02-28T21:14:10Z"
+  },
+  {
     "name": "Family-IT-Guy/perplexity-mcp",
     "repo": "https://github.com/Family-IT-Guy/perplexity-mcp",
     "description": "A lightweight, easy-to-use Model Context Protocol (MCP) implementation that seamlessly integrates Perplexity's powerful AI models into Claude Desktop. This bridge lets Claude access Perplexity's search and reasoning capabilities through Anthropic's standardized tool interface.",

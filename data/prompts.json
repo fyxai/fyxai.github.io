@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T20:50:06.599Z",
+    "updatedAt": "2026-02-28T22:08:38.895Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -15,10 +15,16 @@
         "updatedAt": null
       },
       {
+        "title": "alex-feel/claude-code-artifacts-public",
+        "url": "https://github.com/alex-feel/claude-code-artifacts-public",
+        "stars": 4,
+        "updatedAt": "2026-02-28T21:24:29Z"
+      },
+      {
         "title": "adenaufal/anti-slop-writing",
         "url": "https://github.com/adenaufal/anti-slop-writing",
         "stars": 0,
-        "updatedAt": "2026-02-28T20:07:12Z"
+        "updatedAt": "2026-02-28T21:20:04Z"
       },
       {
         "title": "liaohch3/claude-tap",
@@ -31,18 +37,12 @@
         "url": "https://github.com/Piebald-AI/tweakcc",
         "stars": 1184,
         "updatedAt": "2026-02-28T15:17:10Z"
-      },
-      {
-        "title": "p0/claude-code-prompts",
-        "url": "https://github.com/p0/claude-code-prompts",
-        "stars": 5,
-        "updatedAt": "2026-02-28T06:11:42Z"
       }
     ]
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T20:50:06.797Z",
+    "updatedAt": "2026-02-28T22:08:39.113Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -59,7 +59,7 @@
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T20:50:07.106Z",
+    "updatedAt": "2026-02-28T22:08:39.366Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
