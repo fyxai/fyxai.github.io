@@ -64,5 +64,16 @@
       "Dashboard"
     ],
     "description": "Tracks daily AI releases and scores market impact signals."
+  },
+  {
+    "name": "Prompt Radar",
+    "status": "active",
+    "url": "https://github.com/fyxai/prompt-radar",
+    "stack": [
+      "Node.js",
+      "GitHub Actions",
+      "Prompt Tracking"
+    ],
+    "description": "Multi-source prompt tracker with normalization, deduplication, confidence scoring, and per-tool change timelines."
   }
 ]
