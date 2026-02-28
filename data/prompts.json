@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T13:48:48.195Z",
+    "updatedAt": "2026-02-28T16:51:11.345Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -18,7 +18,13 @@
         "title": "liaohch3/claude-tap",
         "url": "https://github.com/liaohch3/claude-tap",
         "stars": 2,
-        "updatedAt": "2026-02-28T06:48:43Z"
+        "updatedAt": "2026-02-28T16:50:52Z"
+      },
+      {
+        "title": "Piebald-AI/tweakcc",
+        "url": "https://github.com/Piebald-AI/tweakcc",
+        "stars": 1184,
+        "updatedAt": "2026-02-28T15:17:10Z"
       },
       {
         "title": "p0/claude-code-prompts",
@@ -29,26 +35,14 @@
       {
         "title": "gsd-build/get-shit-done",
         "url": "https://github.com/gsd-build/get-shit-done",
-        "stars": 22058,
-        "updatedAt": "2026-02-28T13:47:22Z"
-      },
-      {
-        "title": "Piebald-AI/tweakcc",
-        "url": "https://github.com/Piebald-AI/tweakcc",
-        "stars": 1183,
-        "updatedAt": "2026-02-28T12:35:11Z"
-      },
-      {
-        "title": "GAIn-Tech/opencode-setup",
-        "url": "https://github.com/GAIn-Tech/opencode-setup",
-        "stars": 0,
-        "updatedAt": "2026-02-28T00:41:46Z"
+        "stars": 22135,
+        "updatedAt": "2026-02-28T16:49:58Z"
       }
     ]
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T13:48:48.402Z",
+    "updatedAt": "2026-02-28T16:51:11.503Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -58,14 +52,14 @@
       {
         "title": "jasonkneen/kiro",
         "url": "https://github.com/jasonkneen/kiro",
-        "stars": 544,
-        "updatedAt": "2026-02-28T10:29:00Z"
+        "stars": 545,
+        "updatedAt": "2026-02-28T14:58:12Z"
       }
     ]
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T13:48:48.587Z",
+    "updatedAt": "2026-02-28T16:51:11.695Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
