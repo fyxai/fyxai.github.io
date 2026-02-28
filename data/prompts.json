@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T20:12:29.145Z",
+    "updatedAt": "2026-02-28T20:13:14.187Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -42,7 +42,7 @@
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T20:12:29.327Z",
+    "updatedAt": "2026-02-28T20:13:14.592Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -59,7 +59,7 @@
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T20:12:29.511Z",
+    "updatedAt": "2026-02-28T20:13:14.849Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
