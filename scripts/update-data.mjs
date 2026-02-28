@@ -89,6 +89,26 @@ async function updateNews() {
   if (top10.length) {
     await writeFile(new URL('news.json', DATA_DIR), `${JSON.stringify(top10, null, 2)}\n`);
     console.log(`news.json updated with ${top10.length} items`);
+
+    // append to archive instead of losing old news
+    let oldArchive = [];
+    try {
+      oldArchive = JSON.parse(await readFile(new URL('news-archive.json', DATA_DIR), 'utf8'));
+    } catch {}
+
+    const merged = [];
+    const seenArchive = new Set();
+    for (const item of [...top10, ...oldArchive]) {
+      const key = (item.url || '').split('?')[0];
+      if (!key || seenArchive.has(key)) continue;
+      seenArchive.add(key);
+      merged.push(item);
+    }
+
+    merged.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+    const capped = merged.slice(0, 500);
+    await writeFile(new URL('news-archive.json', DATA_DIR), `${JSON.stringify(capped, null, 2)}\n`);
+    console.log(`news-archive.json updated with ${capped.length} items`);
   }
 }
 
