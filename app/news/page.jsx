@@ -15,7 +15,7 @@ const dayKey = (t) => {
   return d.toISOString().slice(0, 10);
 };
 
-const cleanSummary = (s = '') => {
+const cleanText = (s = '') => {
   const decoded = s
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
@@ -25,6 +25,8 @@ const cleanSummary = (s = '') => {
 
   return decoded
     .replace(/<[^>]*>/g, ' ')
+    .replace(/(?:^|\s)[a-z]+\s*=\s*"[^"]*"/gi, ' ')
+    .replace(/(?:^|\s)[a-z]+\s*=\s*'[^']*'/gi, ' ')
     .replace(/https?:\/\/\S+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -52,8 +54,8 @@ export default function NewsPage() {
       <h2 className="mb-4 text-xl font-semibold text-cyan-100">Fresh Updates</h2>
       <CardGrid>
         {latest.map((item) => (
-          <InfoCard key={item.url} title={item.title} subtitle={`${item.source} • ${fmt(item.publishedAt)}`} href={item.url}>
-            {cleanSummary(item.summary)}
+          <InfoCard key={item.url} title={cleanText(item.title)} subtitle={`${item.source} • ${fmt(item.publishedAt)}`} href={item.url}>
+            {cleanText(item.summary)}
           </InfoCard>
         ))}
       </CardGrid>
@@ -69,11 +71,11 @@ export default function NewsPage() {
               {grouped[d].map((item) => (
                 <InfoCard
                   key={`${item.url}-${item.publishedAt}`}
-                  title={item.title}
+                  title={cleanText(item.title)}
                   subtitle={`${item.source} • ${fmt(item.publishedAt)}`}
                   href={item.url}
                 >
-                  {cleanSummary(item.summary)}
+                  {cleanText(item.summary)}
                 </InfoCard>
               ))}
             </div>
