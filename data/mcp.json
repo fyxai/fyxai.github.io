@@ -1,5 +1,26 @@
 [
   {
+    "name": "truss44/mcp-crypto-price",
+    "repo": "https://github.com/truss44/mcp-crypto-price",
+    "description": "A Model Context Protocol (MCP) server that provides real-time cryptocurrency analysis via CoinCap's API. Enables Claude and other MCP clients to fetch crypto prices, analyze market trends, and track historical data.",
+    "stars": 38,
+    "updatedAt": "2026-02-27T23:23:19Z"
+  },
+  {
+    "name": "getsentry/XcodeBuildMCP",
+    "repo": "https://github.com/getsentry/XcodeBuildMCP",
+    "description": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
+    "stars": 4485,
+    "updatedAt": "2026-02-28T04:07:08Z"
+  },
+  {
+    "name": "esaio/esa-mcp-server",
+    "repo": "https://github.com/esaio/esa-mcp-server",
+    "description": "esa.io の公式 MCP(Model Context Protocol)サーバー(STDIO Transport版)",
+    "stars": 46,
+    "updatedAt": "2026-02-27T22:16:44Z"
+  },
+  {
     "name": "vinkius-labs/mcp-fusion",
     "repo": "https://github.com/vinkius-labs/mcp-fusion",
     "description": "Create your MCP server at lightspeed - AI-First DX for the Model Context Protocol. Build production-grade MCP servers with type safety, behavioral governance, and zero boilerplate.",
