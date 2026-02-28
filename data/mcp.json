@@ -1,5 +1,26 @@
 [
   {
+    "name": "flaviodelgrosso/fastify-mcp-server",
+    "repo": "https://github.com/flaviodelgrosso/fastify-mcp-server",
+    "description": "Fastify plugin to easily spin up Model Context Protocol (MCP) HTTP servers",
+    "stars": 23,
+    "updatedAt": "2026-02-28T08:42:51Z"
+  },
+  {
+    "name": "cyanheads/mcp-ts-template",
+    "repo": "https://github.com/cyanheads/mcp-ts-template",
+    "description": "TypeScript template for building Model Context Protocol (MCP) servers. Ships with declarative tools/resources, pluggable auth, multi-backend storage, OpenTelemetry observability, and first-class support for both local and edge (Cloudflare Workers) runtimes.",
+    "stars": 117,
+    "updatedAt": "2026-02-28T04:58:26Z"
+  },
+  {
+    "name": "grab/TalkToFigmaDesktop",
+    "repo": "https://github.com/grab/TalkToFigmaDesktop",
+    "description": "A powerful desktop application bridging Figma and AI tools via Model Context Protocol Seamless integration between Figma designs and AI assistants",
+    "stars": 25,
+    "updatedAt": "2026-02-28T04:42:23Z"
+  },
+  {
     "name": "truss44/mcp-crypto-price",
     "repo": "https://github.com/truss44/mcp-crypto-price",
     "description": "A Model Context Protocol (MCP) server that provides real-time cryptocurrency analysis via CoinCap's API. Enables Claude and other MCP clients to fetch crypto prices, analyze market trends, and track historical data.",
