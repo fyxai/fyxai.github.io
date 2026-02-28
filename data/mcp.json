@@ -1,5 +1,33 @@
 [
   {
+    "name": "elgorro/aiquila",
+    "repo": "https://github.com/elgorro/aiquila",
+    "description": "Connect Claude AI to your Nextcloud via the Model Context Protocol. Browse, search, and manage files through natural conversation.",
+    "stars": 6,
+    "updatedAt": "2026-02-28T12:17:05Z"
+  },
+  {
+    "name": "ITSpecialist111/MicrosoftGraph_Transcript_MCP",
+    "repo": "https://github.com/ITSpecialist111/MicrosoftGraph_Transcript_MCP",
+    "description": "A remote Model Context Protocol (MCP) server that retrieves Microsoft Teams meeting transcripts via the Microsoft Graph API, using delegated **OAuth 2.0 On-Behalf-Of (OBO)** authentication.  Designed for integration with Microsoft Copilot Studio (via the MCP Wizard), though any MCP-compatible client can connect.",
+    "stars": 12,
+    "updatedAt": "2026-02-28T13:12:21Z"
+  },
+  {
+    "name": "arinspunk/claude-talk-to-figma-mcp",
+    "repo": "https://github.com/arinspunk/claude-talk-to-figma-mcp",
+    "description": "A Model Context Protocol (MCP) that allows Claude Desktop and other AI tools (Claude Code, Cursor, Antigravity, etc.) to read, analyze, and modify Figma designs",
+    "stars": 433,
+    "updatedAt": "2026-02-28T11:16:25Z"
+  },
+  {
+    "name": "cyanheads/git-mcp-server",
+    "repo": "https://github.com/cyanheads/git-mcp-server",
+    "description": "An MCP (Model Context Protocol) server enabling LLMs and AI agents to interact with Git repositories. Provides tools for comprehensive Git operations including clone, commit, branch, diff, log, status, push, pull, merge, rebase, worktree, tag management, and more, via the MCP standard. STDIO & HTTP.",
+    "stars": 185,
+    "updatedAt": "2026-02-28T10:05:18Z"
+  },
+  {
     "name": "flaviodelgrosso/fastify-mcp-server",
     "repo": "https://github.com/flaviodelgrosso/fastify-mcp-server",
     "description": "Fastify plugin to easily spin up Model Context Protocol (MCP) HTTP servers",

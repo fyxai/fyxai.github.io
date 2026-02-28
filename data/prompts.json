@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T08:56:49.396Z",
+    "updatedAt": "2026-02-28T13:48:48.195Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -29,14 +29,14 @@
       {
         "title": "gsd-build/get-shit-done",
         "url": "https://github.com/gsd-build/get-shit-done",
-        "stars": 21950,
-        "updatedAt": "2026-02-28T08:55:28Z"
+        "stars": 22058,
+        "updatedAt": "2026-02-28T13:47:22Z"
       },
       {
         "title": "Piebald-AI/tweakcc",
         "url": "https://github.com/Piebald-AI/tweakcc",
-        "stars": 1181,
-        "updatedAt": "2026-02-28T08:43:08Z"
+        "stars": 1183,
+        "updatedAt": "2026-02-28T12:35:11Z"
       },
       {
         "title": "GAIn-Tech/opencode-setup",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T08:56:49.524Z",
+    "updatedAt": "2026-02-28T13:48:48.402Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -58,14 +58,14 @@
       {
         "title": "jasonkneen/kiro",
         "url": "https://github.com/jasonkneen/kiro",
-        "stars": 542,
-        "updatedAt": "2026-02-28T02:18:34Z"
+        "stars": 544,
+        "updatedAt": "2026-02-28T10:29:00Z"
       }
     ]
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T08:56:49.687Z",
+    "updatedAt": "2026-02-28T13:48:48.587Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
