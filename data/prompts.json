@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T16:52:35.282Z",
+    "updatedAt": "2026-02-28T19:50:50.715Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -13,6 +13,12 @@
         "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
         "stars": null,
         "updatedAt": null
+      },
+      {
+        "title": "adenaufal/anti-slop-writing",
+        "url": "https://github.com/adenaufal/anti-slop-writing",
+        "stars": 0,
+        "updatedAt": "2026-02-28T19:49:07Z"
       },
       {
         "title": "liaohch3/claude-tap",
@@ -31,18 +37,12 @@
         "url": "https://github.com/p0/claude-code-prompts",
         "stars": 5,
         "updatedAt": "2026-02-28T06:11:42Z"
-      },
-      {
-        "title": "gsd-build/get-shit-done",
-        "url": "https://github.com/gsd-build/get-shit-done",
-        "stars": 22137,
-        "updatedAt": "2026-02-28T16:51:32Z"
       }
     ]
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T16:52:35.409Z",
+    "updatedAt": "2026-02-28T19:50:50.842Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -52,14 +52,14 @@
       {
         "title": "jasonkneen/kiro",
         "url": "https://github.com/jasonkneen/kiro",
-        "stars": 545,
-        "updatedAt": "2026-02-28T14:58:12Z"
+        "stars": 546,
+        "updatedAt": "2026-02-28T18:33:56Z"
       }
     ]
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T16:52:35.639Z",
+    "updatedAt": "2026-02-28T19:50:51.066Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"

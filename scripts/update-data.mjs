@@ -25,28 +25,45 @@ function stripHtml(input = '') {
     .trim();
 }
 
-function parseRssItems(xml, source) {
-  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => m[1]);
-  return items.map((item) => {
-    const get = (tag) => {
-      const hit = item.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\/${tag}>`, 'i'));
-      return hit ? stripHtml(hit[1]) : '';
-    };
-    return {
-      title: get('title'),
-      url: get('link'),
-      summary: get('description').slice(0, 220),
-      publishedAt: get('pubDate') || new Date().toISOString(),
-      source,
-    };
-  }).filter((x) => x.title && x.url);
+function getTag(block, tag) {
+  const m = block.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\/${tag}>`, 'i'));
+  return m ? stripHtml(m[1]) : '';
+}
+
+function parseFeedItems(xml, source) {
+  const out = [];
+
+  // RSS <item>
+  const rssItems = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
+  for (const item of rssItems) {
+    const title = getTag(item, 'title');
+    const url = getTag(item, 'link');
+    const summary = getTag(item, 'description') || getTag(item, 'content:encoded');
+    const publishedAt = getTag(item, 'pubDate') || getTag(item, 'dc:date') || new Date().toISOString();
+    if (title && url) out.push({ title, url, summary: summary.slice(0, 220), publishedAt, source });
+  }
+
+  // Atom <entry>
+  const atomEntries = [...xml.matchAll(/<entry[\s\S]*?>([\s\S]*?)<\/entry>/gi)].map((m) => m[1]);
+  for (const entry of atomEntries) {
+    const title = getTag(entry, 'title');
+    const linkHref = (entry.match(/<link[^>]*href=["']([^"']+)["'][^>]*>/i) || [])[1] || '';
+    const url = linkHref || getTag(entry, 'link');
+    const summary = getTag(entry, 'summary') || getTag(entry, 'content');
+    const publishedAt = getTag(entry, 'updated') || getTag(entry, 'published') || new Date().toISOString();
+    if (title && url) out.push({ title, url, summary: summary.slice(0, 220), publishedAt, source });
+  }
+
+  return out;
 }
 
 async function updateNews() {
   const feeds = [
-    ['https://feeds.feedburner.com/oreilly/radar/atom', 'OReilly Radar'],
+    ['https://news.google.com/rss/search?q=AI+when:1d&hl=en-US&gl=US&ceid=US:en', 'Google News AI'],
+    ['https://techcrunch.com/tag/artificial-intelligence/feed/', 'TechCrunch AI'],
     ['https://www.artificialintelligence-news.com/feed/', 'AI News'],
-    ['https://venturebeat.com/category/ai/feed/', 'VentureBeat AI'],
+    ['https://www.oreilly.com/radar/feed/', 'OReilly Radar'],
+    ['https://venturebeat.com/ai/feed/', 'VentureBeat AI'],
   ];
 
   let news = [];
@@ -54,21 +71,24 @@ async function updateNews() {
     const res = await safeFetch(url);
     if (!res) continue;
     const xml = await res.text();
-    news.push(...parseRssItems(xml, source));
+    news.push(...parseFeedItems(xml, source));
   }
 
   const unique = [];
   const seen = new Set();
   for (const item of news) {
-    if (seen.has(item.url)) continue;
-    seen.add(item.url);
+    const key = item.url.split('?')[0];
+    if (seen.has(key)) continue;
+    seen.add(key);
     unique.push(item);
-    if (unique.length >= 10) break;
   }
 
-  if (unique.length) {
-    await writeFile(new URL('news.json', DATA_DIR), `${JSON.stringify(unique, null, 2)}\n`);
-    console.log(`news.json updated with ${unique.length} items`);
+  unique.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  const top10 = unique.slice(0, 10);
+
+  if (top10.length) {
+    await writeFile(new URL('news.json', DATA_DIR), `${JSON.stringify(top10, null, 2)}\n`);
+    console.log(`news.json updated with ${top10.length} items`);
   }
 }
 
@@ -177,6 +197,74 @@ async function loadReferencePrompt(url) {
   return text.replace(/\r/g, '').trim().slice(0, 900);
 }
 
+async function updatePrompts() {
+  const tools = [
+    {
+      name: 'Claude Code',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt',
+      },
+      searchQuery: 'claude code system prompt',
+      pinnedCandidates: [
+        {
+          title: 'Piebald-AI/claude-code-system-prompts',
+          url: 'https://github.com/Piebald-AI/claude-code-system-prompts',
+          stars: null,
+          updatedAt: null,
+        },
+      ],
+    },
+    {
+      name: 'Kiro',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt',
+      },
+      searchQuery: 'Kiro IDE system prompt',
+      pinnedCandidates: [],
+    },
+    {
+      name: 'Antigravity',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt',
+      },
+      searchQuery: 'Google Antigravity prompt',
+      pinnedCandidates: [
+        {
+          title: 'Google Antigravity full system prompt (gist)',
+          url: 'https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a',
+          stars: null,
+          updatedAt: null,
+        },
+      ],
+    },
+  ];
+
+  const rows = [];
+  for (const tool of tools) {
+    const [referenceExcerpt, candidates] = await Promise.all([
+      loadReferencePrompt(tool.referenceSource.url),
+      githubRepoCandidates(tool.searchQuery),
+    ]);
+    const merged = [...tool.pinnedCandidates, ...candidates]
+      .filter((x, idx, arr) => arr.findIndex((y) => y.url === x.url) === idx)
+      .slice(0, 6);
+
+    rows.push({
+      name: tool.name,
+      updatedAt: new Date().toISOString(),
+      referenceSource: tool.referenceSource,
+      referenceExcerpt,
+      latestCandidates: merged,
+    });
+  }
+
+  await writeFile(new URL('prompts.json', DATA_DIR), `${JSON.stringify(rows, null, 2)}\n`);
+  console.log(`prompts.json refreshed with ${rows.length} tools`);
+}
+
 function parseClawhubSearch(raw, category) {
   return raw
     .split('\n')
@@ -250,74 +338,6 @@ async function updateClawhubWeekly() {
     await writeFile(new URL('clawhub.json', DATA_DIR), `${JSON.stringify(out, null, 2)}\n`);
     console.log('clawhub.json refreshed');
   }
-}
-
-async function updatePrompts() {
-  const tools = [
-    {
-      name: 'Claude Code',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt',
-      },
-      searchQuery: 'claude code system prompt',
-      pinnedCandidates: [
-        {
-          title: 'Piebald-AI/claude-code-system-prompts',
-          url: 'https://github.com/Piebald-AI/claude-code-system-prompts',
-          stars: null,
-          updatedAt: null,
-        },
-      ],
-    },
-    {
-      name: 'Kiro',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt',
-      },
-      searchQuery: 'Kiro IDE system prompt',
-      pinnedCandidates: [],
-    },
-    {
-      name: 'Antigravity',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt',
-      },
-      searchQuery: 'Google Antigravity prompt',
-      pinnedCandidates: [
-        {
-          title: 'Google Antigravity full system prompt (gist)',
-          url: 'https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a',
-          stars: null,
-          updatedAt: null,
-        },
-      ],
-    },
-  ];
-
-  const rows = [];
-  for (const tool of tools) {
-    const [referenceExcerpt, candidates] = await Promise.all([
-      loadReferencePrompt(tool.referenceSource.url),
-      githubRepoCandidates(tool.searchQuery),
-    ]);
-    const merged = [...tool.pinnedCandidates, ...candidates]
-      .filter((x, idx, arr) => arr.findIndex((y) => y.url === x.url) === idx)
-      .slice(0, 6);
-
-    rows.push({
-      name: tool.name,
-      updatedAt: new Date().toISOString(),
-      referenceSource: tool.referenceSource,
-      referenceExcerpt,
-      latestCandidates: merged,
-    });
-  }
-
-  await writeFile(new URL('prompts.json', DATA_DIR), `${JSON.stringify(rows, null, 2)}\n`);
-  console.log(`prompts.json refreshed with ${rows.length} tools`);
 }
 
 await updateNews();

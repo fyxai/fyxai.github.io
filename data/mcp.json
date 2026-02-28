@@ -1,52 +1,38 @@
 [
   {
-    "name": "elgorro/aiquila",
-    "repo": "https://github.com/elgorro/aiquila",
-    "description": "Connect Claude AI to your Nextcloud via the Model Context Protocol. Browse, search, and manage files through natural conversation.",
-    "stars": 6,
-    "updatedAt": "2026-02-28T12:17:05Z"
-  },
-  {
-    "name": "ITSpecialist111/MicrosoftGraph_Transcript_MCP",
-    "repo": "https://github.com/ITSpecialist111/MicrosoftGraph_Transcript_MCP",
-    "description": "A remote Model Context Protocol (MCP) server that retrieves Microsoft Teams meeting transcripts via the Microsoft Graph API, using delegated **OAuth 2.0 On-Behalf-Of (OBO)** authentication.  Designed for integration with Microsoft Copilot Studio (via the MCP Wizard), though any MCP-compatible client can connect.",
-    "stars": 12,
-    "updatedAt": "2026-02-28T13:12:21Z"
+    "name": "Family-IT-Guy/perplexity-mcp",
+    "repo": "https://github.com/Family-IT-Guy/perplexity-mcp",
+    "description": "A lightweight, easy-to-use Model Context Protocol (MCP) implementation that seamlessly integrates Perplexity's powerful AI models into Claude Desktop. This bridge lets Claude access Perplexity's search and reasoning capabilities through Anthropic's standardized tool interface.",
+    "stars": 16,
+    "updatedAt": "2026-02-28T19:27:51Z"
   },
   {
     "name": "arinspunk/claude-talk-to-figma-mcp",
     "repo": "https://github.com/arinspunk/claude-talk-to-figma-mcp",
     "description": "A Model Context Protocol (MCP) that allows Claude Desktop and other AI tools (Claude Code, Cursor, Antigravity, etc.) to read, analyze, and modify Figma designs",
-    "stars": 433,
-    "updatedAt": "2026-02-28T11:16:25Z"
+    "stars": 434,
+    "updatedAt": "2026-02-28T16:42:35Z"
   },
   {
-    "name": "cyanheads/git-mcp-server",
-    "repo": "https://github.com/cyanheads/git-mcp-server",
-    "description": "An MCP (Model Context Protocol) server enabling LLMs and AI agents to interact with Git repositories. Provides tools for comprehensive Git operations including clone, commit, branch, diff, log, status, push, pull, merge, rebase, worktree, tag management, and more, via the MCP standard. STDIO & HTTP.",
-    "stars": 185,
-    "updatedAt": "2026-02-28T10:05:18Z"
+    "name": "spences10/mcp-memory-libsql",
+    "repo": "https://github.com/spences10/mcp-memory-libsql",
+    "description": "🧠 High-performance persistent memory system for Model Context Protocol (MCP) powered by libSQL. Features vector search, semantic knowledge storage, and efficient relationship management - perfect for AI agents and knowledge graph applications.",
+    "stars": 81,
+    "updatedAt": "2026-02-28T15:55:28Z"
   },
   {
-    "name": "flaviodelgrosso/fastify-mcp-server",
-    "repo": "https://github.com/flaviodelgrosso/fastify-mcp-server",
-    "description": "Fastify plugin to easily spin up Model Context Protocol (MCP) HTTP servers",
-    "stars": 23,
-    "updatedAt": "2026-02-28T08:42:51Z"
+    "name": "Daghis/teamcity-mcp",
+    "repo": "https://github.com/Daghis/teamcity-mcp",
+    "description": "Model Context Protocol (MCP) server for JetBrains TeamCity: control builds, tests, agents and configs from AI coding assistants.",
+    "stars": 18,
+    "updatedAt": "2026-02-28T14:40:15Z"
   },
   {
-    "name": "cyanheads/mcp-ts-template",
-    "repo": "https://github.com/cyanheads/mcp-ts-template",
-    "description": "TypeScript template for building Model Context Protocol (MCP) servers. Ships with declarative tools/resources, pluggable auth, multi-backend storage, OpenTelemetry observability, and first-class support for both local and edge (Cloudflare Workers) runtimes.",
-    "stars": 117,
-    "updatedAt": "2026-02-28T04:58:26Z"
-  },
-  {
-    "name": "grab/TalkToFigmaDesktop",
-    "repo": "https://github.com/grab/TalkToFigmaDesktop",
-    "description": "A powerful desktop application bridging Figma and AI tools via Model Context Protocol Seamless integration between Figma designs and AI assistants",
-    "stars": 25,
-    "updatedAt": "2026-02-28T04:42:23Z"
+    "name": "elgorro/aiquila",
+    "repo": "https://github.com/elgorro/aiquila",
+    "description": "Connect Claude AI to your Nextcloud via the Model Context Protocol. Browse, search, and manage files through natural conversation.",
+    "stars": 6,
+    "updatedAt": "2026-02-28T12:17:05Z"
   },
   {
     "name": "truss44/mcp-crypto-price",

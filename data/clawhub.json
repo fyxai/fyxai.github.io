@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-28T08:32:12.356Z",
+  "updatedAt": "2026-02-28T19:50:54.151Z",
   "sections": [
     {
       "name": "Hot Skills",
@@ -7,7 +7,7 @@
         {
           "slug": "automation-workflows",
           "title": "Automation Workflows",
-          "score": 3.686,
+          "score": 3.688,
           "category": "Hot Skills",
           "url": "https://clawhub.ai/skills/automation-workflows"
         },
@@ -21,21 +21,21 @@
         {
           "slug": "windows-ui-automation",
           "title": "Windows UI Automation",
-          "score": 3.526,
+          "score": 3.528,
           "category": "Hot Skills",
           "url": "https://clawhub.ai/skills/windows-ui-automation"
         },
         {
           "slug": "x-post-automation",
           "title": "X(Twitter) Post Automation",
-          "score": 3.519,
+          "score": 3.52,
           "category": "Hot Skills",
           "url": "https://clawhub.ai/skills/x-post-automation"
         },
         {
           "slug": "ai-automation-workflows",
           "title": "Ai Automation Workflows",
-          "score": 3.493,
+          "score": 3.494,
           "category": "Hot Skills",
           "url": "https://clawhub.ai/skills/ai-automation-workflows"
         }
@@ -47,21 +47,21 @@
         {
           "slug": "monitoring",
           "title": "Monitoring",
-          "score": 3.527,
+          "score": 3.529,
           "category": "New & Rising",
           "url": "https://clawhub.ai/skills/monitoring"
         },
         {
           "slug": "auto-monitor",
           "title": "Auto Monitor - System Monitoring",
-          "score": 1.903,
+          "score": 1.94,
           "category": "New & Rising",
           "url": "https://clawhub.ai/skills/auto-monitor"
         },
         {
           "slug": "security-monitor",
           "title": "Security Monitor",
-          "score": 1.1,
+          "score": 1.101,
           "category": "New & Rising",
           "url": "https://clawhub.ai/skills/security-monitor"
         },
@@ -75,7 +75,7 @@
         {
           "slug": "task-status",
           "title": "Task Status",
-          "score": 1.046,
+          "score": 1.048,
           "category": "New & Rising",
           "url": "https://clawhub.ai/skills/task-status"
         }
@@ -87,35 +87,35 @@
         {
           "slug": "productivity",
           "title": "Productivity",
-          "score": 3.551,
+          "score": 3.553,
           "category": "Builder Picks",
           "url": "https://clawhub.ai/skills/productivity"
         },
         {
           "slug": "afrexai-productivity-system",
           "title": "Productivity Operating System",
-          "score": 3.237,
+          "score": 3.247,
           "category": "Builder Picks",
           "url": "https://clawhub.ai/skills/afrexai-productivity-system"
         },
         {
           "slug": "productivity-skill",
           "title": "productivity skill(yewubin)",
-          "score": 3.136,
+          "score": 3.169,
           "category": "Builder Picks",
           "url": "https://clawhub.ai/skills/productivity-skill"
         },
         {
           "slug": "rescuetime",
           "title": "RescueTime",
-          "score": 0.995,
+          "score": 0.996,
           "category": "Builder Picks",
           "url": "https://clawhub.ai/skills/rescuetime"
         },
         {
           "slug": "focus-deep-work",
           "title": "Focus Deep Work",
-          "score": 0.942,
+          "score": 0.943,
           "category": "Builder Picks",
           "url": "https://clawhub.ai/skills/focus-deep-work"
         }
