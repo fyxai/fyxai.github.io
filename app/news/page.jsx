@@ -15,6 +15,17 @@ const dayKey = (t) => {
   return d.toISOString().slice(0, 10);
 };
 
+const cleanSummary = (s = '') =>
+  s
+    .replace(/&lt;[^&]*&gt;/g, ' ')
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/https?:\/\/\S+/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+
 export default function NewsPage() {
   const latest = news.slice(0, 10);
   const latestSet = new Set(latest.map((x) => (x.url || '').split('?')[0]));
@@ -38,7 +49,7 @@ export default function NewsPage() {
       <CardGrid>
         {latest.map((item) => (
           <InfoCard key={item.url} title={item.title} subtitle={`${item.source} • ${fmt(item.publishedAt)}`} href={item.url}>
-            {item.summary}
+            {cleanSummary(item.summary)}
           </InfoCard>
         ))}
       </CardGrid>
@@ -58,7 +69,7 @@ export default function NewsPage() {
                   subtitle={`${item.source} • ${fmt(item.publishedAt)}`}
                   href={item.url}
                 >
-                  {item.summary}
+                  {cleanSummary(item.summary)}
                 </InfoCard>
               ))}
             </div>
