@@ -144,55 +144,84 @@ async function updateMcp() {
   }
 }
 
-function inferSkill(repo) {
-  const text = `${repo.name} ${repo.description || ''}`.toLowerCase();
-  const rules = [
-    ['voice', 'Realtime multimodal voice interfaces'],
-    ['agent', 'Autonomous agent coordination'],
-    ['rag', 'Retrieval-augmented reasoning'],
-    ['vision', 'Vision-language perception'],
-    ['eval', 'Continuous AI evaluation'],
-    ['safety', 'Policy-constrained action planning'],
-    ['workflow', 'Adaptive workflow orchestration'],
-  ];
-  for (const [token, label] of rules) {
-    if (text.includes(token)) return label;
+const SKILL_REQUIRED_FIELDS = [
+  'name',
+  'category',
+  'whatItDoes',
+  'practicalUseCase',
+  'sourceName',
+  'sourceUrl',
+  'verificationLevel',
+];
+
+const VAGUE_SKILL_TERMS = [
+  'agentic',
+  'synergy',
+  'future-ready',
+  'next-gen',
+  'revolutionary',
+  'cutting-edge',
+  'emergent capability',
+  'autonomous',
+  'ai capability',
+];
+
+function isActionableSkill(skill) {
+  if (!skill || typeof skill !== 'object') return false;
+
+  for (const key of SKILL_REQUIRED_FIELDS) {
+    if (!skill[key] || typeof skill[key] !== 'string') return false;
   }
-  return null;
+
+  if (!['official', 'community-verified'].includes(skill.verificationLevel)) return false;
+
+  const lowerName = skill.name.toLowerCase();
+  if (VAGUE_SKILL_TERMS.some((term) => lowerName.includes(term))) return false;
+
+  const sentenceLike = (value) => value.includes('.') && value.length >= 35;
+  if (!sentenceLike(skill.whatItDoes) || !sentenceLike(skill.practicalUseCase)) return false;
+
+  try {
+    const parsed = new URL(skill.sourceUrl);
+    if (!['http:', 'https:'].includes(parsed.protocol)) return false;
+  } catch {
+    return false;
+  }
+
+  return true;
 }
 
 async function updateSkills() {
   const file = new URL('skills.json', DATA_DIR);
   const current = JSON.parse(await readFile(file, 'utf8'));
-  const existing = new Set(current.map((x) => x.name));
 
-  const q = encodeURIComponent('ai agent framework language:python stars:>20 pushed:>2025-01-01');
-  const res = await safeFetch(`https://api.github.com/search/repositories?q=${q}&sort=updated&order=desc&per_page=15`, {
-    headers: { accept: 'application/vnd.github+json' },
-  });
-  if (!res) return;
+  const cleaned = current
+    .filter(isActionableSkill)
+    .map((item) => ({
+      name: item.name.trim(),
+      category: item.category.trim(),
+      whatItDoes: item.whatItDoes.trim(),
+      practicalUseCase: item.practicalUseCase.trim(),
+      sourceName: item.sourceName.trim(),
+      sourceUrl: item.sourceUrl.trim(),
+      verificationLevel: item.verificationLevel,
+    }));
 
-  const data = await res.json();
-  const additions = [];
-  for (const repo of data.items || []) {
-    const skillName = inferSkill(repo);
-    if (!skillName || existing.has(skillName)) continue;
-    additions.push({
-      name: skillName,
-      category: 'AI Capability',
-      description: `Emergent capability inferred from active OSS signal: ${repo.full_name}.`,
-      signal: `GitHub repo activity (${repo.html_url})`,
-      url: repo.html_url,
-    });
-    existing.add(skillName);
-    if (additions.length >= 3) break;
+  const deduped = [];
+  const seen = new Set();
+  for (const skill of cleaned) {
+    const key = skill.name.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    deduped.push(skill);
   }
 
-  if (additions.length) {
-    const merged = [...additions, ...current].slice(0, 40);
-    await writeFile(file, `${JSON.stringify(merged, null, 2)}\n`);
-    console.log(`skills.json updated with ${additions.length} new signals`);
+  if (deduped.length < 20 || deduped.length > 30) {
+    throw new Error(`skills.json must contain 20-30 validated skills, found ${deduped.length}`);
   }
+
+  await writeFile(file, `${JSON.stringify(deduped, null, 2)}\n`);
+  console.log(`skills.json validated and normalized with ${deduped.length} concrete skills`);
 }
 
 async function githubRepoCandidates(query) {

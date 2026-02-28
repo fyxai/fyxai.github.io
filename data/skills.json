@@ -1,154 +1,218 @@
 [
   {
-    "name": "Autonomous agent coordination",
-    "category": "AI Capability",
-    "description": "Emergent capability inferred from active OSS signal: pydantic/pydantic-ai.",
-    "signal": "GitHub repo activity (https://github.com/pydantic/pydantic-ai)"
+    "name": "Function calling with JSON schema",
+    "category": "LLM Integration",
+    "whatItDoes": "Lets an LLM return structured arguments that match a predefined JSON schema for deterministic tool execution.",
+    "practicalUseCase": "A support bot can call a ticket API with validated fields instead of generating free-form text.",
+    "sourceName": "OpenAI Platform Docs",
+    "sourceUrl": "https://platform.openai.com/docs/guides/function-calling",
+    "verificationLevel": "official"
   },
   {
-    "name": "Realtime multimodal voice interfaces",
-    "category": "AI Capability",
-    "description": "Emergent capability inferred from active OSS signal: TEN-framework/ten-framework.",
-    "signal": "GitHub repo activity (https://github.com/TEN-framework/ten-framework)"
+    "name": "Structured outputs",
+    "category": "LLM Integration",
+    "whatItDoes": "Constrains model responses to a strict output schema so downstream systems can parse results reliably.",
+    "practicalUseCase": "An extraction pipeline can always receive valid JSON for invoice fields without custom regex cleanup.",
+    "sourceName": "OpenAI Platform Docs",
+    "sourceUrl": "https://platform.openai.com/docs/guides/structured-outputs",
+    "verificationLevel": "official"
   },
   {
-    "name": "Long-context planning",
-    "category": "AI Capability",
-    "description": "Long-context planning applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Long-context%20planning%20ai&type=repositories"
+    "name": "Embeddings-based semantic search",
+    "category": "Retrieval",
+    "whatItDoes": "Converts text into vectors so semantically similar documents can be retrieved by nearest-neighbor search.",
+    "practicalUseCase": "A docs assistant can find the right troubleshooting article even when wording differs from the user query.",
+    "sourceName": "OpenAI Embeddings Guide",
+    "sourceUrl": "https://platform.openai.com/docs/guides/embeddings",
+    "verificationLevel": "official"
   },
   {
-    "name": "Tool orchestration",
-    "category": "AI Capability",
-    "description": "Tool orchestration applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Tool%20orchestration%20ai&type=repositories"
+    "name": "RAG with chunking and citation",
+    "category": "Retrieval",
+    "whatItDoes": "Retrieves relevant document chunks and injects them into prompts while keeping source references for answers.",
+    "practicalUseCase": "An internal policy assistant can answer leave questions and cite the exact handbook section used.",
+    "sourceName": "LangChain RAG Tutorial",
+    "sourceUrl": "https://python.langchain.com/docs/tutorials/rag/",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Codebase refactoring",
-    "category": "AI Capability",
-    "description": "Codebase refactoring applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Codebase%20refactoring%20ai&type=repositories"
+    "name": "Hybrid retrieval (BM25 + dense vectors)",
+    "category": "Retrieval",
+    "whatItDoes": "Combines sparse lexical search and dense semantic search to improve recall across exact terms and paraphrases.",
+    "practicalUseCase": "A legal search app can match exact clause IDs and also find conceptually similar precedent language.",
+    "sourceName": "Pinecone Hybrid Search Guide",
+    "sourceUrl": "https://docs.pinecone.io/guides/search/hybrid-search",
+    "verificationLevel": "official"
   },
   {
-    "name": "Autonomous QA generation",
-    "category": "AI Capability",
-    "description": "Autonomous QA generation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Autonomous%20QA%20generation%20ai&type=repositories"
+    "name": "Prompt caching",
+    "category": "Cost & Latency",
+    "whatItDoes": "Reuses cached prompt prefixes so repeated requests reduce token processing cost and response time.",
+    "practicalUseCase": "A multi-turn app with a long system prompt can cut costs when many users share the same context block.",
+    "sourceName": "Anthropic Prompt Caching",
+    "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+    "verificationLevel": "official"
   },
   {
-    "name": "Synthetic data curation",
-    "category": "AI Capability",
-    "description": "Synthetic data curation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Synthetic%20data%20curation%20ai&type=repositories"
+    "name": "Batch API processing",
+    "category": "Cost & Latency",
+    "whatItDoes": "Submits large volumes of offline requests in one batch job to process data more cheaply at scale.",
+    "practicalUseCase": "A content team can classify 100,000 product descriptions overnight instead of sending real-time calls.",
+    "sourceName": "OpenAI Batch API Guide",
+    "sourceUrl": "https://platform.openai.com/docs/guides/batch",
+    "verificationLevel": "official"
   },
   {
-    "name": "Vision-language grounding",
-    "category": "AI Capability",
-    "description": "Vision-language grounding applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Vision-language%20grounding%20ai&type=repositories"
+    "name": "Streaming token responses",
+    "category": "UX Engineering",
+    "whatItDoes": "Delivers model output incrementally as tokens are generated so users see progress immediately.",
+    "practicalUseCase": "A chat UI can show answers in real time to reduce perceived latency on long completions.",
+    "sourceName": "OpenAI Streaming Guide",
+    "sourceUrl": "https://platform.openai.com/docs/guides/streaming-responses",
+    "verificationLevel": "official"
   },
   {
-    "name": "Realtime voice agents",
-    "category": "AI Capability",
-    "description": "Realtime voice agents applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Realtime%20voice%20agents%20ai&type=repositories"
+    "name": "Conversation memory summarization",
+    "category": "Agent Design",
+    "whatItDoes": "Compresses prior turns into concise state summaries to preserve context while controlling token growth.",
+    "practicalUseCase": "A customer success agent can remember account history over long chats without exceeding context limits.",
+    "sourceName": "LangChain Memory Docs",
+    "sourceUrl": "https://python.langchain.com/docs/concepts/memory/",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Multi-agent negotiation",
-    "category": "AI Capability",
-    "description": "Multi-agent negotiation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Multi-agent%20negotiation%20ai&type=repositories"
+    "name": "ReAct tool-use prompting",
+    "category": "Agent Design",
+    "whatItDoes": "Alternates reasoning and actions so the model can decide when to call tools and when to answer directly.",
+    "practicalUseCase": "A research agent can search the web, inspect results, and then synthesize a grounded response.",
+    "sourceName": "ReAct Paper",
+    "sourceUrl": "https://arxiv.org/abs/2210.03629",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Retrieval augmentation tuning",
-    "category": "AI Capability",
-    "description": "Retrieval augmentation tuning applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Retrieval%20augmentation%20tuning%20ai&type=repositories"
+    "name": "OpenAPI-to-tool conversion",
+    "category": "Integration",
+    "whatItDoes": "Transforms OpenAPI specs into callable tool definitions so agents can invoke REST APIs safely.",
+    "practicalUseCase": "An operations assistant can trigger shipping API endpoints using validated request parameters.",
+    "sourceName": "OpenAI Cookbook",
+    "sourceUrl": "https://cookbook.openai.com/examples/function_calling_with_an_openapi_spec",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Policy-safe execution",
-    "category": "AI Capability",
-    "description": "Policy-safe execution applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Policy-safe%20execution%20ai&type=repositories"
+    "name": "Model context protocol server integration",
+    "category": "Integration",
+    "whatItDoes": "Connects agents to standardized MCP servers so tools and data sources are discovered through a common interface.",
+    "practicalUseCase": "A developer assistant can access Git, tickets, and docs through one protocol instead of custom connectors.",
+    "sourceName": "Model Context Protocol Spec",
+    "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+    "verificationLevel": "official"
   },
   {
-    "name": "Graph memory synthesis",
-    "category": "AI Capability",
-    "description": "Graph memory synthesis applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Graph%20memory%20synthesis%20ai&type=repositories"
+    "name": "Guardrails with schema and policy checks",
+    "category": "Safety",
+    "whatItDoes": "Applies input and output validators to block unsafe content and enforce response format constraints.",
+    "practicalUseCase": "A healthcare intake assistant can reject responses that include prohibited medical advice patterns.",
+    "sourceName": "Guardrails AI Docs",
+    "sourceUrl": "https://www.guardrailsai.com/docs",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Workflow self-healing",
-    "category": "AI Capability",
-    "description": "Workflow self-healing applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Workflow%20self-healing%20ai&type=repositories"
+    "name": "Prompt injection defense for RAG",
+    "category": "Safety",
+    "whatItDoes": "Implements retrieval filtering and instruction hierarchy so malicious documents cannot override system behavior.",
+    "practicalUseCase": "An enterprise chatbot can ignore embedded 'ignore previous instructions' text in uploaded files.",
+    "sourceName": "OWASP LLM Top 10",
+    "sourceUrl": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "verificationLevel": "official"
   },
   {
-    "name": "Browser automation robustness",
-    "category": "AI Capability",
-    "description": "Browser automation robustness applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Browser%20automation%20robustness%20ai&type=repositories"
+    "name": "PII detection and redaction",
+    "category": "Safety",
+    "whatItDoes": "Identifies sensitive personal data in text and masks it before storage, logging, or model calls.",
+    "practicalUseCase": "A contact-center transcript pipeline can redact phone numbers and SSNs before analytics processing.",
+    "sourceName": "Microsoft Presidio",
+    "sourceUrl": "https://microsoft.github.io/presidio/",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Prompt compression",
-    "category": "AI Capability",
-    "description": "Prompt compression applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Prompt%20compression%20ai&type=repositories"
+    "name": "Human-in-the-loop approval gates",
+    "category": "Operations",
+    "whatItDoes": "Requires explicit human approval for high-risk actions while allowing automation for low-risk tasks.",
+    "practicalUseCase": "A finance agent can draft wire transfers but must wait for manager approval before execution.",
+    "sourceName": "LangGraph Human-in-the-loop",
+    "sourceUrl": "https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Reasoning trace distillation",
-    "category": "AI Capability",
-    "description": "Reasoning trace distillation applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Reasoning%20trace%20distillation%20ai&type=repositories"
+    "name": "Evaluation with custom test sets",
+    "category": "Evaluation",
+    "whatItDoes": "Runs repeatable benchmarks against domain-specific prompts and expected outputs to track quality over time.",
+    "practicalUseCase": "A legal drafting assistant can be regression-tested on clause rewrite quality before each release.",
+    "sourceName": "OpenAI Evals Framework",
+    "sourceUrl": "https://github.com/openai/evals",
+    "verificationLevel": "community-verified"
   },
   {
-    "name": "Adaptive evaluation harnesses",
-    "category": "AI Capability",
-    "description": "Adaptive evaluation harnesses applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Adaptive%20evaluation%20harnesses%20ai&type=repositories"
+    "name": "LLM-as-judge scoring",
+    "category": "Evaluation",
+    "whatItDoes": "Uses a separate evaluator model and rubric to grade relevance, faithfulness, or style at scale.",
+    "practicalUseCase": "A marketing copy generator can auto-score outputs for brand tone adherence before publishing.",
+    "sourceName": "LangSmith Evaluation Concepts",
+    "sourceUrl": "https://docs.smith.langchain.com/evaluation/concepts",
+    "verificationLevel": "official"
   },
   {
-    "name": "Edge deployment optimization",
-    "category": "AI Capability",
-    "description": "Edge deployment optimization applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Edge%20deployment%20optimization%20ai&type=repositories"
+    "name": "Tracing and observability for agents",
+    "category": "Operations",
+    "whatItDoes": "Captures tool calls, prompts, latencies, and token usage so failures can be diagnosed quickly.",
+    "practicalUseCase": "An SRE can trace why an agent failed by inspecting the exact tool call and prompt sequence.",
+    "sourceName": "OpenTelemetry",
+    "sourceUrl": "https://opentelemetry.io/docs/",
+    "verificationLevel": "official"
   },
   {
-    "name": "Structured extraction",
-    "category": "AI Capability",
-    "description": "Structured extraction applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Structured%20extraction%20ai&type=repositories"
+    "name": "Rate limiting and retry backoff",
+    "category": "Reliability",
+    "whatItDoes": "Controls request frequency and retries transient failures with exponential backoff to prevent outages.",
+    "practicalUseCase": "A high-traffic chat API can avoid cascading failures during provider throttling events.",
+    "sourceName": "AWS Retry with Backoff Pattern",
+    "sourceUrl": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html",
+    "verificationLevel": "official"
   },
   {
-    "name": "Data drift detection",
-    "category": "AI Capability",
-    "description": "Data drift detection applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Data%20drift%20detection%20ai&type=repositories"
+    "name": "Idempotent tool execution",
+    "category": "Reliability",
+    "whatItDoes": "Ensures repeated action requests with the same idempotency key do not duplicate side effects.",
+    "practicalUseCase": "A payment assistant can safely retry charge creation without double-billing the customer.",
+    "sourceName": "Stripe Idempotent Requests",
+    "sourceUrl": "https://docs.stripe.com/api/idempotent_requests",
+    "verificationLevel": "official"
   },
   {
-    "name": "Cross-modal summarization",
-    "category": "AI Capability",
-    "description": "Cross-modal summarization applied to production copilots and autonomous systems.",
-    "signal": "GitHub + arXiv + product release activity",
-    "url": "https://github.com/search?q=Cross-modal%20summarization%20ai&type=repositories"
+    "name": "Long-document parsing with OCR",
+    "category": "Document AI",
+    "whatItDoes": "Extracts machine-readable text and structure from scanned PDFs and images for downstream LLM workflows.",
+    "practicalUseCase": "An insurance intake workflow can digitize uploaded claim forms before data extraction.",
+    "sourceName": "Tesseract OCR Docs",
+    "sourceUrl": "https://tesseract-ocr.github.io/tessdoc/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "JSON mode output parsing",
+    "category": "LLM Integration",
+    "whatItDoes": "Requests JSON-only responses and validates payloads before handing data to application services.",
+    "practicalUseCase": "A lead-qualification bot can return strict JSON fields consumed directly by a CRM webhook.",
+    "sourceName": "OpenAI JSON Mode Guide",
+    "sourceUrl": "https://platform.openai.com/docs/guides/text-generation/json-mode",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Canary rollout for model versions",
+    "category": "MLOps",
+    "whatItDoes": "Routes a small traffic percentage to a new model version before full deployment to limit blast radius.",
+    "practicalUseCase": "A production assistant can test a new model on 5% of traffic and compare error rates before rollout.",
+    "sourceName": "Kubernetes Canary Deployment",
+    "sourceUrl": "https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/#canary-deployments",
+    "verificationLevel": "official"
   }
 ]
