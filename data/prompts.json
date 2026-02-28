@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T16:51:11.345Z",
+    "updatedAt": "2026-02-28T16:52:35.282Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -35,14 +35,14 @@
       {
         "title": "gsd-build/get-shit-done",
         "url": "https://github.com/gsd-build/get-shit-done",
-        "stars": 22135,
-        "updatedAt": "2026-02-28T16:49:58Z"
+        "stars": 22137,
+        "updatedAt": "2026-02-28T16:51:32Z"
       }
     ]
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T16:51:11.503Z",
+    "updatedAt": "2026-02-28T16:52:35.409Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -59,7 +59,7 @@
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T16:51:11.695Z",
+    "updatedAt": "2026-02-28T16:52:35.639Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
