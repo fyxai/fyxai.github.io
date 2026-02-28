@@ -7,7 +7,7 @@ export default function PromptsPage() {
   return (
     <section>
       <h1 className="mb-2 text-3xl font-bold text-cyan-200">AI Prompt Registry</h1>
-      <p className="mb-6 text-sm text-slate-300">收录成熟 AI 项目的 prompt 线索：先基于公开仓库快照，再每 4 小时自动检索最新候选来源。</p>
+      <p className="mb-6 text-sm text-slate-300">持续追踪成熟 AI 项目的 Prompt 演进，聚合公开线索并展示最新可验证来源。</p>
 
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         {prompts.map((item) => (
