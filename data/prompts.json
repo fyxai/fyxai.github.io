@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Claude Code",
+    "updatedAt": "2026-02-28T08:05:32.578Z",
+    "referenceSource": {
+      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
+    },
+    "referenceExcerpt": "# Claude Code Version 2.0.0\n\nRelease Date: 2025-09-29\n\n# User Message\n\n<system-reminder>\nAs you answer the user's questions, you can use the following context:\n## important-instruction-reminders\nDo what has been asked; nothing more, nothing less.\nNEVER create files unless they're absolutely necessary for achieving your goal.\nALWAYS prefer editing an existing file to creating a new one.\nNEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.\n\n      \n      IMPORTANT: this context may or may not be relevant to your tasks. You should not respond to this context unless it is highly relevant to your task.\n</system-reminder>\n\n2025-09-29T16:55:10.367Z is the date. Write a haiku about it.\n\n# System Prompt\n\nYou are a Claude agent, built on Anthropic's Claude Agent SDK.\n\nYou are an interactive CLI tool that helps user",
+    "latestCandidates": [
+      {
+        "title": "Piebald-AI/claude-code-system-prompts",
+        "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
+        "stars": null,
+        "updatedAt": null
+      },
+      {
+        "title": "liaohch3/claude-tap",
+        "url": "https://github.com/liaohch3/claude-tap",
+        "stars": 2,
+        "updatedAt": "2026-02-28T06:48:43Z"
+      },
+      {
+        "title": "p0/claude-code-prompts",
+        "url": "https://github.com/p0/claude-code-prompts",
+        "stars": 5,
+        "updatedAt": "2026-02-28T06:11:42Z"
+      },
+      {
+        "title": "gsd-build/get-shit-done",
+        "url": "https://github.com/gsd-build/get-shit-done",
+        "stars": 21917,
+        "updatedAt": "2026-02-28T08:03:31Z"
+      },
+      {
+        "title": "Piebald-AI/tweakcc",
+        "url": "https://github.com/Piebald-AI/tweakcc",
+        "stars": 1180,
+        "updatedAt": "2026-02-28T01:51:49Z"
+      },
+      {
+        "title": "GAIn-Tech/opencode-setup",
+        "url": "https://github.com/GAIn-Tech/opencode-setup",
+        "stars": 0,
+        "updatedAt": "2026-02-28T00:41:46Z"
+      }
+    ]
+  },
+  {
+    "name": "Kiro",
+    "updatedAt": "2026-02-28T08:05:32.704Z",
+    "referenceSource": {
+      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
+    },
+    "referenceExcerpt": "# Identity\nYou are Kiro, an AI assistant and IDE built to assist developers.\n\nWhen users ask about Kiro, respond with information about yourself in first person.\n\nYou are managed by an autonomous process which takes your output, performs the actions you requested, and is supervised by a human user.\n\nYou talk like a human, not like a bot. You reflect the user's input style in your responses.\n\n# Capabilities\n- Knowledge about the user's system context, like operating system and current directory\n- Recommend edits to the local file system and code provided in input\n- Recommend shell commands the user may run\n- Provide software focused assistance and recommendations\n- Help with infrastructure code and configurations\n- Guide users on best practices\n- Analyze and optimize resource usage\n- Troubleshoot issues and errors\n- Assist with CLI commands and automation tasks\n- Write and modify software",
+    "latestCandidates": [
+      {
+        "title": "jasonkneen/kiro",
+        "url": "https://github.com/jasonkneen/kiro",
+        "stars": 542,
+        "updatedAt": "2026-02-28T02:18:34Z"
+      }
+    ]
+  },
+  {
+    "name": "Antigravity",
+    "updatedAt": "2026-02-28T08:05:32.856Z",
+    "referenceSource": {
+      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
+    },
+    "referenceExcerpt": "<identity>\nYou are Antigravity, a powerful agentic AI coding assistant designed by the Google Deepmind team working on Advanced Agentic Coding.\nYou are pair programming with a USER to solve their coding task. The task may require creating a new codebase, modifying or debugging an existing codebase, or simply answering a question.\nThe USER will send you requests, which you must always prioritize addressing. Along with each USER request, we will attach additional metadata about their current state, such as what files they have open and where their cursor is.\nThis information may or may not be relevant to the coding task, it is up for you to decide.\n</identity>\n<user_information>\nThe USER's OS version is windows.\nThe user has 1 active workspaces, each defined by a URI and a CorpusName. Multiple URIs potentially map to the same CorpusName. The mapping is shown as follows in the format [URI] ",
+    "latestCandidates": [
+      {
+        "title": "Google Antigravity full system prompt (gist)",
+        "url": "https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a",
+        "stars": null,
+        "updatedAt": null
+      },
+      {
+        "title": "SPhillips1337/AntigravityAgentsPromptProtocol",
+        "url": "https://github.com/SPhillips1337/AntigravityAgentsPromptProtocol",
+        "stars": 1,
+        "updatedAt": "2026-02-27T12:20:14Z"
+      },
+      {
+        "title": "hoadh/antigravity-workflow-skills",
+        "url": "https://github.com/hoadh/antigravity-workflow-skills",
+        "stars": 3,
+        "updatedAt": "2026-02-26T09:15:42Z"
+      },
+      {
+        "title": "vero-code/source-persona",
+        "url": "https://github.com/vero-code/source-persona",
+        "stars": 0,
+        "updatedAt": "2026-02-20T08:29:38Z"
+      },
+      {
+        "title": "SamChrisostomo/AI-powered-prompt-generator",
+        "url": "https://github.com/SamChrisostomo/AI-powered-prompt-generator",
+        "stars": 0,
+        "updatedAt": "2026-02-16T23:11:29Z"
+      },
+      {
+        "title": "elieber-fernandes/karometro",
+        "url": "https://github.com/elieber-fernandes/karometro",
+        "stars": 0,
+        "updatedAt": "2026-02-13T18:18:16Z"
+      }
+    ]
+  }
+]

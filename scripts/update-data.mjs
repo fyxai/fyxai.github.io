@@ -5,7 +5,7 @@ const DATA_DIR = new URL('../data/', import.meta.url);
 async function safeFetch(url, opts = {}) {
   try {
     const res = await fetch(url, {
-      headers: { 'user-agent': 'fyxai-autonomous-updater/1.0' },
+      headers: { 'user-agent': 'fyxai-autonomous-updater/1.0', ...(opts.headers || {}) },
       ...opts,
     });
     if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
@@ -78,12 +78,7 @@ async function updateMcp() {
 
   const query = encodeURIComponent('model context protocol language:TypeScript stars:>5');
   const url = `https://api.github.com/search/repositories?q=${query}&sort=updated&order=desc&per_page=10`;
-  const res = await safeFetch(url, {
-    headers: {
-      'accept': 'application/vnd.github+json',
-      'user-agent': 'fyxai-autonomous-updater/1.0',
-    },
-  });
+  const res = await safeFetch(url, { headers: { accept: 'application/vnd.github+json' } });
   if (!res) return;
 
   const body = await res.json();
@@ -105,8 +100,6 @@ async function updateMcp() {
     const merged = [...additions, ...current].slice(0, 60);
     await writeFile(file, `${JSON.stringify(merged, null, 2)}\n`);
     console.log(`mcp.json appended with ${additions.length} repos`);
-  } else {
-    console.log(`mcp.json unchanged; discovered ${additions.length} unique repos`);
   }
 }
 
@@ -134,7 +127,7 @@ async function updateSkills() {
 
   const q = encodeURIComponent('ai agent framework language:python stars:>20 pushed:>2025-01-01');
   const res = await safeFetch(`https://api.github.com/search/repositories?q=${q}&sort=updated&order=desc&per_page=15`, {
-    headers: { 'accept': 'application/vnd.github+json', 'user-agent': 'fyxai-autonomous-updater/1.0' },
+    headers: { accept: 'application/vnd.github+json' },
   });
   if (!res) return;
 
@@ -161,6 +154,97 @@ async function updateSkills() {
   }
 }
 
+async function githubRepoCandidates(query) {
+  const q = encodeURIComponent(query);
+  const res = await safeFetch(`https://api.github.com/search/repositories?q=${q}&sort=updated&order=desc&per_page=5`, {
+    headers: { accept: 'application/vnd.github+json' },
+  });
+  if (!res) return [];
+  const data = await res.json();
+  return (data.items || []).slice(0, 5).map((r) => ({
+    title: r.full_name,
+    url: r.html_url,
+    stars: r.stargazers_count,
+    updatedAt: r.updated_at,
+  }));
+}
+
+async function loadReferencePrompt(url) {
+  const res = await safeFetch(url);
+  if (!res) return 'Failed to load reference prompt snapshot at this cycle.';
+  const text = await res.text();
+  return text.replace(/\r/g, '').trim().slice(0, 900);
+}
+
+async function updatePrompts() {
+  const tools = [
+    {
+      name: 'Claude Code',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt',
+      },
+      searchQuery: 'claude code system prompt',
+      pinnedCandidates: [
+        {
+          title: 'Piebald-AI/claude-code-system-prompts',
+          url: 'https://github.com/Piebald-AI/claude-code-system-prompts',
+          stars: null,
+          updatedAt: null,
+        },
+      ],
+    },
+    {
+      name: 'Kiro',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt',
+      },
+      searchQuery: 'Kiro IDE system prompt',
+      pinnedCandidates: [],
+    },
+    {
+      name: 'Antigravity',
+      referenceSource: {
+        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
+        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt',
+      },
+      searchQuery: 'Google Antigravity prompt',
+      pinnedCandidates: [
+        {
+          title: 'Google Antigravity full system prompt (gist)',
+          url: 'https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a',
+          stars: null,
+          updatedAt: null,
+        },
+      ],
+    },
+  ];
+
+  const rows = [];
+  for (const tool of tools) {
+    const [referenceExcerpt, candidates] = await Promise.all([
+      loadReferencePrompt(tool.referenceSource.url),
+      githubRepoCandidates(tool.searchQuery),
+    ]);
+    const merged = [...tool.pinnedCandidates, ...candidates]
+      .filter((x, idx, arr) => arr.findIndex((y) => y.url === x.url) === idx)
+      .slice(0, 6);
+
+    rows.push({
+      name: tool.name,
+      updatedAt: new Date().toISOString(),
+      referenceSource: tool.referenceSource,
+      referenceExcerpt,
+      latestCandidates: merged,
+    });
+  }
+
+  await writeFile(new URL('prompts.json', DATA_DIR), `${JSON.stringify(rows, null, 2)}\n`);
+  console.log(`prompts.json refreshed with ${rows.length} tools`);
+}
+
 await updateNews();
 await updateMcp();
 await updateSkills();
+await updatePrompts();

@@ -13,6 +13,7 @@ export default function HomePage() {
             ['/mcp', 'MCP Registry'],
             ['/skills', 'AI Skills'],
             ['/projects', 'Projects'],
+            ['/prompts', 'Prompt Registry'],
           ].map(([href, label]) => (
             <Link key={href} href={href} className="rounded-lg border border-cyan-400/30 px-4 py-2 text-sm hover:border-cyan-300 hover:text-cyan-300">{label}</Link>
           ))}
