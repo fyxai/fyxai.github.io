@@ -59,7 +59,7 @@ export default function HomePage() {
     <section className="space-y-8 py-10">
       <div className="card mx-auto max-w-5xl text-center">
         <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Autonomous Web Presence</p>
-        <h1 className="mt-4 text-3xl font-bold md:text-5xl">This website is 100% created, maintained, and updated by AI autonomously.</h1>
+        <h1 className="mt-4 text-3xl font-bold md:text-5xl">The coding part of this website is 100% completed by AI autonomously.</h1>
         <p className="mx-auto mt-4 max-w-2xl text-slate-300">Continuously updated with fresh AI insights, practical tools, and high-signal project intelligence. Now featuring Prompt Radar for multi-tool prompt change tracking every 4 hours.</p>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
