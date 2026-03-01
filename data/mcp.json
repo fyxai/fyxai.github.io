@@ -1,5 +1,26 @@
 [
   {
+    "name": "Algovate/xhs-mcp",
+    "repo": "https://github.com/Algovate/xhs-mcp",
+    "description": "用于小红书（xiaohongshu.com）的 Model Context Protocol（MCP）服务器与 CLI 工具，支持登录、发布、搜索、推荐等自动化能力",
+    "stars": 42,
+    "updatedAt": "2026-03-01T02:45:47Z"
+  },
+  {
+    "name": "grab/TalkToFigmaDesktop",
+    "repo": "https://github.com/grab/TalkToFigmaDesktop",
+    "description": "A powerful desktop application bridging Figma and AI tools via Model Context Protocol Seamless integration between Figma designs and AI assistants",
+    "stars": 25,
+    "updatedAt": "2026-03-01T01:41:15Z"
+  },
+  {
+    "name": "vm-wylbur/claude-mem",
+    "repo": "https://github.com/vm-wylbur/claude-mem",
+    "description": "A long-term memory storage system for LLMs using the Model Context Protocol (MCP) standard. This system helps LLMs remember the context of work done over the entire history of a project, even across multiple sessions. It uses semantic search with embeddings to provide relevant context from past interactions and development decisions.",
+    "stars": 6,
+    "updatedAt": "2026-03-01T00:26:46Z"
+  },
+  {
     "name": "chrisleekr/mcp-server-playground",
     "repo": "https://github.com/chrisleekr/mcp-server-playground",
     "description": "A playground for Model Context Protocol (MCP) server built with TypeScript and Streamable HTTP transport with an OAuth Proxy for 3rd party authorization servers like Auth0",

@@ -1,7 +1,7 @@
 [
   {
     "name": "Claude Code",
-    "updatedAt": "2026-02-28T23:01:38.019Z",
+    "updatedAt": "2026-03-01T05:11:30.535Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
@@ -15,34 +15,40 @@
         "updatedAt": null
       },
       {
+        "title": "liaohch3/claude-tap",
+        "url": "https://github.com/liaohch3/claude-tap",
+        "stars": 2,
+        "updatedAt": "2026-03-01T02:22:23Z"
+      },
+      {
+        "title": "adenaufal/anti-slop-writing",
+        "url": "https://github.com/adenaufal/anti-slop-writing",
+        "stars": 4,
+        "updatedAt": "2026-03-01T05:07:49Z"
+      },
+      {
+        "title": "Domoryonok/claude-code-system-prompts",
+        "url": "https://github.com/Domoryonok/claude-code-system-prompts",
+        "stars": 0,
+        "updatedAt": "2026-03-01T00:54:23Z"
+      },
+      {
         "title": "alex-feel/claude-code-artifacts-public",
         "url": "https://github.com/alex-feel/claude-code-artifacts-public",
         "stars": 4,
         "updatedAt": "2026-02-28T21:24:29Z"
       },
       {
-        "title": "adenaufal/anti-slop-writing",
-        "url": "https://github.com/adenaufal/anti-slop-writing",
-        "stars": 0,
-        "updatedAt": "2026-02-28T21:20:04Z"
-      },
-      {
-        "title": "liaohch3/claude-tap",
-        "url": "https://github.com/liaohch3/claude-tap",
-        "stars": 2,
-        "updatedAt": "2026-02-28T16:50:52Z"
-      },
-      {
         "title": "Piebald-AI/tweakcc",
         "url": "https://github.com/Piebald-AI/tweakcc",
-        "stars": 1184,
-        "updatedAt": "2026-02-28T15:17:10Z"
+        "stars": 1186,
+        "updatedAt": "2026-03-01T05:02:23Z"
       }
     ]
   },
   {
     "name": "Kiro",
-    "updatedAt": "2026-02-28T23:01:38.216Z",
+    "updatedAt": "2026-03-01T05:11:30.648Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
@@ -59,7 +65,7 @@
   },
   {
     "name": "Antigravity",
-    "updatedAt": "2026-02-28T23:01:38.443Z",
+    "updatedAt": "2026-03-01T05:11:30.880Z",
     "referenceSource": {
       "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
