@@ -1,113 +1,362 @@
-[
-  {
-    "name": "Claude Code",
-    "updatedAt": "2026-03-01T05:11:30.535Z",
-    "referenceSource": {
-      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
-      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt"
-    },
-    "referenceExcerpt": "# Claude Code Version 2.0.0\n\nRelease Date: 2025-09-29\n\n# User Message\n\n<system-reminder>\nAs you answer the user's questions, you can use the following context:\n## important-instruction-reminders\nDo what has been asked; nothing more, nothing less.\nNEVER create files unless they're absolutely necessary for achieving your goal.\nALWAYS prefer editing an existing file to creating a new one.\nNEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.\n\n      \n      IMPORTANT: this context may or may not be relevant to your tasks. You should not respond to this context unless it is highly relevant to your task.\n</system-reminder>\n\n2025-09-29T16:55:10.367Z is the date. Write a haiku about it.\n\n# System Prompt\n\nYou are a Claude agent, built on Anthropic's Claude Agent SDK.\n\nYou are an interactive CLI tool that helps user",
-    "latestCandidates": [
-      {
-        "title": "Piebald-AI/claude-code-system-prompts",
-        "url": "https://github.com/Piebald-AI/claude-code-system-prompts",
-        "stars": null,
-        "updatedAt": null
-      },
-      {
-        "title": "liaohch3/claude-tap",
-        "url": "https://github.com/liaohch3/claude-tap",
-        "stars": 2,
-        "updatedAt": "2026-03-01T02:22:23Z"
-      },
-      {
-        "title": "adenaufal/anti-slop-writing",
-        "url": "https://github.com/adenaufal/anti-slop-writing",
-        "stars": 4,
-        "updatedAt": "2026-03-01T05:07:49Z"
-      },
-      {
-        "title": "Domoryonok/claude-code-system-prompts",
-        "url": "https://github.com/Domoryonok/claude-code-system-prompts",
-        "stars": 0,
-        "updatedAt": "2026-03-01T00:54:23Z"
-      },
-      {
-        "title": "alex-feel/claude-code-artifacts-public",
-        "url": "https://github.com/alex-feel/claude-code-artifacts-public",
-        "stars": 4,
-        "updatedAt": "2026-02-28T21:24:29Z"
-      },
-      {
-        "title": "Piebald-AI/tweakcc",
-        "url": "https://github.com/Piebald-AI/tweakcc",
-        "stars": 1186,
-        "updatedAt": "2026-03-01T05:02:23Z"
-      }
-    ]
+{
+  "generatedAt": "2026-03-01T08:43:41.043Z",
+  "method": {
+    "name": "prompt-radar-style coding registry",
+    "description": "Multi-source prompt candidate scoring focused on coding workflows, with hash-based change tracking and timeline retention.",
+    "version": 3
   },
-  {
-    "name": "Kiro",
-    "updatedAt": "2026-03-01T05:11:30.648Z",
-    "referenceSource": {
-      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
-      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt"
-    },
-    "referenceExcerpt": "# Identity\nYou are Kiro, an AI assistant and IDE built to assist developers.\n\nWhen users ask about Kiro, respond with information about yourself in first person.\n\nYou are managed by an autonomous process which takes your output, performs the actions you requested, and is supervised by a human user.\n\nYou talk like a human, not like a bot. You reflect the user's input style in your responses.\n\n# Capabilities\n- Knowledge about the user's system context, like operating system and current directory\n- Recommend edits to the local file system and code provided in input\n- Recommend shell commands the user may run\n- Provide software focused assistance and recommendations\n- Help with infrastructure code and configurations\n- Guide users on best practices\n- Analyze and optimize resource usage\n- Troubleshoot issues and errors\n- Assist with CLI commands and automation tasks\n- Write and modify software",
-    "latestCandidates": [
-      {
-        "title": "jasonkneen/kiro",
-        "url": "https://github.com/jasonkneen/kiro",
-        "stars": 546,
-        "updatedAt": "2026-02-28T18:33:56Z"
+  "tools": [
+    {
+      "tool": "claude-code",
+      "displayName": "claude code",
+      "latest": {
+        "snapshotId": "claude-code-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Anthropic Claude Code Docs",
+        "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+        "contentHash": "09f6e4eb071fafc6",
+        "confidence": 100,
+        "excerpt": "<!DOCTYPE html><html lang=\"en\" class=\"__variable_ed9089 __variable_ea4744 dark\" data-banner-state=\"visible\" data-page-mode=\"none\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/docs/_next/static/media/bb3e",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Anthropic Claude Code Docs + Claude Code GitHub); average confidence 96%.",
+        "codingFocus": "agent-workflows",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "09f6e4eb071fafc6",
+          "status": "new",
+          "confidence": 100,
+          "source": "Anthropic Claude Code Docs"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Anthropic Claude Code Docs",
+          "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+          "type": "official-doc"
+        },
+        {
+          "label": "Claude Code GitHub",
+          "url": "https://github.com/search?q=claude+code+cli&type=repositories",
+          "type": "official-repo"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
       }
-    ]
-  },
-  {
-    "name": "Antigravity",
-    "updatedAt": "2026-03-01T05:11:30.880Z",
-    "referenceSource": {
-      "label": "x1xhlol/system-prompts-and-models-of-ai-tools",
-      "url": "https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt"
     },
-    "referenceExcerpt": "<identity>\nYou are Antigravity, a powerful agentic AI coding assistant designed by the Google Deepmind team working on Advanced Agentic Coding.\nYou are pair programming with a USER to solve their coding task. The task may require creating a new codebase, modifying or debugging an existing codebase, or simply answering a question.\nThe USER will send you requests, which you must always prioritize addressing. Along with each USER request, we will attach additional metadata about their current state, such as what files they have open and where their cursor is.\nThis information may or may not be relevant to the coding task, it is up for you to decide.\n</identity>\n<user_information>\nThe USER's OS version is windows.\nThe user has 1 active workspaces, each defined by a URI and a CorpusName. Multiple URIs potentially map to the same CorpusName. The mapping is shown as follows in the format [URI] ",
-    "latestCandidates": [
-      {
-        "title": "Google Antigravity full system prompt (gist)",
-        "url": "https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a",
-        "stars": null,
-        "updatedAt": null
+    {
+      "tool": "kiro",
+      "displayName": "kiro",
+      "latest": {
+        "snapshotId": "kiro-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Kiro Docs",
+        "url": "https://kiro.dev/docs",
+        "contentHash": "208a6f87404d8f87",
+        "confidence": 90,
+        "excerpt": "<!DOCTYPE html><!--Cf7x9ul_8di64Z3cVVQq1--><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"/images/kiro-wordmark.png?h=0ad65a93\"/><link rel=\"stylesheet\" href=\"/_next/static/css/9c8bc8f2f9bdd66b.css\" data-precedence=\"n",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Kiro Docs + Kiro Blog); average confidence 90%.",
+        "codingFocus": "spec-driven-development",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
       },
-      {
-        "title": "SPhillips1337/AntigravityAgentsPromptProtocol",
-        "url": "https://github.com/SPhillips1337/AntigravityAgentsPromptProtocol",
-        "stars": 1,
-        "updatedAt": "2026-02-27T12:20:14Z"
-      },
-      {
-        "title": "hoadh/antigravity-workflow-skills",
-        "url": "https://github.com/hoadh/antigravity-workflow-skills",
-        "stars": 3,
-        "updatedAt": "2026-02-26T09:15:42Z"
-      },
-      {
-        "title": "vero-code/source-persona",
-        "url": "https://github.com/vero-code/source-persona",
-        "stars": 0,
-        "updatedAt": "2026-02-20T08:29:38Z"
-      },
-      {
-        "title": "SamChrisostomo/AI-powered-prompt-generator",
-        "url": "https://github.com/SamChrisostomo/AI-powered-prompt-generator",
-        "stars": 0,
-        "updatedAt": "2026-02-16T23:11:29Z"
-      },
-      {
-        "title": "elieber-fernandes/karometro",
-        "url": "https://github.com/elieber-fernandes/karometro",
-        "stars": 0,
-        "updatedAt": "2026-02-13T18:18:16Z"
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "208a6f87404d8f87",
+          "status": "new",
+          "confidence": 90,
+          "source": "Kiro Docs"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Kiro Docs",
+          "url": "https://kiro.dev/docs",
+          "type": "official-doc"
+        },
+        {
+          "label": "Kiro Blog",
+          "url": "https://kiro.dev/blog",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
       }
-    ]
-  }
-]
+    },
+    {
+      "tool": "codex",
+      "displayName": "codex",
+      "latest": {
+        "snapshotId": "codex-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "No healthy source this cycle",
+        "url": "https://openai.com/index/introducing-codex/",
+        "contentHash": "unavailable",
+        "confidence": 0,
+        "excerpt": "Source fetch failed for all configured inputs in this cycle.",
+        "sourceSummary": "No live sources available in this cycle; previous snapshot retained.",
+        "codingFocus": "code-generation-and-refactor",
+        "change": {
+          "status": "unknown",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "unavailable",
+          "status": "unknown",
+          "confidence": 0,
+          "source": "No healthy source this cycle"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "OpenAI Codex Intro",
+          "url": "https://openai.com/index/introducing-codex/",
+          "type": "official-doc"
+        },
+        {
+          "label": "OpenAI Prompting Guide",
+          "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 0
+      }
+    },
+    {
+      "tool": "antigravity",
+      "displayName": "antigravity",
+      "latest": {
+        "snapshotId": "antigravity-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Antigravity GitHub Search",
+        "url": "https://github.com/search?q=antigravity+ai+agent&type=repositories",
+        "contentHash": "d1d560b34e84f8fa",
+        "confidence": 92,
+        "excerpt": "<!DOCTYPE html> <html lang=\"en\" data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\" data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\" > <head> <meta charset=\"utf-8\"> <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\"> <link rel=\"dns-prefetch\" href=\"https://avatars.githu",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Antigravity GitHub Search + Antigravity Docs); average confidence 61%.",
+        "codingFocus": "high-speed-coding-assistant",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "d1d560b34e84f8fa",
+          "status": "new",
+          "confidence": 92,
+          "source": "Antigravity GitHub Search"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Antigravity Docs",
+          "url": "https://antigravity.dev",
+          "type": "official-doc"
+        },
+        {
+          "label": "Antigravity GitHub Search",
+          "url": "https://github.com/search?q=antigravity+ai+agent&type=repositories",
+          "type": "official-repo"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
+      }
+    },
+    {
+      "tool": "gemini-cli",
+      "displayName": "gemini cli",
+      "latest": {
+        "snapshotId": "gemini-cli-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Gemini Prompting Intro",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-intro",
+        "contentHash": "99cb1ac832f61b49",
+        "confidence": 96,
+        "excerpt": "<!doctype html> <html lang=\"en\" dir=\"ltr\"> <head> <meta name=\"google-signin-client-id\" content=\"157101835696-ooapojlodmuabs2do2vuhhnf90bccmoi.apps.googleusercontent.com\"><meta name=\"google-signin-scope\" content=\"profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerpro",
+        "sourceSummary": "Scored 1/2 live sources, selected highest-confidence signal (Gemini Prompting Intro); average confidence 96%.",
+        "codingFocus": "terminal-first-coding",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "99cb1ac832f61b49",
+          "status": "new",
+          "confidence": 96,
+          "source": "Gemini Prompting Intro"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Gemini CLI Docs",
+          "url": "https://ai.google.dev/gemini-api/docs/cli",
+          "type": "official-doc"
+        },
+        {
+          "label": "Gemini Prompting Intro",
+          "url": "https://ai.google.dev/gemini-api/docs/prompting-intro",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 1
+      }
+    },
+    {
+      "tool": "kimi",
+      "displayName": "kimi",
+      "latest": {
+        "snapshotId": "kimi-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Kimi Product Site",
+        "url": "https://kimi.moonshot.cn",
+        "contentHash": "d6064b43391c9cf5",
+        "confidence": 84,
+        "excerpt": "<!doctype html><html class=light lang=en-US translate=no><head><script crossorigin src=//statics.moonshot.cn/kimi-web-seo/assets/polyfills-BfUbHAD3.js type=module></script><meta charset=UTF-8><meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <title>Kimi AI with K2.5 | Visual Co",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Kimi Product Site + Moonshot API Docs); average confidence 58%.",
+        "codingFocus": "long-context-debugging",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "d6064b43391c9cf5",
+          "status": "new",
+          "confidence": 84,
+          "source": "Kimi Product Site"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Moonshot API Docs",
+          "url": "https://platform.moonshot.cn/docs",
+          "type": "official-doc"
+        },
+        {
+          "label": "Kimi Product Site",
+          "url": "https://kimi.moonshot.cn",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
+      }
+    },
+    {
+      "tool": "glm",
+      "displayName": "glm",
+      "latest": {
+        "snapshotId": "glm-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Zhipu Open Platform",
+        "url": "https://open.bigmodel.cn/dev/api",
+        "contentHash": "6e177d4c9fc6660a",
+        "confidence": 51,
+        "excerpt": "<!DOCTYPE html><html lang=\"zh-cn\"><head><meta charset=\"utf-8\"><meta name=\"author\" content=\"北京智谱华章科技股份有限公司\"><meta name=\"copyright\" content=\"大模型开放平台\"><meta name=\"robots\" content=\"all\"><meta name=\"renderer\" content=\"webkit\"><meta http-equiv=\"cache-control\" content=\"no-cache\"><meta http-equiv=\"Content-Security-Policy\" cont",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Zhipu Open Platform + Zhipu How-To Docs); average confidence 51%.",
+        "codingFocus": "cn-stack-engineering",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "6e177d4c9fc6660a",
+          "status": "new",
+          "confidence": 51,
+          "source": "Zhipu Open Platform"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Zhipu Open Platform",
+          "url": "https://open.bigmodel.cn/dev/api",
+          "type": "official-doc"
+        },
+        {
+          "label": "Zhipu How-To Docs",
+          "url": "https://open.bigmodel.cn/dev/howuse/introduction",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
+      }
+    },
+    {
+      "tool": "doubao",
+      "displayName": "doubao",
+      "latest": {
+        "snapshotId": "doubao-20260301084341",
+        "detectedAt": "2026-03-01T08:43:41.043Z",
+        "title": "Doubao Product Site",
+        "url": "https://www.doubao.com",
+        "contentHash": "91d935f675db0d50",
+        "confidence": 96,
+        "excerpt": "<!DOCTYPE html><html><head><script nonce=\"04ea01f980ca48d8d66d289b29daba2b-argus\">window.gfdatav1={\"env\":\"prod\",\"envName\":\"prod\",\"runtime\":\"node\",\"ver\":\"1.0.8.4070\",\"canary\":0,\"idc\":\"lf\",\"region\":\"cn\",\"vdc\":\"lf\",\"vregion\":\"China-North\",\"extra\":{\"canaryType\":null}}</script><script nonce=\"04ea01f980ca48d8d66d289b29daba2b",
+        "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Doubao Product Site + Volcengine Doubao Docs); average confidence 90%.",
+        "codingFocus": "enterprise-agent-apps",
+        "change": {
+          "status": "new",
+          "previousHash": null
+        }
+      },
+      "timeline": [
+        {
+          "at": "2026-03-01T08:43:41.043Z",
+          "hash": "91d935f675db0d50",
+          "status": "new",
+          "confidence": 96,
+          "source": "Doubao Product Site"
+        }
+      ],
+      "monitoredSources": [
+        {
+          "label": "Volcengine Doubao Docs",
+          "url": "https://www.volcengine.com/docs/82379",
+          "type": "official-doc"
+        },
+        {
+          "label": "Doubao Product Site",
+          "url": "https://www.doubao.com",
+          "type": "official-doc"
+        }
+      ],
+      "sourceStats": {
+        "total": 2,
+        "healthy": 2
+      }
+    }
+  ]
+}

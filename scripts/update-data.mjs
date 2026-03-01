@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { execSync } from 'node:child_process';
+import crypto from 'node:crypto';
 
 const DATA_DIR = new URL('../data/', import.meta.url);
 
@@ -33,7 +34,6 @@ function getTag(block, tag) {
 function parseFeedItems(xml, source) {
   const out = [];
 
-  // RSS <item>
   const rssItems = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
   for (const item of rssItems) {
     const title = getTag(item, 'title');
@@ -43,7 +43,6 @@ function parseFeedItems(xml, source) {
     if (title && url) out.push({ title, url, summary: summary.slice(0, 220), publishedAt, source });
   }
 
-  // Atom <entry>
   const atomEntries = [...xml.matchAll(/<entry[\s\S]*?>([\s\S]*?)<\/entry>/gi)].map((m) => m[1]);
   for (const entry of atomEntries) {
     const title = getTag(entry, 'title');
@@ -55,6 +54,33 @@ function parseFeedItems(xml, source) {
   }
 
   return out;
+}
+
+function hashText(input) {
+  return crypto.createHash('sha256').update(input).digest('hex').slice(0, 16);
+}
+
+function scoreCandidate({ text, sourceType, tool }) {
+  const normalized = String(text || '').toLowerCase();
+  const keywords = [tool, 'system prompt', 'instructions', 'code', 'coding', 'cli', 'assistant', 'agent'];
+  const keywordHits = keywords.reduce((acc, k) => acc + (normalized.includes(k.toLowerCase()) ? 1 : 0), 0);
+  const lengthScore = Math.min(22, Math.floor((normalized.length || 0) / 500));
+  const typeScore = sourceType === 'official-doc' ? 28 : sourceType === 'official-repo' ? 24 : 16;
+  const keywordScore = Math.min(40, keywordHits * 6);
+  const codingScore = /code|coding|cli|agent/.test(normalized) ? 10 : 0;
+  return Math.max(0, Math.min(100, typeScore + lengthScore + keywordScore + codingScore));
+}
+
+function summarizeSource(candidates) {
+  const ok = candidates.filter((c) => c.ok);
+  if (!ok.length) return 'No live sources available in this cycle; previous snapshot retained.';
+  const avg = Math.round(ok.reduce((a, c) => a + c.confidence, 0) / ok.length);
+  const top = ok
+    .sort((a, b) => b.confidence - a.confidence)
+    .slice(0, 2)
+    .map((c) => c.label)
+    .join(' + ');
+  return `Scored ${ok.length}/${candidates.length} live sources, selected highest-confidence signal (${top}); average confidence ${avg}%.`;
 }
 
 async function updateNews() {
@@ -90,7 +116,6 @@ async function updateNews() {
     await writeFile(new URL('news.json', DATA_DIR), `${JSON.stringify(top10, null, 2)}\n`);
     console.log(`news.json updated with ${top10.length} items`);
 
-    // append to archive instead of losing old news
     let oldArchive = [];
     try {
       oldArchive = JSON.parse(await readFile(new URL('news-archive.json', DATA_DIR), 'utf8'));
@@ -112,36 +137,50 @@ async function updateNews() {
   }
 }
 
+async function githubSearchRepos(query, perPage = 30) {
+  const q = encodeURIComponent(query);
+  const res = await safeFetch(`https://api.github.com/search/repositories?q=${q}&sort=updated&order=desc&per_page=${perPage}`, {
+    headers: { accept: 'application/vnd.github+json' },
+  });
+  if (!res) return [];
+  const json = await res.json();
+  return json.items || [];
+}
+
 async function updateMcp() {
   const file = new URL('mcp.json', DATA_DIR);
-  const current = JSON.parse(await readFile(file, 'utf8'));
-  const seen = new Set(current.map((x) => x.repo));
 
-  const query = encodeURIComponent('model context protocol language:TypeScript stars:>5');
-  const url = `https://api.github.com/search/repositories?q=${query}&sort=updated&order=desc&per_page=10`;
-  const res = await safeFetch(url, { headers: { accept: 'application/vnd.github+json' } });
-  if (!res) return;
+  const canonical = await githubSearchRepos('org:modelcontextprotocol mcp in:readme,name,description', 25);
+  const ecosystem = await githubSearchRepos('"model context protocol" mcp server in:readme,name,description stars:>3', 40);
 
-  const body = await res.json();
-  const additions = [];
-  for (const repo of body.items || []) {
-    if (seen.has(repo.html_url)) continue;
-    additions.push({
+  const mergedMap = new Map();
+  for (const repo of [...canonical, ...ecosystem]) {
+    if (!repo?.html_url || !repo?.full_name) continue;
+    const key = repo.html_url.toLowerCase();
+    if (mergedMap.has(key)) continue;
+    mergedMap.set(key, {
       name: repo.full_name,
       repo: repo.html_url,
-      description: repo.description || 'MCP repository discovered by automation.',
-      stars: repo.stargazers_count,
+      description: (repo.description || 'MCP server discovered by autonomous scanner.').slice(0, 220),
+      stars: repo.stargazers_count || 0,
       updatedAt: repo.updated_at,
+      verifiedAt: new Date().toISOString(),
+      source: repo.owner?.login === 'modelcontextprotocol' ? 'official' : 'community',
     });
-    seen.add(repo.html_url);
-    if (additions.length >= 5) break;
   }
 
-  if (additions.length >= 3) {
-    const merged = [...additions, ...current].slice(0, 60);
-    await writeFile(file, `${JSON.stringify(merged, null, 2)}\n`);
-    console.log(`mcp.json appended with ${additions.length} repos`);
-  }
+  const rows = [...mergedMap.values()]
+    .sort((a, b) => {
+      if (a.source !== b.source) return a.source === 'official' ? -1 : 1;
+      if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
+      return new Date(b.updatedAt || 0) - new Date(a.updatedAt || 0);
+    })
+    .slice(0, 60);
+
+  if (rows.length < 20) throw new Error(`mcp.json quality guard failed: only ${rows.length} healthy repos`);
+
+  await writeFile(file, `${JSON.stringify(rows, null, 2)}\n`);
+  console.log(`mcp.json rebuilt with ${rows.length} verified MCP repos`);
 }
 
 const SKILL_REQUIRED_FIELDS = [
@@ -224,94 +263,188 @@ async function updateSkills() {
   console.log(`skills.json validated and normalized with ${deduped.length} concrete skills`);
 }
 
-async function githubRepoCandidates(query) {
-  const q = encodeURIComponent(query);
-  const res = await safeFetch(`https://api.github.com/search/repositories?q=${q}&sort=updated&order=desc&per_page=5`, {
-    headers: { accept: 'application/vnd.github+json' },
-  });
-  if (!res) return [];
-  const data = await res.json();
-  return (data.items || []).slice(0, 5).map((r) => ({
-    title: r.full_name,
-    url: r.html_url,
-    stars: r.stargazers_count,
-    updatedAt: r.updated_at,
-  }));
-}
-
-async function loadReferencePrompt(url) {
+async function fetchPromptSource(url) {
   const res = await safeFetch(url);
-  if (!res) return 'Failed to load reference prompt snapshot at this cycle.';
-  const text = await res.text();
-  return text.replace(/\r/g, '').trim().slice(0, 900);
+  if (!res) return { ok: false, error: 'fetch-failed' };
+  const text = (await res.text()).replace(/\s+/g, ' ').trim();
+  return { ok: true, text };
 }
 
 async function updatePrompts() {
-  const tools = [
+  const now = new Date().toISOString();
+  const file = new URL('prompts.json', DATA_DIR);
+
+  let existing = { generatedAt: null, method: null, tools: [] };
+  try {
+    existing = JSON.parse(await readFile(file, 'utf8'));
+  } catch {}
+  const previousMap = new Map((existing.tools || []).map((t) => [t.tool, t]));
+
+  const radarConfig = [
     {
-      name: 'Claude Code',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Anthropic/Claude%20Code%202.0.txt',
-      },
-      searchQuery: 'claude code system prompt',
-      pinnedCandidates: [
-        {
-          title: 'Piebald-AI/claude-code-system-prompts',
-          url: 'https://github.com/Piebald-AI/claude-code-system-prompts',
-          stars: null,
-          updatedAt: null,
-        },
+      tool: 'claude code',
+      shortName: 'claude-code',
+      codingFocus: 'agent-workflows',
+      sources: [
+        { label: 'Anthropic Claude Code Docs', url: 'https://docs.anthropic.com/en/docs/claude-code/overview', sourceType: 'official-doc' },
+        { label: 'Claude Code GitHub', url: 'https://github.com/search?q=claude+code+cli&type=repositories', sourceType: 'official-repo' },
       ],
     },
     {
-      name: 'Kiro',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Kiro/Vibe_Prompt.txt',
-      },
-      searchQuery: 'Kiro IDE system prompt',
-      pinnedCandidates: [],
+      tool: 'kiro',
+      shortName: 'kiro',
+      codingFocus: 'spec-driven-development',
+      sources: [
+        { label: 'Kiro Docs', url: 'https://kiro.dev/docs', sourceType: 'official-doc' },
+        { label: 'Kiro Blog', url: 'https://kiro.dev/blog', sourceType: 'official-doc' },
+      ],
     },
     {
-      name: 'Antigravity',
-      referenceSource: {
-        label: 'x1xhlol/system-prompts-and-models-of-ai-tools',
-        url: 'https://raw.githubusercontent.com/x1xhlol/system-prompts-and-models-of-ai-tools/main/Google/Antigravity/Fast%20Prompt.txt',
-      },
-      searchQuery: 'Google Antigravity prompt',
-      pinnedCandidates: [
-        {
-          title: 'Google Antigravity full system prompt (gist)',
-          url: 'https://gist.github.com/anthfgreco/87718fbbf313bcf7f5ca3f36fedb372a',
-          stars: null,
-          updatedAt: null,
-        },
+      tool: 'codex',
+      shortName: 'codex',
+      codingFocus: 'code-generation-and-refactor',
+      sources: [
+        { label: 'OpenAI Codex Intro', url: 'https://openai.com/index/introducing-codex/', sourceType: 'official-doc' },
+        { label: 'OpenAI Prompting Guide', url: 'https://platform.openai.com/docs/guides/prompt-engineering', sourceType: 'official-doc' },
+      ],
+    },
+    {
+      tool: 'antigravity',
+      shortName: 'antigravity',
+      codingFocus: 'high-speed-coding-assistant',
+      sources: [
+        { label: 'Antigravity Docs', url: 'https://antigravity.dev', sourceType: 'official-doc' },
+        { label: 'Antigravity GitHub Search', url: 'https://github.com/search?q=antigravity+ai+agent&type=repositories', sourceType: 'official-repo' },
+      ],
+    },
+    {
+      tool: 'gemini cli',
+      shortName: 'gemini-cli',
+      codingFocus: 'terminal-first-coding',
+      sources: [
+        { label: 'Gemini CLI Docs', url: 'https://ai.google.dev/gemini-api/docs/cli', sourceType: 'official-doc' },
+        { label: 'Gemini Prompting Intro', url: 'https://ai.google.dev/gemini-api/docs/prompting-intro', sourceType: 'official-doc' },
+      ],
+    },
+    {
+      tool: 'kimi',
+      shortName: 'kimi',
+      codingFocus: 'long-context-debugging',
+      sources: [
+        { label: 'Moonshot API Docs', url: 'https://platform.moonshot.cn/docs', sourceType: 'official-doc' },
+        { label: 'Kimi Product Site', url: 'https://kimi.moonshot.cn', sourceType: 'official-doc' },
+      ],
+    },
+    {
+      tool: 'glm',
+      shortName: 'glm',
+      codingFocus: 'cn-stack-engineering',
+      sources: [
+        { label: 'Zhipu Open Platform', url: 'https://open.bigmodel.cn/dev/api', sourceType: 'official-doc' },
+        { label: 'Zhipu How-To Docs', url: 'https://open.bigmodel.cn/dev/howuse/introduction', sourceType: 'official-doc' },
+      ],
+    },
+    {
+      tool: 'doubao',
+      shortName: 'doubao',
+      codingFocus: 'enterprise-agent-apps',
+      sources: [
+        { label: 'Volcengine Doubao Docs', url: 'https://www.volcengine.com/docs/82379', sourceType: 'official-doc' },
+        { label: 'Doubao Product Site', url: 'https://www.doubao.com', sourceType: 'official-doc' },
       ],
     },
   ];
 
-  const rows = [];
-  for (const tool of tools) {
-    const [referenceExcerpt, candidates] = await Promise.all([
-      loadReferencePrompt(tool.referenceSource.url),
-      githubRepoCandidates(tool.searchQuery),
-    ]);
-    const merged = [...tool.pinnedCandidates, ...candidates]
-      .filter((x, idx, arr) => arr.findIndex((y) => y.url === x.url) === idx)
-      .slice(0, 6);
+  const tools = [];
 
-    rows.push({
-      name: tool.name,
-      updatedAt: new Date().toISOString(),
-      referenceSource: tool.referenceSource,
-      referenceExcerpt,
-      latestCandidates: merged,
+  for (const cfg of radarConfig) {
+    const candidates = [];
+    for (const source of cfg.sources) {
+      const res = await fetchPromptSource(source.url);
+      if (!res.ok) {
+        candidates.push({ ...source, ok: false, confidence: 0, error: res.error });
+        continue;
+      }
+      const confidence = scoreCandidate({ text: res.text, sourceType: source.sourceType, tool: cfg.tool });
+      candidates.push({
+        ...source,
+        ok: true,
+        confidence,
+        contentHash: hashText(res.text || source.url),
+        sample: (res.text || '').slice(0, 320),
+      });
+    }
+
+    const successful = candidates.filter((x) => x.ok).sort((a, b) => b.confidence - a.confidence);
+    const selected = successful[0] || null;
+    const previous = previousMap.get(cfg.shortName);
+    const previousHash = previous?.latest?.contentHash || null;
+
+    const latest = selected
+      ? {
+          snapshotId: `${cfg.shortName}-${now.slice(0, 19).replace(/[-:T]/g, '')}`,
+          detectedAt: now,
+          title: selected.label,
+          url: selected.url,
+          contentHash: selected.contentHash,
+          confidence: selected.confidence,
+          excerpt: selected.sample,
+          sourceSummary: summarizeSource(candidates),
+          codingFocus: cfg.codingFocus,
+          change: {
+            status: previousHash ? (previousHash === selected.contentHash ? 'unchanged' : 'updated') : 'new',
+            previousHash,
+          },
+        }
+      : previous?.latest || {
+          snapshotId: `${cfg.shortName}-${now.slice(0, 19).replace(/[-:T]/g, '')}`,
+          detectedAt: now,
+          title: 'No healthy source this cycle',
+          url: cfg.sources[0].url,
+          contentHash: previousHash || 'unavailable',
+          confidence: 0,
+          excerpt: 'Source fetch failed for all configured inputs in this cycle.',
+          sourceSummary: summarizeSource(candidates),
+          codingFocus: cfg.codingFocus,
+          change: { status: previousHash ? 'unchanged' : 'unknown', previousHash },
+        };
+
+    const prevTimeline = previous?.timeline || [];
+    const timeline = [
+      {
+        at: now,
+        hash: latest.contentHash,
+        status: latest.change?.status || 'unknown',
+        confidence: latest.confidence,
+        source: latest.title,
+      },
+      ...prevTimeline,
+    ]
+      .filter((item, idx, arr) => idx === arr.findIndex((x) => x.at === item.at && x.hash === item.hash))
+      .slice(0, 8);
+
+    tools.push({
+      tool: cfg.shortName,
+      displayName: cfg.tool,
+      latest,
+      timeline,
+      monitoredSources: cfg.sources.map((s) => ({ label: s.label, url: s.url, type: s.sourceType })),
+      sourceStats: { total: candidates.length, healthy: candidates.filter((x) => x.ok).length },
     });
   }
 
-  await writeFile(new URL('prompts.json', DATA_DIR), `${JSON.stringify(rows, null, 2)}\n`);
-  console.log(`prompts.json refreshed with ${rows.length} tools`);
+  const out = {
+    generatedAt: now,
+    method: {
+      name: 'prompt-radar-style coding registry',
+      description: 'Multi-source prompt candidate scoring focused on coding workflows, with hash-based change tracking and timeline retention.',
+      version: 3,
+    },
+    tools,
+  };
+
+  await writeFile(file, `${JSON.stringify(out, null, 2)}\n`);
+  console.log(`prompts.json refreshed with ${out.tools.length} coding-focused profiles`);
 }
 
 function parseClawhubSearch(raw, category) {
@@ -366,18 +499,9 @@ async function updateClawhubWeekly() {
   const out = {
     updatedAt: new Date().toISOString(),
     sections: [
-      {
-        name: 'Hot Skills',
-        items: merged.filter((x) => x.category === 'Hot Skills').slice(0, 5),
-      },
-      {
-        name: 'New & Rising',
-        items: merged.filter((x) => x.category === 'New & Rising').slice(0, 5),
-      },
-      {
-        name: 'Builder Picks',
-        items: merged.filter((x) => x.category === 'Builder Picks').slice(0, 5),
-      },
+      { name: 'Hot Skills', items: merged.filter((x) => x.category === 'Hot Skills').slice(0, 5) },
+      { name: 'New & Rising', items: merged.filter((x) => x.category === 'New & Rising').slice(0, 5) },
+      { name: 'Builder Picks', items: merged.filter((x) => x.category === 'Builder Picks').slice(0, 5) },
     ],
     buzzwords: ['agentic workflows', 'mcp', 'automation', 'monitoring', 'productivity'],
   };

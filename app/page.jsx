@@ -52,7 +52,7 @@ export default function HomePage() {
     { label: 'MCP Entries', value: mcp.length },
     { label: 'Skill Signals', value: skills.length },
     { label: 'Projects', value: projects.length },
-    { label: 'Prompt Profiles', value: prompts.length },
+    { label: 'Prompt Profiles', value: Array.isArray(prompts) ? prompts.length : (prompts.tools?.length || 0) },
   ];
 
   return (
