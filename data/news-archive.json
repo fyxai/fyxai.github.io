@@ -1,5 +1,19 @@
 [
   {
+    "title": "Soft Forks: How Agent Skills Create Specialized AI Without Training",
+    "url": "https://www.oreilly.com/radar/?p=18215",
+    "summary": "Our previous article framed the Model Context Protocol (MCP) as the toolbox that provides AI agents tools and Agent Skills as materials that teach AI agents how to complete tasks. This is different from pre- or posttrain",
+    "publishedAt": "2026-03-09T14:40:31.359Z",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "Mastercard Says AI vs AI Will Be Fraud Prevention’s Future - PYMNTS.com",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPeVQxQnpnNS1RbGJKVm1aeDN0SUtYWF9SdjVqLUhDX0pSZnNLd0RUUVR5cm9IbGJuaWlUU1JWaWFUSFc4SEdtZnAxdnR2UThzVEtVVWI2LUlIeHl6dzVJRi1JNXQ2b3A0X2gtYVZscVRsN3hDY2VaSEh1TkJGbHl3SW5CX0gxSGlEQUh0OVdQbXUtN05sTkJUXzRKbFR4ZnRCZmlyaU9n?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPeVQxQnpnNS1RbGJKVm1aeDN0SUtYWF9SdjVqLUhDX0pSZnNLd0RUUVR5cm9IbGJuaWlUU1JWaWFUSFc4SEdtZnAxdnR2UThzVEtVVWI2LUlIeHl6dzVJRi1JNXQ2b3A0X2gtYVZscVRsN3hDY2VaSEh1TkJ",
+    "publishedAt": "Mon, 09 Mar 2026 14:38:28 GMT",
+    "source": "Google News AI"
+  },
+  {
     "title": "Survey: AI spending projected to increase, but implementation bottlenecks remain - SmartBrief",
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1ZrN0tpdjFESm95UnFFNll1M1ZPQkRlMkRGRlBNdENGSHlLSEVtRllnaUNkQk81ckNVMUh3NVVrX1BPYXpPaVZibWNmNmtWSVdmWGl6c2hrXzgzaDNfaUxXS0JiWTlDRS13LTdWSUpibU9EenNHV0Z3SjVLaGQyUkRSUkxOWTczUDQ5VkJ4cHZLTkp2SFJFemxLUi10TURmYlU1WHhxWkdwYkRmZ0lfdks2aV8?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNY1ZrN0tpdjFESm95UnFFNll1M1ZPQkRlMkRGRlBNdENGSHlLSEVtRllnaUNkQk81ckNVMUh3NVVrX1BPYXpPaVZibWNmNmtWSVdmWGl6c2hrXzgzaDNfaUxXS0JiWTlDRS13LTdWSUpibU9EenNHV0Z3SjV",
@@ -3484,20 +3498,6 @@
     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeEV3TV84T2hjSlJLVkV6amt5ejU4MUpQQWUxOUNVVnk0V1NSNmdLNGFlMm1nVzZOdmxxRV9xUlFTSjRKSlhGRmg3OGtqemtiTF83NTd0TFVmQkppdVZ0WUQwYm1wcEN6RTdhTlZjT1VpTkZsNkhRQ3VtdGFOY1RBR0p3?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiggFBVV95cUxPeEV3TV84T2hjSlJLVkV6amt5ejU4MUpQQWUxOUNVVnk0V1NSNmdLNGFlMm1nVzZOdmxxRV9xUlFTSjRKSlhGRmg3OGtqemtiTF83NTd0TFVmQkppdVZ0WUQwYm1wcEN6RTdhTlZjT1VpTkZsNkhRQ3VtdGF",
     "publishedAt": "Sat, 28 Feb 2026 19:07:02 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Anthropic CEO Dario Amodei says 'we are patriotic Americans' committed to defending the U.S. - Fortune",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWWt0Sl9qQlZVQTBiNWJVWDFwTHJPNnRnckFWM0pUVjlHLUcyOEZXNU43Um16UVJmY0ZueVNiUkQ5MXJvRlRhMnpHZkZ3amFpUlctbDd4c2tGbW0wdUNFZ3BTN3NjM09OeWFEdGg3ZHRKak9hU0dZaXh3RVJpVHNCdGl0dl9CY1F0VmNDQWlkWEp4Mkx6Q05ZMFhUclFPNHRmb2FNTnZLa1FCZ25hbUkwdkd4RVNsdi1vQjFfLWxDZFJQMUNBZjUxSA?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiyAFBVV95cUxNWWt0Sl9qQlZVQTBiNWJVWDFwTHJPNnRnckFWM0pUVjlHLUcyOEZXNU43Um16UVJmY0ZueVNiUkQ5MXJvRlRhMnpHZkZ3amFpUlctbDd4c2tGbW0wdUNFZ3BTN3NjM09OeWFEdGg3ZHRKak9hU0dZaXh3RVJ",
-    "publishedAt": "Sat, 28 Feb 2026 19:02:00 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Delis and AI: TEDxIU covers range of topics at 10th anniversary conference - Indiana Daily Student",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnFERXl1VjEwQnhMazBJZFIteHk0dHV5bUt2T1VSZlVzNk1MTzJmLTRBZThRQlhxalMtZlIta3ptTUF1NkdLdVJVZHJBRkhBSDBUaTJlYXZETzVsMnNvbGVCWXNrcFRDQTlDejNKeTZyeFQ1TXVVUlp4TEVWN1NxWk9uaHhyUGtKSEp2ZkdRRkkzYUVYc2dqVGNMZnVJd1ZnMnUtVWRnOU5jY3RaOXFsel93?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnFERXl1VjEwQnhMazBJZFIteHk0dHV5bUt2T1VSZlVzNk1MTzJmLTRBZThRQlhxalMtZlIta3ptTUF1NkdLdVJVZHJBRkhBSDBUaTJlYXZETzVsMnNvbGVCWXNrcFRDQTlDejNKeTZyeFQ1TXVVUlp4TEV",
-    "publishedAt": "Sat, 28 Feb 2026 18:52:00 GMT",
     "source": "Google News AI"
   }
 ]
