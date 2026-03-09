@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T14:40:33.384Z",
+  "generatedAt": "2026-03-09T18:05:40.422Z",
   "method": {
     "name": "prompt-radar-style coding registry",
     "description": "Multi-source prompt candidate scoring focused on coding workflows, with hash-based change tracking and timeline retention.",
@@ -10,21 +10,28 @@
       "tool": "claude-code",
       "displayName": "claude code",
       "latest": {
-        "snapshotId": "claude-code-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "claude-code-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Anthropic Claude Code Docs",
         "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
-        "contentHash": "5a865952f1732238",
+        "contentHash": "13514fef1e497d7b",
         "confidence": 100,
         "excerpt": "<!DOCTYPE html><html lang=\"en\" class=\"__variable_ed9089 __variable_ea4744 dark\" data-banner-state=\"visible\" data-page-mode=\"none\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover\"/><link rel=\"preload\" href=\"/docs/_next/static/media/bb3e",
         "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Anthropic Claude Code Docs + Claude Code GitHub); average confidence 96%.",
         "codingFocus": "agent-workflows",
         "change": {
-          "status": "unchanged",
+          "status": "updated",
           "previousHash": "5a865952f1732238"
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "13514fef1e497d7b",
+          "status": "updated",
+          "confidence": 100,
+          "source": "Anthropic Claude Code Docs"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "5a865952f1732238",
@@ -73,13 +80,6 @@
           "status": "unchanged",
           "confidence": 100,
           "source": "Anthropic Claude Code Docs"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "a0cb972f0e17740b",
-          "status": "unchanged",
-          "confidence": 100,
-          "source": "Anthropic Claude Code Docs"
         }
       ],
       "monitoredSources": [
@@ -103,8 +103,8 @@
       "tool": "kiro",
       "displayName": "kiro",
       "latest": {
-        "snapshotId": "kiro-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "kiro-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Kiro Docs",
         "url": "https://kiro.dev/docs",
         "contentHash": "5acbe835ab475ba5",
@@ -118,6 +118,13 @@
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "5acbe835ab475ba5",
+          "status": "unchanged",
+          "confidence": 90,
+          "source": "Kiro Docs"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "5acbe835ab475ba5",
@@ -162,13 +169,6 @@
         },
         {
           "at": "2026-03-08T20:52:26.490Z",
-          "hash": "5acbe835ab475ba5",
-          "status": "unchanged",
-          "confidence": 90,
-          "source": "Kiro Docs"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
           "hash": "5acbe835ab475ba5",
           "status": "unchanged",
           "confidence": 90,
@@ -212,6 +212,13 @@
       },
       "timeline": [
         {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "unavailable",
+          "status": "unknown",
+          "confidence": 0,
+          "source": "No healthy source this cycle"
+        },
+        {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "unavailable",
           "status": "unknown",
@@ -259,13 +266,6 @@
           "status": "unknown",
           "confidence": 0,
           "source": "No healthy source this cycle"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "unavailable",
-          "status": "unknown",
-          "confidence": 0,
-          "source": "No healthy source this cycle"
         }
       ],
       "monitoredSources": [
@@ -289,21 +289,28 @@
       "tool": "antigravity",
       "displayName": "antigravity",
       "latest": {
-        "snapshotId": "antigravity-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "antigravity-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Antigravity GitHub Search",
         "url": "https://github.com/search?q=antigravity+ai+agent&type=repositories",
-        "contentHash": "d4754b6e6ec755ed",
+        "contentHash": "66cc6ba72de4c1fa",
         "confidence": 96,
         "excerpt": "<!DOCTYPE html> <html lang=\"en\" data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\" data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\" > <head> <meta charset=\"utf-8\"> <link rel=\"dns-prefetch\" href=\"https://github.githubassets.com\"> <link rel=\"dns-prefetch\" href=\"https://avatars.githu",
         "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Antigravity GitHub Search + Antigravity Docs); average confidence 63%.",
         "codingFocus": "high-speed-coding-assistant",
         "change": {
           "status": "updated",
-          "previousHash": "4ff64211b9fbcce5"
+          "previousHash": "d4754b6e6ec755ed"
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "66cc6ba72de4c1fa",
+          "status": "updated",
+          "confidence": 96,
+          "source": "Antigravity GitHub Search"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "d4754b6e6ec755ed",
@@ -352,13 +359,6 @@
           "status": "updated",
           "confidence": 96,
           "source": "Antigravity GitHub Search"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "7d7da0c67c9a04eb",
-          "status": "updated",
-          "confidence": 96,
-          "source": "Antigravity GitHub Search"
         }
       ],
       "monitoredSources": [
@@ -382,21 +382,28 @@
       "tool": "gemini-cli",
       "displayName": "gemini cli",
       "latest": {
-        "snapshotId": "gemini-cli-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "gemini-cli-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Gemini Prompting Intro",
         "url": "https://ai.google.dev/gemini-api/docs/prompting-intro",
-        "contentHash": "31db5a1993c56f1b",
+        "contentHash": "1e610a75ac0edcdf",
         "confidence": 96,
         "excerpt": "<!doctype html> <html lang=\"en\" dir=\"ltr\"> <head> <meta name=\"google-signin-client-id\" content=\"157101835696-ooapojlodmuabs2do2vuhhnf90bccmoi.apps.googleusercontent.com\"><meta name=\"google-signin-scope\" content=\"profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerpro",
         "sourceSummary": "Scored 1/2 live sources, selected highest-confidence signal (Gemini Prompting Intro); average confidence 96%.",
         "codingFocus": "terminal-first-coding",
         "change": {
           "status": "updated",
-          "previousHash": "6650a3d918faa6bc"
+          "previousHash": "31db5a1993c56f1b"
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "1e610a75ac0edcdf",
+          "status": "updated",
+          "confidence": 96,
+          "source": "Gemini Prompting Intro"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "31db5a1993c56f1b",
@@ -445,13 +452,6 @@
           "status": "updated",
           "confidence": 96,
           "source": "Gemini Prompting Intro"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "7fc6e35f7c289a16",
-          "status": "updated",
-          "confidence": 96,
-          "source": "Gemini Prompting Intro"
         }
       ],
       "monitoredSources": [
@@ -475,21 +475,28 @@
       "tool": "kimi",
       "displayName": "kimi",
       "latest": {
-        "snapshotId": "kimi-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "kimi-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Kimi Product Site",
         "url": "https://kimi.moonshot.cn",
-        "contentHash": "cc1294568f3b1e8c",
+        "contentHash": "77461afb88bfaca0",
         "confidence": 84,
         "excerpt": "<!doctype html><html class=light lang=en-US translate=no><head><script crossorigin src=//statics.moonshot.cn/kimi-web-seo/assets/polyfills-BfUbHAD3.js type=module></script><meta charset=UTF-8><meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <title>Kimi AI with K2.5 | Visual Co",
         "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Kimi Product Site + Moonshot API Docs); average confidence 58%.",
         "codingFocus": "long-context-debugging",
         "change": {
           "status": "updated",
-          "previousHash": "d504bd7291f40191"
+          "previousHash": "cc1294568f3b1e8c"
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "77461afb88bfaca0",
+          "status": "updated",
+          "confidence": 84,
+          "source": "Kimi Product Site"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "cc1294568f3b1e8c",
@@ -538,13 +545,6 @@
           "status": "updated",
           "confidence": 84,
           "source": "Kimi Product Site"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "46a85342a2c1e3a9",
-          "status": "updated",
-          "confidence": 84,
-          "source": "Kimi Product Site"
         }
       ],
       "monitoredSources": [
@@ -568,8 +568,8 @@
       "tool": "glm",
       "displayName": "glm",
       "latest": {
-        "snapshotId": "glm-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "glm-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Zhipu Open Platform",
         "url": "https://open.bigmodel.cn/dev/api",
         "contentHash": "823966e291c422c8",
@@ -583,6 +583,13 @@
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "823966e291c422c8",
+          "status": "unchanged",
+          "confidence": 51,
+          "source": "Zhipu Open Platform"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "823966e291c422c8",
@@ -631,13 +638,6 @@
           "status": "unchanged",
           "confidence": 51,
           "source": "Zhipu Open Platform"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "823966e291c422c8",
-          "status": "unchanged",
-          "confidence": 51,
-          "source": "Zhipu Open Platform"
         }
       ],
       "monitoredSources": [
@@ -661,21 +661,28 @@
       "tool": "doubao",
       "displayName": "doubao",
       "latest": {
-        "snapshotId": "doubao-20260309144033",
-        "detectedAt": "2026-03-09T14:40:33.384Z",
+        "snapshotId": "doubao-20260309180540",
+        "detectedAt": "2026-03-09T18:05:40.422Z",
         "title": "Doubao Product Site",
         "url": "https://www.doubao.com",
-        "contentHash": "88347f02f32e2293",
+        "contentHash": "448dfa697d42d345",
         "confidence": 90,
-        "excerpt": "<!DOCTYPE html><html><head><script nonce=\"ff23a671df8df2b5ea6c07cf6509a1cf-argus\">window.gfdatav1={\"env\":\"prod\",\"envName\":\"prod\",\"runtime\":\"node\",\"ver\":\"1.0.8.5297\",\"canary\":0,\"idc\":\"lf\",\"region\":\"cn\",\"vdc\":\"lf\",\"vregion\":\"China-North\",\"extra\":{\"canaryType\":null}}</script><script nonce=\"ff23a671df8df2b5ea6c07cf6509a1cf",
+        "excerpt": "<!DOCTYPE html><html><head><script nonce=\"d5f96d00f33f3553968ca50cd9d1a7f5-argus\">window.gfdatav1={\"env\":\"prod\",\"envName\":\"prod\",\"runtime\":\"node\",\"ver\":\"1.0.8.5493\",\"canary\":0,\"idc\":\"hl\",\"region\":\"cn\",\"vdc\":\"hl\",\"vregion\":\"China-North\",\"extra\":{\"canaryType\":null}}</script><script nonce=\"d5f96d00f33f3553968ca50cd9d1a7f5",
         "sourceSummary": "Scored 2/2 live sources, selected highest-confidence signal (Doubao Product Site + Volcengine Doubao Docs); average confidence 87%.",
         "codingFocus": "enterprise-agent-apps",
         "change": {
           "status": "updated",
-          "previousHash": "0714d4551933e4be"
+          "previousHash": "88347f02f32e2293"
         }
       },
       "timeline": [
+        {
+          "at": "2026-03-09T18:05:40.422Z",
+          "hash": "448dfa697d42d345",
+          "status": "updated",
+          "confidence": 90,
+          "source": "Doubao Product Site"
+        },
         {
           "at": "2026-03-09T14:40:33.384Z",
           "hash": "88347f02f32e2293",
@@ -723,13 +730,6 @@
           "hash": "1c9e66f3d90b5a3b",
           "status": "updated",
           "confidence": 90,
-          "source": "Doubao Product Site"
-        },
-        {
-          "at": "2026-03-08T16:56:25.199Z",
-          "hash": "d07a8c164fff09e1",
-          "status": "updated",
-          "confidence": 96,
           "source": "Doubao Product Site"
         }
       ],
