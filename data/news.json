@@ -1,5 +1,12 @@
 [
   {
+    "title": "Soft Forks: How Agent Skills Create Specialized AI Without Training",
+    "url": "https://www.oreilly.com/radar/?p=18215",
+    "summary": "Our previous article framed the Model Context Protocol (MCP) as the toolbox that provides AI agents tools and Agent Skills as materials that teach AI agents how to complete tasks. This is different from pre- or posttrain",
+    "publishedAt": "2026-03-09T18:06:43.635Z",
+    "source": "OReilly Radar"
+  },
+  {
     "title": "Gounardes wants moratorium on sale of AI chatbot-enabled kids’ toys - City &amp; State New York",
     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPOTluckZzM1IzenllcEJia1pXLS1YczNVNUFOTm5TTkozWEpTSkNiWWZlQU1LcFBxSHB5QW5MRmMtZ1ZKZVFMSUY2UUhwN1hvcm5scDhpLTl2a2hJbVozVnBqdkQyWFFOVlVNSFlaWG80N2NPUHFhY0o1TWgtT29EblBvNlNNWkU2NFBDSElkbkFTcjMtbTZ6VERsekVGQVZWN1hIa19IMDJBSjMtaThuZkJXbVlZR1RPTmJ6MEVlSTlYT3ZFeU1CLVlWTjdPVzFramZDTmFvOVAwUlBCR2E2RVI2RlE?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxPOTluckZzM1IzenllcEJia1pXLS1YczNVNUFOTm5TTkozWEpTSkNiWWZlQU1LcFBxSHB5QW5MRmMtZ1ZKZVFMSUY2UUhwN1hvcm5scDhpLTl2a2hJbVozVnBqdkQyWFFOVlVNSFlaWG80N2NPUHFhY0o1TWg",
@@ -42,13 +49,6 @@
     "source": "Google News AI"
   },
   {
-    "title": "Opinion | Don’t trust this $4 solution for getting a prescription - The Washington Post",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdlNEN1NNbElKUlEtVHNDYXFlMTMydU95aGhJbUZwWFdkaWNGUVdFZjMtUmkzaVF6NHlMN08wUThoSk1mRVJ5UGpQcWpSZmNDTUtPUks5WUdxQ1Y1ekJDVjdXa0xCRi1WaVV6VGxVQnVDOVVCMm9pb3JUSTY3UXppWUYyM1NrczgxYVlSS0tYWjhVTlZa?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQdlNEN1NNbElKUlEtVHNDYXFlMTMydU95aGhJbUZwWFdkaWNGUVdFZjMtUmkzaVF6NHlMN08wUThoSk1mRVJ5UGpQcWpSZmNDTUtPUks5WUdxQ1Y1ekJDVjdXa0xCRi1WaVV6VGxVQnVDOVVCMm9pb3JUSTY",
-    "publishedAt": "Mon, 09 Mar 2026 17:38:46 GMT",
-    "source": "Google News AI"
-  },
-  {
     "title": "They wanted to put AI to the test. They created agents of chaos. - Northeastern Global News",
     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE01QUF6LTZPejR4bm9xdU5SZHozc0xrNFVpOG1zb1pDTWNaOTAzMklhZnFLVHdsODVtSDZKN0tWd0xsYldHZFdIT1Z4MWJuYVo3QUllUHF0eE5Hb2t3a19XNmtKZGM2VWlfT1hjZVEzakZNbDZXUkdSR1FJNA?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE01QUF6LTZPejR4bm9xdU5SZHozc0xrNFVpOG1zb1pDTWNaOTAzMklhZnFLVHdsODVtSDZKN0tWd0xsYldHZFdIT1Z4MWJuYVo3QUllUHF0eE5Hb2t3a19XNmtKZGM2VWlfT1hjZVEzakZNbDZXUkdSR1FJNA?",
@@ -56,17 +56,17 @@
     "source": "Google News AI"
   },
   {
-    "title": "AI can detect heart disease risk through routine mammogram - Leader Publications",
-    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMmd4SUhFVHdWdmoxSGlEM1U1TERULWFjSzJHMFQyR2Y4TzBaWVRGbnlOSlhLVUsxRnhrYkdxNlcwaXJJQy1oS3NuTzJHaktjQi1YbUFVNXNXaVVIOWM2Y1I3OHhJWUhOSTM3OW0yYlM5dmhfc083LWRNeWE4UzM0N0g5NmtEb1FESTVXUUtmdG8wVFZ6VnlHay1zN0p1NVdSWndxLVJrcGs0bHpEZGI3cFR3emVrdlNqZnVwcmpQNmgwMldNdVUxVlN4TGdhWVZtRXdYOTV5Qkh2OGFMdDhkamdmS25LME11cjZUaw?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMmd4SUhFVHdWdmoxSGlEM1U1TERULWFjSzJHMFQyR2Y4TzBaWVRGbnlOSlhLVUsxRnhrYkdxNlcwaXJJQy1oS3NuTzJHaktjQi1YbUFVNXNXaVVIOWM2Y1I3OHhJWUhOSTM3OW0yYlM5dmhfc083LWRNeWE",
-    "publishedAt": "Mon, 09 Mar 2026 17:34:22 GMT",
-    "source": "Google News AI"
-  },
-  {
     "title": "China’s AI giants are handing out cash to lure in users - The Economist",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMXBJUF9KRmVNT2lQbzBjdFRudzhLVDN3R19uRlhXMVRPb0VMOWs4eGRrQThjcFFLN2FFTFBCVzNMQ3hVSV9aRnN6R2VjWFpib01CeTFZakZ2UDUtcDN3T1ptVjhYWGg2MWY1WjhjVmRQZ2lGN3NpWE0yUDBybmVna0tncF8xeW1pZ1Ryd3lpTFpEWEJrUXJpQ2hid2dRN0tIaWc?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxOMXBJUF9KRmVNT2lQbzBjdFRudzhLVDN3R19uRlhXMVRPb0VMOWs4eGRrQThjcFFLN2FFTFBCVzNMQ3hVSV9aRnN6R2VjWFpib01CeTFZakZ2UDUtcDN3T1ptVjhYWGg2MWY1WjhjVmRQZ2lGN3NpWE0yUDB",
     "publishedAt": "Mon, 09 Mar 2026 17:33:19 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "This AI tool helps you ask better questions, get more authentic results - MIT Sloan",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXRSZHRoX3BVcjdWNVlfbWZ3UDZxQnBGTzhBdWpMZmdqM3VrZ2w2NlFNTlpWaElUSlFaNmxSSFZUeklCR3hrcF9Gc1ptUExfU2N6UmExVDRUTUNyTVNMYl9jZWZDOHZBQkU0VWVhVjhNVFpOcFJydXhBVUJYWXR2bk54VTNRSmo1TGRqVnpWWndnNENuQXhNTXJTdjZHVnUyUUhWcEZuOEFORzRhQzdtdA?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxOUXRSZHRoX3BVcjdWNVlfbWZ3UDZxQnBGTzhBdWpMZmdqM3VrZ2w2NlFNTlpWaElUSlFaNmxSSFZUeklCR3hrcF9Gc1ptUExfU2N6UmExVDRUTUNyTVNMYl9jZWZDOHZBQkU0VWVhVjhNVFpOcFJydXhBVUJ",
+    "publishedAt": "Mon, 09 Mar 2026 17:32:19 GMT",
     "source": "Google News AI"
   }
 ]
