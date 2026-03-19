@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Home, Newspaper, Cpu, Sparkles, FolderKanban, ScrollText } from 'lucide-react';
+import { Home, Newspaper, Cpu, Sparkles, FolderKanban, ScrollText, Wrench } from 'lucide-react';
 
 const links = [
   { href: '/', label: 'Home', icon: Home },
@@ -8,6 +8,7 @@ const links = [
   { href: '/skills', label: 'Skills', icon: Sparkles },
   { href: '/projects', label: 'Projects', icon: FolderKanban },
   { href: '/prompts', label: 'Prompts', icon: ScrollText },
+  { href: '/utilities', label: 'Utilities Tools', icon: Wrench },
 ];
 
 export default function Navbar() {
