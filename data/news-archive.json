@@ -1,5 +1,12 @@
 [
   {
+    "title": "Beyond Code Review",
+    "url": "https://www.oreilly.com/radar/beyond-code-review/",
+    "summary": "Not that long ago, we were resigned to the idea that humans would need to inspect every line of AI-generated code. We’d do it personally, code reviews would always be part of a serious software practice, and the ability ",
+    "publishedAt": "Fri, 20 Mar 2026 11:13:40 +0000",
+    "source": "OReilly Radar"
+  },
+  {
     "title": "Smart City Summit &amp; Expo 2026: Advancing the AI City Vision with ASUS - ASUS Pressroom",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZVdsbk5TUUdJdXdvLUFXNHRKX1RIa19LRWt3Y2RhLUVZNEhqNUhhMTdOSkZaZGVWeHZDQ000N0Y4RFdPZVcwV1NUdTh2dy1KQi01QWNRQzd2NmhhM0FXYXJmTkRJSVVwbmp5RjNyUERkTmhMVlVOTFZJZWVhMjhDUmFzTQ?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxPZVdsbk5TUUdJdXdvLUFXNHRKX1RIa19LRWt3Y2RhLUVZNEhqNUhhMTdOSkZaZGVWeHZDQ000N0Y4RFdPZVcwV1NUdTh2dy1KQi01QWNRQzd2NmhhM0FXYXJmTkRJSVVwbmp5RjNyUERkTmhMVlVOTFZJZWV",
@@ -350,6 +357,13 @@
     "source": "Google News AI"
   },
   {
+    "title": "Keep Deterministic Work Deterministic",
+    "url": "https://www.oreilly.com/radar/keep-deterministic-work-deterministic/",
+    "summary": "This is the second article in a series on agentic engineering and AI-driven development. Read part one here, and look for the next article on April 2 on O’Reilly Radar. The first 90 percent of the code accounts for the f",
+    "publishedAt": "Thu, 19 Mar 2026 11:15:28 +0000",
+    "source": "OReilly Radar"
+  },
+  {
     "title": "What Governance Resets Should Pharma Companies Take in Response to AI? - Pharmaceutical Executive",
     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yTnF2SjhqN3VIMDhrQ2duMWg4VEJnSDhyQ21lTTZKQWNwUjNIS2JrZFY3ZS1weG0yYUhjMXpkWHI1cFR5S2pVY3N6NG9ta2lORXVmWFdpSVFqVUVuSDR4Qndsei00SFBCWnd4SUlSOFROUk9LYU1xeEdB?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTE0yTnF2SjhqN3VIMDhrQ2duMWg4VEJnSDhyQ21lTTZKQWNwUjNIS2JrZFY3ZS1weG0yYUhjMXpkWHI1cFR5S2pVY3N6NG9ta2lORXVmWFdpSVFqVUVuSDR4Qndsei00SFBCWnd4SUlSOFROUk9LYU1xeEdB?oc",
@@ -418,6 +432,20 @@
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWbXFQMzZtLU0yNVhzNnhUODFReFFjaExmdDdGY1dUME52OVNTZUpJcFVza3BRUGxfTzdMTWNsQ2JkUnR6WllrTVVUY19NNlJJS3NXREF1ZjVybHlpc0RQTlhXemJ2MVE?oc=5\" target=\"_blank\"&gt;Am",
     "publishedAt": "Thu, 19 Mar 2026 10:00:22 GMT",
     "source": "Google News AI"
+  },
+  {
+    "title": "Visa prepares payment systems for AI agent-initiated transactions",
+    "url": "https://www.artificialintelligence-news.com/news/visa-prepares-payment-systems-for-ai-agent-initiated-transactions/",
+    "summary": "Payments rely on a simple model: a person decides to buy something, and a bank or card network processes the transaction. That model is starting to change as Visa tests how AI agents can initiate payments. New work in th",
+    "publishedAt": "Thu, 19 Mar 2026 10:00:00 +0000",
+    "source": "AI News"
+  },
+  {
+    "title": "NVIDIA wants enterprise AI agents safer to deploy",
+    "url": "https://www.artificialintelligence-news.com/news/nvidia-agent-toolkit-enterprise-ai-agents/",
+    "summary": "The NVIDIA Agent Toolkit is Jensen Huang&#8217;s answer to the question enterprises keep asking: how do we put AI agents to work without losing control of our data and our liability? Announced at GTC 2026 in San Jose on ",
+    "publishedAt": "Thu, 19 Mar 2026 08:00:00 +0000",
+    "source": "AI News"
   },
   {
     "title": "Forum on harnessing Artificial Intelligence for health equity - World Health Organization (WHO)",
@@ -698,6 +726,27 @@
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNemNnVUQ1eUJYTFc2NlpWUm5KTklrZTFRdlV0amlhREVZdmtrTmVwTUZRNnRqWmtnVWpYSFd1alJEQ2VMbzJpalZ6ZW1DRlJqREFLcEZKZkpsS1k5MU1XZ3ZXRmtPYW94UWtIZUZVR0Z2TER1UlZ6X0pPLUJ",
     "publishedAt": "Wed, 18 Mar 2026 15:31:34 GMT",
     "source": "Google News AI"
+  },
+  {
+    "title": "Mastercard keeps tabs on fraud with new foundation model",
+    "url": "https://www.artificialintelligence-news.com/news/mastercards-ltm-keeps-tabs-on-fraud-with-a-new-foundation-model/",
+    "summary": "Mastercard has developed a large tabular model (an LTM as opposed to an LLM) that&#8217;s trained on transaction data rather than text or images to help it address security and authenticity issues in digital payments. Th",
+    "publishedAt": "Wed, 18 Mar 2026 15:31:00 +0000",
+    "source": "AI News"
+  },
+  {
+    "title": "For effective AI, insurance needs to get its data house in order",
+    "url": "https://www.artificialintelligence-news.com/news/for-effective-ai-insurance-needs-a-better-data-layer-and-integration/",
+    "summary": "A report from Autorek, a provider of AI solutions to the insurance industry has produced a report that describes operational drag in companies&#8217; internal processes that not only affect overall efficiency but cause a",
+    "publishedAt": "Wed, 18 Mar 2026 14:37:00 +0000",
+    "source": "AI News"
+  },
+  {
+    "title": "What Is the PARK Stack?",
+    "url": "https://www.oreilly.com/radar/what-is-the-park-stack/",
+    "summary": "Background: Stacks with four-letter acronyms According to Wikipedia, the LAMP stack was coined in 1998 by Michael Kunze to describe what had emerged as a popular open source software stack for websites. When the World Wi",
+    "publishedAt": "Wed, 18 Mar 2026 11:15:43 +0000",
+    "source": "OReilly Radar"
   },
   {
     "title": "What Kant and Spinoza can teach us about AI - Engelsberg Ideas",
@@ -1071,6 +1120,20 @@
     "source": "Google News AI"
   },
   {
+    "title": "Trustpilot partners with AI companies as traditional search declines",
+    "url": "https://www.artificialintelligence-news.com/news/ai-in-ecommerce-trustpilot-partnerships-integration-news-trad-search-declines/",
+    "summary": "Trustpilot is reported to be pursuing partnerships with large eCommerce companies as AI-driven shopping gains traction. In an interview with Bloomberg News [paywall], chief executive Adrian Blair said that AI agents acti",
+    "publishedAt": "Tue, 17 Mar 2026 12:26:00 +0000",
+    "source": "AI News"
+  },
+  {
+    "title": "Stop Closing the Door. Fix the House.",
+    "url": "https://www.oreilly.com/radar/stop-closing-the-door-fix-the-house/",
+    "summary": "The following article originally appeared on Angie Jones&#8217;s website and is being republished here with the author&#8217;s permission. I’ve been seeing more and more open source maintainers throwing up their hands ov",
+    "publishedAt": "Tue, 17 Mar 2026 11:23:28 +0000",
+    "source": "OReilly Radar"
+  },
+  {
     "title": "Meet the sustainability exec at the center of the AI boom - Axios",
     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9nM0lkVklmOXRXMHc1M0lqUUZsWU5NdUVRdGF0ZWhQRHZZZ1BCUEdQSm94OWVPNmpGNDg0NE02SHRxdVR2S2czYWZERERDNC1ScWt3ZWNwQzhrbkVTSnFLd3lmM3dRM3g5cG1zd0E1MTU5ZnlTNnc?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMidkFVX3lxTE9nM0lkVklmOXRXMHc1M0lqUUZsWU5NdUVRdGF0ZWhQRHZZZ1BCUEdQSm94OWVPNmpGNDg0NE02SHRxdVR2S2czYWZERERDNC1ScWt3ZWNwQzhrbkVTSnFLd3lmM3dRM3g5cG1zd0E1MTU5ZnlTNnc?oc=5\" t",
@@ -1139,6 +1202,13 @@
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNZHZuVWZZcW5MRlY0SU1MUmIxVnZCcGowQk1pTzhPbVZYMUZPdU5qWTJSdDRBYU4zNkIxY0dBb1pFcE0yUWxmRWNGVDI5ZlgtQk50RmsycE5vOHRDSUtRN0VoamI0cjA0WEFLVjE5T0RucXZia2U4WFBEQ1l",
     "publishedAt": "Tue, 17 Mar 2026 10:17:24 GMT",
     "source": "Google News AI"
+  },
+  {
+    "title": "Goldman Sachs sees AI investment shift to data centres",
+    "url": "https://www.artificialintelligence-news.com/news/goldman-sachs-sees-ai-investment-shift-to-data-centres/",
+    "summary": "Artificial intelligence investment is entering a more selective phase as companies and investors look beyond early excitement and focus on the data centre infrastructure required to run AI systems. Recent analysis from G",
+    "publishedAt": "Tue, 17 Mar 2026 10:00:00 +0000",
+    "source": "AI News"
   },
   {
     "title": "What flocking birds can teach AI about reducing noise - Tech Xplore",
@@ -3427,76 +3497,6 @@
     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSnMxWE5MaDN0cGhjbEtPcjdIelYyR2xhNUZ0bWRkcExWamdLcUUyejA1emdMV0pzRE52aFJWYXdqdkkzQXV2VWFNaVQ3VXZkMUxKOVJjQzhnbTR1Mkx0aXpRNXMzdThwY2puNVdFb2FXbmc0djk5bmhBeU9vaEhEWQ?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNSnMxWE5MaDN0cGhjbEtPcjdIelYyR2xhNUZ0bWRkcExWamdLcUUyejA1emdMV0pzRE52aFJWYXdqdkkzQXV2VWFNaVQ3VXZkMUxKOVJjQzhnbTR1Mkx0aXpRNXMzdThwY2puNVdFb2FXbmc0djk5bmhBeU9",
     "publishedAt": "Wed, 11 Mar 2026 17:55:00 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Black Students Are Leading in AI Use. Their Teachers Aren’t Getting Trained - The San Diego Voice &amp; Viewpoint",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb1cybVZSN0VyamJCMnhLVm5TZG5uaWxVSDU0cGVQY3dOWEx0ZmprTkJzLWt4X2dsbXhldWUwOWlsSm5aYWI3WEo4TTM5NXlaRkl1cFgtM2l0WmIwZHhvMXFlNUlTQjhWNms3ekh4VVE2WXpvQkFWT0lVVnNGMGtWR2FSUGtlOUwtdXNxR0lvMllsM1dVdjFQOG5BMA?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPb1cybVZSN0VyamJCMnhLVm5TZG5uaWxVSDU0cGVQY3dOWEx0ZmprTkJzLWt4X2dsbXhldWUwOWlsSm5aYWI3WEo4TTM5NXlaRkl1cFgtM2l0WmIwZHhvMXFlNUlTQjhWNms3ekh4VVE2WXpvQkFWT0lVVnN",
-    "publishedAt": "Wed, 11 Mar 2026 17:47:55 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "AI for court systems: Your most pressing questions, answered - Thomson Reuters Legal Solutions",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOS1MxWVNxTGhYcnhCSVU1WUtYQjZZSnNRZXRaT1RQVy10cDNCbzVZeFhQN1Yxc3FQMm5IbzFpaHVtOGIxMlZsOE5sOUNsSmtlQmc4Y0s2NllLbFZrc1ZyVzFySVNoN1NPQXBNRkR0T3hBSFQxVER2bExUTktRSnRrVUpNX1U5eWpWYmdWU2QyZy1kR1ZLVVJhMg?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOS1MxWVNxTGhYcnhCSVU1WUtYQjZZSnNRZXRaT1RQVy10cDNCbzVZeFhQN1Yxc3FQMm5IbzFpaHVtOGIxMlZsOE5sOUNsSmtlQmc4Y0s2NllLbFZrc1ZyVzFySVNoN1NPQXBNRkR0T3hBSFQxVER2bExUTkt",
-    "publishedAt": "Wed, 11 Mar 2026 17:47:30 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "What OpenClaw Reveals About the Next Phase of AI Agents",
-    "url": "https://www.oreilly.com/radar/what-openclaw-reveals-about-the-next-phase-of-ai-agents/",
-    "summary": "In November 2025, Austrian developer Peter Steinberger published a weekend project called Clawdbot. You could text it on Telegram or WhatsApp, and it would do things for you: manage your calendar, triage your email, run ",
-    "publishedAt": "Wed, 11 Mar 2026 17:28:45 +0000",
-    "source": "OReilly Radar"
-  },
-  {
-    "title": "Ai2: Building physical AI with virtual simulation data",
-    "url": "https://www.artificialintelligence-news.com/news/ai2-building-physical-ai-with-virtual-simulation-data/",
-    "summary": "Virtual simulation data is driving the development of physical AI across corporate environments, led by initiatives like Ai2’s MolmoBot. Instructing hardware to interact with the real world has historically relied on hig",
-    "publishedAt": "Wed, 11 Mar 2026 16:50:56 +0000",
-    "source": "AI News"
-  },
-  {
-    "title": "Customer Service Scams: Safeguarding Yourself In The Era of AI Fraud - edhat",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjRtVU1OeTdmMW8wUEdxSmhFbmlmQWRBR2R2SGlwb0xnY1V3Z05BOU01b21neFM1UXhlc0tYVVZnb0tZNDRsQmxPeWJiRTdFS3RlTnBuYk00U21qWXcxbklELVV1bEtMXzZNd2xqeG5lMnJ2STVabW9mbnd6MnM2SzNDd0cxLXppeUdIMWFYT0tWRWtCTUxSQVowLUtwT01DYXBWZjVkUQ?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjRtVU1OeTdmMW8wUEdxSmhFbmlmQWRBR2R2SGlwb0xnY1V3Z05BOU01b21neFM1UXhlc0tYVVZnb0tZNDRsQmxPeWJiRTdFS3RlTnBuYk00U21qWXcxbklELVV1bEtMXzZNd2xqeG5lMnJ2STVabW9mbnd",
-    "publishedAt": "Wed, 11 Mar 2026 14:32:43 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Oracle stock spikes 12% as strong Q3 earnings answer Wall Street AI buildout concerns - CNBC",
-    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFJnMkN5WndqaWZubVZyVkdYcHpEVFY0MXZ1SjVpYmVwNEs4SHpDeGhXMWw1OVV6TEk3ZmFNSDBGLXZiMm01MUtXMm9IVXRqODRZRTFQdnk5d3FYcjZ2NXdCR0hYZV9EVFlLdzg1MGo4SHNuNFpVbjBBYk5vOHZha0dCWVhRaXdz0gGOAUFVX3lxTE1PY2JsU2d4U2VwaGczS094YkZOX1I2T1Uxa2VXV0I3WjgxRFhzeXljdUZrVTlJYlA2c0QzOVdrLURtaHZSNS00REFuY2RXXzQ5Qzh2eWs3VFJYZEtSVWdJMXdieThnVGdIdnRwQ3R2ZWFzVTRmaG1TalNaRzh2bWtXWGFNTFYzbGpiS2lDRUE?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxONFJnMkN5WndqaWZubVZyVkdYcHpEVFY0MXZ1SjVpYmVwNEs4SHpDeGhXMWw1OVV6TEk3ZmFNSDBGLXZiMm01MUtXMm9IVXRqODRZRTFQdnk5d3FYcjZ2NXdCR0hYZV9EVFlLdzg1MGo4SHNuNFpVbjBBYk5",
-    "publishedAt": "Wed, 11 Mar 2026 14:30:42 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Protege Launches DataLab to Make AI Data a Scientific Discipline - Yahoo Finance",
-    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNeUUtZ1JWdFFXRWxiUm5ObGx0MGFRNUJjbDhrWC11SVA2OVZSNDJfRlBVMU1lVXFSRF8xZ2dGd3hHMFBNaFNtc201QzVnNzBYODRRc3gtTmJRNWVvRm9FM1F4U3JRYTNFY2hjTkg3TEp2bWJYUUVidE5yd2ROTkEwZ2c1dHo?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxNeUUtZ1JWdFFXRWxiUm5ObGx0MGFRNUJjbDhrWC11SVA2OVZSNDJfRlBVMU1lVXFSRF8xZ2dGd3hHMFBNaFNtc201QzVnNzBYODRRc3gtTmJRNWVvRm9FM1F4U3JRYTNFY2hjTkg3TEp2bWJYUUVidE5yd2R",
-    "publishedAt": "Wed, 11 Mar 2026 14:30:00 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Servier in the age of AI - Servier",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBabDcydHdlM2o0NVdpSk1XMHJkc1pnVmRVVC1BRldmNUVTUi1lSWU5M2E4TWpZT1EzMDNMODVyRXJyUmx0ZjlSOGVqdFRtUkxGOWNkbGVRaUpKZTRwbnFaOTkyeGNucExmUFE?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTFBabDcydHdlM2o0NVdpSk1XMHJkc1pnVmRVVC1BRldmNUVTUi1lSWU5M2E4TWpZT1EzMDNMODVyRXJyUmx0ZjlSOGVqdFRtUkxGOWNkbGVRaUpKZTRwbnFaOTkyeGNucExmUFE?oc=5\" target=\"_blank\"&g",
-    "publishedAt": "Wed, 11 Mar 2026 14:24:11 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Meta Developed Four New Chips to Power Its AI and Recommendation Systems - WIRED",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWWo3Q0luZkRLWV9WU2cxXzBEbUVzQ0lLOG5ZR2prVzVpMFBFZHBrRDR3cVlIYWt4Wkl1ck5RSXBhb2xheUhsVUYzNkFGVjI0LU5mTHBDZDdueXRfWDFRT05VR19CcmdsaWU5cm1fRElWY0hsZXRKcmFJbDhNR0FmTUxlNjgtX2Q3R0ItOVd2SC1NUnlNQlhUb1VpQlMyV2pk?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQWWo3Q0luZkRLWV9WU2cxXzBEbUVzQ0lLOG5ZR2prVzVpMFBFZHBrRDR3cVlIYWt4Wkl1ck5RSXBhb2xheUhsVUYzNkFGVjI0LU5mTHBDZDdueXRfWDFRT05VR19CcmdsaWU5cm1fRElWY0hsZXRKcmFJbDh",
-    "publishedAt": "Wed, 11 Mar 2026 14:23:00 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Warner, Rounds introduce bipartisan bill to prepare U.S. workers for AI‑driven economy - WVVA",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZXl1MFhpeHZDMmsxN2NLREJXUlUwV0lwTnJacm9JOTRmaVFxQUxobnlSeVF3U29fUmZqQzlwTm1fTU8ybUJVZmhNZG5ESEpzVnIwM2lROVpUck1yVzd0OVo1djJ6MXNxa3FOWXMzNXRZNTFkM1RhX0lEYXhQRzFTbFdqajJ3amM5dlZ6OVFCYVNQZENlWVVfZFBlQU5rbG1PMFdLTVNxOEZnZGdB?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOZXl1MFhpeHZDMmsxN2NLREJXUlUwV0lwTnJacm9JOTRmaVFxQUxobnlSeVF3U29fUmZqQzlwTm1fTU8ybUJVZmhNZG5ESEpzVnIwM2lROVpUck1yVzd0OVo1djJ6MXNxa3FOWXMzNXRZNTFkM1RhX0lEYXh",
-    "publishedAt": "Wed, 11 Mar 2026 14:23:00 GMT",
     "source": "Google News AI"
   }
 ]
