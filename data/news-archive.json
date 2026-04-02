@@ -1,5 +1,75 @@
 [
   {
+    "title": "The Toolkit Pattern",
+    "url": "https://www.oreilly.com/radar/?p=18436",
+    "summary": "The toolkit pattern is a way of documenting your project&#8217;s configuration so that any AI can generate working inputs from a plain-English description. You and the AI create a single file that describes your tool&#82",
+    "publishedAt": "2026-04-02T12:43:48.425Z",
+    "source": "OReilly Radar"
+  },
+  {
+    "title": "Google Pressured To Stop Serving AI Video To Kids 04/01/2026 - MediaPost",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHJfRWVmOGFZU0xtYjZUYm5Yb2xPOGE5S1dzWFl2WXZmcUk4Y01QYXVpLThNdXdEWU5zOVFvT3ZpWDZlcmExUEpSZVA4Q0ItckYtWnUwdWZNQXZjd1dDblozTzBET2dPbDFKcFMzbzZzMXVLc3NxQzFwc1RJbEc5QWZfT3FKXzhDZ3RrbG83WEZ3VGhMd3BBSFN3bE9VcEJ5V0xFRGJhbV9oWFJWZUZpV2t0ck1uTDliR1djbWpxRjY?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNOHJfRWVmOGFZU0xtYjZUYm5Yb2xPOGE5S1dzWFl2WXZmcUk4Y01QYXVpLThNdXdEWU5zOVFvT3ZpWDZlcmExUEpSZVA4Q0ItckYtWnUwdWZNQXZjd1dDblozTzBET2dPbDFKcFMzbzZzMXVLc3NxQzFwc1R",
+    "publishedAt": "Thu, 02 Apr 2026 12:39:16 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "4 ways to find the competitive advantage in AI hallucinations - fastcompany.com",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWi1oSGEyYzhXSktzMjJFWWZkZFJMbnZYTzI4TGctaV9HMDF5TElUdU9EZndwMVZLSUw2Wm9rZVhMcHAyUXE5M3pXZ1dnUWdwMGJ1MndPVXVXeUc2bGpxdU9jbnB3ZWN1Y3R4cTZJLUZmTUVYQzFtanVPT3ZvNE9nM1V4RExQeGpUcTRvRm1uSmFrQmxoaTF2ZUF0d3RhSGM?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNWi1oSGEyYzhXSktzMjJFWWZkZFJMbnZYTzI4TGctaV9HMDF5TElUdU9EZndwMVZLSUw2Wm9rZVhMcHAyUXE5M3pXZ1dnUWdwMGJ1MndPVXVXeUc2bGpxdU9jbnB3ZWN1Y3R4cTZJLUZmTUVYQzFtanVPT3Z",
+    "publishedAt": "Thu, 02 Apr 2026 12:38:29 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "It’s International Fact-Checking Day. Refresh your AI identification skills - Aurora Sentinel",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOem1aa3hBRm1YQ1dTaVBHMjJNRjVuLVFlVWdZOEc0TWZ2QjZ3V2RydVNmcHJPenVmUDZZZVVRSGlCTFhNTlo1NEpnWm1tcGRoNGw5YWF1RkJlSGM3Z080Y1ZrZnVjQmk5SUl2bGpvaVJ0ZTh1b1R6X09sNDhHX0tWUVI1N00zLUFOa3pscEU4RzhHelRGdkFfRzBYcV9VU0k4dWRlSnc0em9oSU9EbldPenhkeThoSHVXRjN2bWdnMA?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMivwFBVV95cUxOem1aa3hBRm1YQ1dTaVBHMjJNRjVuLVFlVWdZOEc0TWZ2QjZ3V2RydVNmcHJPenVmUDZZZVVRSGlCTFhNTlo1NEpnWm1tcGRoNGw5YWF1RkJlSGM3Z080Y1ZrZnVjQmk5SUl2bGpvaVJ0ZTh1b1R6X09sNDh",
+    "publishedAt": "Thu, 02 Apr 2026 12:38:21 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "4 ways storytelling can help communicators explain artificial intelligence - PR Daily",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZC1ISnlhNi1LdUF1Y05VeWlMc0c2ekFxcEtaMkFBOUEyYVJTQktGNFRPOWFwd2QxT0Q3ZUtNal9ORlhkb0xBcjVoRElqMjZpS1F6YVZsWHlCc0V6aW1kUW1xRXA2dTZlbkN6NjlOam1FUmtpNlRiMjRZenRUMlhqc2pEMHFCdVpvMVA5aDdSekIwdVRNcXdxekE4X3hmWE9o?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxOZC1ISnlhNi1LdUF1Y05VeWlMc0c2ekFxcEtaMkFBOUEyYVJTQktGNFRPOWFwd2QxT0Q3ZUtNal9ORlhkb0xBcjVoRElqMjZpS1F6YVZsWHlCc0V6aW1kUW1xRXA2dTZlbkN6NjlOam1FUmtpNlRiMjRZenR",
+    "publishedAt": "Thu, 02 Apr 2026 12:33:23 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "Agentic AI Is Here. Palantir’s Been Ready For 20 Years - Forbes",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNalRCalhaMDlQcm1vRGVDZVRBSENpWWhSOUxwZHBlS1pLSURfTzBLWlAxaTdoYk5WYnZiR3dsZHY5Q3dPUnlrcUdLdFNKb1NwM1RudWpYaUxYWFAybm1xcUJrZmstV3NCSlNwY3liLXRSQXlGUEgyY01XWDF2WEVMY2lGb21Hd2MyYl9Wcl9lNmVmbVFXd2NpZHNTNWRDWjV0SWdUaXdGR25UelhtU1JjUA?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxNalRCalhaMDlQcm1vRGVDZVRBSENpWWhSOUxwZHBlS1pLSURfTzBLWlAxaTdoYk5WYnZiR3dsZHY5Q3dPUnlrcUdLdFNKb1NwM1RudWpYaUxYWFAybm1xcUJrZmstV3NCSlNwY3liLXRSQXlGUEgyY01XWDF",
+    "publishedAt": "Thu, 02 Apr 2026 12:33:10 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "Bill to ban sale of key AI chipmaking equipment to China introduced in House - NBC News",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcEpiU2U5X3luVTNjZVozU2NldG1QRFgxR2pEYy0wQ3ltNGJjYWF5eDA0VFRxemxCWG9XOEZOOVlvb0dzTEltVzh2WEl3TmU2ak5uWlA3ZU9EZEZuZDJVcGU3LTROTDB2YnNlRTVmYURua1BpZFNzclRGWXQ3M1dHWkMxczVWTlFWLU54RVpScm1QeUdOTUdKbGFpR29JRE1YVjZVbEpR?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQcEpiU2U5X3luVTNjZVozU2NldG1QRFgxR2pEYy0wQ3ltNGJjYWF5eDA0VFRxemxCWG9XOEZOOVlvb0dzTEltVzh2WEl3TmU2ak5uWlA3ZU9EZEZuZDJVcGU3LTROTDB2YnNlRTVmYURua1BpZFNzclRGWXQ",
+    "publishedAt": "Thu, 02 Apr 2026 12:30:00 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "AI Video Editing Company Mirage Gets USD 75M from General Catalyst - Slator",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ObUpGQzY5QmhDY3M1eWstT0VTWmVXenJxaGpXemJ4UkVNZmhHaFlnZGdBblVIT0pxd1pTNElxbkNZZ1FhQlZxWUV5ZVFMWlc5Qy1reE5CSDJhMUVFR3czeVJn?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ObUpGQzY5QmhDY3M1eWstT0VTWmVXenJxaGpXemJ4UkVNZmhHaFlnZGdBblVIT0pxd1pTNElxbkNZZ1FhQlZxWUV5ZVFMWlc5Qy1reE5CSDJhMUVFR3czeVJn?oc=5\" target=\"_blank\"&gt;AI Video ",
+    "publishedAt": "Thu, 02 Apr 2026 12:28:19 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "Why AI adoption is high but integration is failing in martech - MarTech",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNODlXblJ1MVk2LTFkVzR3T1BaYTBidy1GbXIwTERMNEFRcXhOazVFM2hHVlRZRERGNE1GMHlGZVdNbk5BeUZKeDk2anB2MTFRWXZjS3oxUzVKeGxQallwTGxOUXBDUEVfekx6WmI5c2V4ZVJBdUxOS0FvX0p1M0pmd1F1RGo0ck9DNXc?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxNODlXblJ1MVk2LTFkVzR3T1BaYTBidy1GbXIwTERMNEFRcXhOazVFM2hHVlRZRERGNE1GMHlGZVdNbk5BeUZKeDk2anB2MTFRWXZjS3oxUzVKeGxQallwTGxOUXBDUEVfekx6WmI5c2V4ZVJBdUxOS0FvX0p",
+    "publishedAt": "Thu, 02 Apr 2026 12:25:56 GMT",
+    "source": "Google News AI"
+  },
+  {
+    "title": "Good writers use AI. Great writers know when not to. - Ragan Communications",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBDV19WNUhqanJwS3ZQQWRMbHZxUjZBMm10dENmMWwwSU90d2ZqQzB4eG5TR1FLdUZRYXRTT1ZsdE04cUJsSWZJWi1yVkJuQnVmazZoVWVkLV9PVFdrSlBNZUxNVzJ3dU5hZ0RVeU9hSWdhemVVVkQ3SV9mOWRlQQ?oc=5",
+    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTFBDV19WNUhqanJwS3ZQQWRMbHZxUjZBMm10dENmMWwwSU90d2ZqQzB4eG5TR1FLdUZRYXRTT1ZsdE04cUJsSWZJWi1yVkJuQnVmazZoVWVkLV9PVFdrSlBNZUxNVzJ3dU5hZ0RVeU9hSWdhemVVVkQ3SV9mOWR",
+    "publishedAt": "Thu, 02 Apr 2026 12:21:11 GMT",
+    "source": "Google News AI"
+  },
+  {
     "title": "Slack’s AI updates signal shift towards agent orchestration - Computerworld",
     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMnhYNXVjaTVRQVRfSFFOVUJBblBydnlpS2ZONWhsMEszUjdydlp4ZlV4UVJSY1lmS2xzUktKaFExcy03R08wQktoeTB4cS1oRjB1VW84UGlDUHA1LU15UEtRUzQ4Z3VLN2V1QXlibU1zNkRfVjUzaldHc2VpZXV5TVpBb2NHdjFfMk1nOXdveXh5XzJkWkJxMWlfTGF5S2VsSWd5cGhhTm43a0dOSGc?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxNMnhYNXVjaTVRQVRfSFFOVUJBblBydnlpS2ZONWhsMEszUjdydlp4ZlV4UVJSY1lmS2xzUktKaFExcy03R08wQktoeTB4cS1oRjB1VW84UGlDUHA1LU15UEtRUzQ4Z3VLN2V1QXlibU1zNkRfVjUzaldHc2V",
@@ -3427,76 +3497,6 @@
     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTl9Uc1VQQXZBcjhvLU1NREc3NDVBV2tLTkkwbHBPM0xBM1JOQTF2N3lzY3NaWUxOOUg4QnRWcGZJLVZlZ0tjbFZEQVROb2ZFQTdJVGpSTmdXWHFNR2JXY2pJT05Lc3NaVEpRZEY2QTlSRE9DTUxPUXFHVWdxY3hBTWVRa19EOGM?oc=5",
     "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQTl9Uc1VQQXZBcjhvLU1NREc3NDVBV2tLTkkwbHBPM0xBM1JOQTF2N3lzY3NaWUxOOUg4QnRWcGZJLVZlZ0tjbFZEQVROb2ZFQTdJVGpSTmdXWHFNR2JXY2pJT05Lc3NaVEpRZEY2QTlSRE9DTUxPUXFHVWd",
     "publishedAt": "Tue, 24 Mar 2026 10:26:59 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "AI and the Future of Bioprocess Labs - The Medicine Maker",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMEpaZER0Qlp0MFVBUmFBdmRHQkdjOG5nOS1VN29kazh4NFNJeVlCMndFUENkdXIzZ25MTFZxeEhWdTBqNHM0V1dhVUl2bzJYVE9TcEJsZXFuT0FSRnV3OENybW40VXhNOUs0WkVBUVBHMkU2U0RrZ1FKdVlJbzhaRHVhbHNKQlJsczZGS1R3MGJ5TlQydFQyYQ?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOMEpaZER0Qlp0MFVBUmFBdmRHQkdjOG5nOS1VN29kazh4NFNJeVlCMndFUENkdXIzZ25MTFZxeEhWdTBqNHM0V1dhVUl2bzJYVE9TcEJsZXFuT0FSRnV3OENybW40VXhNOUs0WkVBUVBHMkU2U0RrZ1FKdVl",
-    "publishedAt": "Tue, 24 Mar 2026 10:25:54 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Dext rolls out AI agent to support bookkeeping workflows - International Accounting Bulletin",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTlBTWJZaUVCRmhYZXJmRjJuTmFJbW5YdVI0eFo4R0NqaGFYcHRRZXl1X0xJdXRXOHNFcExvX1pob2dFd1RVZ0lJdW9KRHVFYWM2dUpRWDZ4OVFFVVQwSFNkQzdDYWd1T1dlQ1BaQUlvWllGOEZZSVl4XzMxTmt3dnptUkJmR3Q5aUtiVlAtSXpkQmVqUVJ3MGVaV3lFNERzTUhVbmtKM0o5TFREcUc0?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMirwFBVV95cUxQSTlBTWJZaUVCRmhYZXJmRjJuTmFJbW5YdVI0eFo4R0NqaGFYcHRRZXl1X0xJdXRXOHNFcExvX1pob2dFd1RVZ0lJdW9KRHVFYWM2dUpRWDZ4OVFFVVQwSFNkQzdDYWd1T1dlQ1BaQUlvWllGOEZZSVl4XzM",
-    "publishedAt": "Tue, 24 Mar 2026 10:23:45 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Have questions about AI? New videos by UW can help - Milwaukee Journal Sentinel",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaEFndEhSdmhGSHNKUml1ZnJ3eHZLcThrNkVQR3ZNTG51YVB1dGEzY0JvbmVJY2liZ0tVZV9HY0w5SjZQbTZrUlhsakZnUjh6YUEzVmt5RVpoS1pFYmtYN2hIallrV2tmaFo3dDBfcmYtRERwcF9pa0hLaDNmUktRSmVTakpvaGhoMXFBVkU3VTh0cnF0a3hST1JTQUlQZXBiY3FuR29qbEJQcXRkbDdfS1Z0OXJSX0s5d0E?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxPaEFndEhSdmhGSHNKUml1ZnJ3eHZLcThrNkVQR3ZNTG51YVB1dGEzY0JvbmVJY2liZ0tVZV9HY0w5SjZQbTZrUlhsakZnUjh6YUEzVmt5RVpoS1pFYmtYN2hIallrV2tmaFo3dDBfcmYtRERwcF9pa0hLaDN",
-    "publishedAt": "Tue, 24 Mar 2026 10:22:50 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "India’s AI Middle Path Offers Lessons for Australia and New Zealand - Tech Policy Press",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNR0gzN2pQV1ptbFFSTS1aNlRLOExENFpXNk5fdVlZRmViZ09XUnczVHZtWUk5QXB4b0tuWFZ1akNHMHZObm5KM21QRWRvN1ptTFBtWnlHODJkVW5UUlZ5UVZYbmh1cUJrV0d0UzF5YWR0UW40a3l2cmlZdlNscXVHVEpFdVZPMHZjVHNXclhiRTRXa3AyMTB4QzJzZjM?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxNR0gzN2pQV1ptbFFSTS1aNlRLOExENFpXNk5fdVlZRmViZ09XUnczVHZtWUk5QXB4b0tuWFZ1akNHMHZObm5KM21QRWRvN1ptTFBtWnlHODJkVW5UUlZ5UVZYbmh1cUJrV0d0UzF5YWR0UW40a3l2cmlZdlN",
-    "publishedAt": "Tue, 24 Mar 2026 10:19:17 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "AI predicts how brain injuries disrupt consciousness — and how to restore it once it’s disordered - Nature",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zYmR0MVJ4V1FhMC1YamVRa0x6M0xzUU9pM3F5Nm5yU011eTdEZ1lKSGYtZV96R2ZuRnNGbW55Z0x5NHNPM2V0UWpVOFBrYnFpVWZaWEQ4LWQzMFpUSWtN?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zYmR0MVJ4V1FhMC1YamVRa0x6M0xzUU9pM3F5Nm5yU011eTdEZ1lKSGYtZV96R2ZuRnNGbW55Z0x5NHNPM2V0UWpVOFBrYnFpVWZaWEQ4LWQzMFpUSWtN?oc=5\" target=\"_blank\"&gt;AI predicts h",
-    "publishedAt": "Tue, 24 Mar 2026 10:16:32 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Behind the Curtain: America's next class war will be over AI fluency - Axios",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0xZ21DRFBNZDlFb0pWRXNTRHYzamdiTTk1MGdadTZOZmZuRklVTzc5UlU0bnZEN0R1bWRxc0NTSkVxUVFqdUdoRkROOUIyLXlnUUJOak1hblFQZXMteDEtWGhQSGMwVUk?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0xZ21DRFBNZDlFb0pWRXNTRHYzamdiTTk1MGdadTZOZmZuRklVTzc5UlU0bnZEN0R1bWRxc0NTSkVxUVFqdUdoRkROOUIyLXlnUUJOak1hblFQZXMteDEtWGhQSGMwVUk?oc=5\" target=\"_blank\"&gt;Be",
-    "publishedAt": "Tue, 24 Mar 2026 10:13:30 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "AI Data Centers Push DC Power &amp; Cooling Limits - Design News",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSDhlUy01NzM3eFg2QUhOWXhNaEx4NW51eldJWEdQSWdGNEE3LV9PRGVGSUZzVjNDSlA4MC1TVmUxWG5UU0ZXci1jWnhURlJ5dGhpVFptQVFlQnNEb21nYUpEbVBodGlPejRvYVNnUHdMNGI1T1k0eDVFVGp5NGNWN3g1eGxGamM?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQSDhlUy01NzM3eFg2QUhOWXhNaEx4NW51eldJWEdQSWdGNEE3LV9PRGVGSUZzVjNDSlA4MC1TVmUxWG5UU0ZXci1jWnhURlJ5dGhpVFptQVFlQnNEb21nYUpEbVBodGlPejRvYVNnUHdMNGI1T1k0eDVFVGp",
-    "publishedAt": "Tue, 24 Mar 2026 04:47:13 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Jensen Huang Sees $1 Trillion in Demand: 3 AI Stocks to Buy Now - The Motley Fool",
-    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdVAzLVpjUXd0a0hUTUhHU2FTQmNWS0EzS2dRMlVwakR1RHdDQzNXTHh6T2hrWEVlT2MwdW5VZ3BZYWE3RzZSNmRVYy1PNHZTdkctaVhlWEI0Z1NVS3BMQTlkSTNWWlZLWWtON19YMTBNSF9MTXRSOXBYdlNZcnZWUDB0WDZFMFVVbThVZGp1SEZqTnVSOFgybg?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOdVAzLVpjUXd0a0hUTUhHU2FTQmNWS0EzS2dRMlVwakR1RHdDQzNXTHh6T2hrWEVlT2MwdW5VZ3BZYWE3RzZSNmRVYy1PNHZTdkctaVhlWEI0Z1NVS3BMQTlkSTNWWlZLWWtON19YMTBNSF9MTXRSOXBYdlN",
-    "publishedAt": "Tue, 24 Mar 2026 04:21:25 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Cleveland Clinic Partners With DASI Simulations to Advance AI Guidance in TAVR - Cleveland Clinic",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNTI2NzJXQ2VSWGF5dUJNbWZFeFRNbngzYVRNNnNuTHRubkl5cnQ1THFQcnlTeUtqZ21mUXNJeHl0dVJzUjNUU0labUp3ckRRUnExcUxzR0htU1NnWlRGUDl2XzdZTWtRRXJvbFN6WGRJaDJybFliNWU2SFZuLW5rUEJkMVZaSWJ5S251RGh1RmowRXNTSFJGM2FZZVdnRHlZQnIw?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxNNTI2NzJXQ2VSWGF5dUJNbWZFeFRNbngzYVRNNnNuTHRubkl5cnQ1THFQcnlTeUtqZ21mUXNJeHl0dVJzUjNUU0labUp3ckRRUnExcUxzR0htU1NnWlRGUDl2XzdZTWtRRXJvbFN6WGRJaDJybFliNWU2SFZ",
-    "publishedAt": "Tue, 24 Mar 2026 04:03:52 GMT",
-    "source": "Google News AI"
-  },
-  {
-    "title": "Ad Tech Briefing: IAB Tech Lab accelerates push to make agentic AI more practical - Digiday",
-    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVndJRWhsV3pRMzkydmF1ZUMzamxyeGZ3RFlBckQ5YTcwQW1jQXRidlREUkdvOUNuWk1mZDNhQlZ1ZkF2bjI5bXFvdHJra1FfTlZ6clJPcXhYdHdwQlpNczU4eGZ3cFl3RE1wQXFtQzRQS1lGQlhyNjlQc2pMRm1QdzZxbHY0UjlfME4tcDQyWUNPMkxzMEZWelk4eDRjeVU0UDBwNVNmOFZGUFVkNGx0d3ZZLWM?oc=5",
-    "summary": "&lt;a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPVndJRWhsV3pRMzkydmF1ZUMzamxyeGZ3RFlBckQ5YTcwQW1jQXRidlREUkdvOUNuWk1mZDNhQlZ1ZkF2bjI5bXFvdHJra1FfTlZ6clJPcXhYdHdwQlpNczU4eGZ3cFl3RE1wQXFtQzRQS1lGQlhyNjlQc2p",
-    "publishedAt": "Tue, 24 Mar 2026 04:01:57 GMT",
     "source": "Google News AI"
   }
 ]
