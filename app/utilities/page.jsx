@@ -1,10 +1,10 @@
+'use client';
 import { ExternalLink, Code2, Microscope, Palette, Zap, Server } from 'lucide-react';
 import utilities from '../../data/utilities.json';
 import { Badge } from '../../components/Badge';
 import { FilterBar } from '../../components/FilterBar';
 import { SectionHeader } from '../../components/SectionHeader';
 
-export const metadata = { title: 'Utilities | FYXAI' };
 
 const CATEGORY_ICONS = {
   Coding:         Code2,

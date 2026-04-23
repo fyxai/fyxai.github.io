@@ -1,10 +1,9 @@
+'use client';
 import skills from '../../data/skills.json';
 import { CardGrid, InfoCard } from '../../components/Cards';
 import { Badge } from '../../components/Badge';
 import { FilterBar } from '../../components/FilterBar';
 import { SectionHeader } from '../../components/SectionHeader';
-
-export const metadata = { title: 'AI Skills | FYXAI' };
 
 const CATEGORIES = [
   'LLM Integration',

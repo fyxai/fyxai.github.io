@@ -1,10 +1,9 @@
+'use client';
 import mcp from '../../data/mcp.json';
 import { CardGrid, InfoCard } from '../../components/Cards';
 import { Badge } from '../../components/Badge';
 import { FilterBar } from '../../components/FilterBar';
 import { SectionHeader } from '../../components/SectionHeader';
-
-export const metadata = { title: 'MCP Ecosystem | FYXAI' };
 
 const SOURCES = ['official', 'community'];
 
