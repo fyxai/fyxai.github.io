@@ -17,4 +17,9 @@ body {
 
 .card {
   @apply bg-card/80 border border-cyan-400/20 rounded-xl p-5 shadow-neon backdrop-blur;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.18), 0 0 30px rgba(34, 211, 238, 0.08);
 }
