@@ -3,36 +3,36 @@
     "name": "modelcontextprotocol/servers",
     "repo": "https://github.com/modelcontextprotocol/servers",
     "description": "Model Context Protocol Servers",
-    "stars": 84329,
-    "updatedAt": "2026-04-23T00:58:54Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 84339,
+    "updatedAt": "2026-04-23T05:41:50Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/python-sdk",
     "repo": "https://github.com/modelcontextprotocol/python-sdk",
     "description": "The official Python SDK for Model Context Protocol servers and clients",
-    "stars": 22726,
-    "updatedAt": "2026-04-22T21:58:49Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 22733,
+    "updatedAt": "2026-04-23T05:45:26Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/typescript-sdk",
     "repo": "https://github.com/modelcontextprotocol/typescript-sdk",
     "description": "The official TypeScript SDK for Model Context Protocol servers and clients",
-    "stars": 12250,
-    "updatedAt": "2026-04-22T22:01:14Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 12254,
+    "updatedAt": "2026-04-23T05:19:50Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/inspector",
     "repo": "https://github.com/modelcontextprotocol/inspector",
     "description": "Visual testing tool for MCP servers",
-    "stars": 9533,
-    "updatedAt": "2026-04-23T00:42:54Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 9536,
+    "updatedAt": "2026-04-23T04:12:14Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -40,17 +40,17 @@
     "repo": "https://github.com/modelcontextprotocol/modelcontextprotocol",
     "description": "Specification and documentation for the Model Context Protocol",
     "stars": 7904,
-    "updatedAt": "2026-04-23T01:11:00Z",
-    "verifiedAt": "2026-04-23T01:24:08.550Z",
+    "updatedAt": "2026-04-23T01:41:07Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/registry",
     "repo": "https://github.com/modelcontextprotocol/registry",
     "description": "A community driven registry service for Model Context Protocol (MCP) servers.",
-    "stars": 6721,
-    "updatedAt": "2026-04-22T22:40:18Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 6722,
+    "updatedAt": "2026-04-23T05:23:44Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -59,7 +59,7 @@
     "description": "The official Go SDK for Model Context Protocol servers and clients. Maintained in collaboration with Google.",
     "stars": 4414,
     "updatedAt": "2026-04-22T20:47:27Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -68,7 +68,7 @@
     "description": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
     "stars": 4212,
     "updatedAt": "2026-04-22T16:26:55Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -77,7 +77,7 @@
     "description": "The official Java SDK for Model Context Protocol servers and clients. Maintained in collaboration with Spring AI",
     "stars": 3375,
     "updatedAt": "2026-04-22T15:23:54Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -86,7 +86,7 @@
     "description": "The official Rust SDK for the Model Context Protocol",
     "stars": 3324,
     "updatedAt": "2026-04-22T13:13:26Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -95,16 +95,16 @@
     "description": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
     "stars": 2095,
     "updatedAt": "2026-04-23T00:13:31Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/mcpb",
     "repo": "https://github.com/modelcontextprotocol/mcpb",
     "description": "Desktop Extensions: One-click local MCP server installation in desktop apps",
-    "stars": 1859,
-    "updatedAt": "2026-04-23T00:03:44Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 1860,
+    "updatedAt": "2026-04-23T05:41:16Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -113,7 +113,7 @@
     "description": "The official PHP SDK for Model Context Protocol servers and clients. Maintained in collaboration with The PHP Foundation.",
     "stars": 1459,
     "updatedAt": "2026-04-21T19:21:00Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -122,16 +122,16 @@
     "description": "The official Swift SDK for Model Context Protocol servers and clients.",
     "stars": 1356,
     "updatedAt": "2026-04-22T02:27:16Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/kotlin-sdk",
     "repo": "https://github.com/modelcontextprotocol/kotlin-sdk",
     "description": "The official Kotlin SDK for Model Context Protocol servers and clients. Maintained in collaboration with JetBrains",
-    "stars": 1343,
-    "updatedAt": "2026-04-22T23:01:18Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 1344,
+    "updatedAt": "2026-04-23T04:40:01Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -140,7 +140,7 @@
     "description": "A repository of servers and clients from the Model Context Protocol tutorials",
     "stars": 1069,
     "updatedAt": "2026-04-22T07:05:43Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -148,8 +148,8 @@
     "repo": "https://github.com/modelcontextprotocol/ruby-sdk",
     "description": "The official Ruby SDK for the Model Context Protocol.",
     "stars": 788,
-    "updatedAt": "2026-04-22T05:01:00Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:05:56Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -158,7 +158,7 @@
     "description": "Experimental exploration of skills discovery and distribution through MCP primitives. Maintained by the Skills Over MCP Working Group.",
     "stars": 81,
     "updatedAt": "2026-04-22T20:18:22Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -167,7 +167,7 @@
     "description": "Extensions to authorization",
     "stars": 80,
     "updatedAt": "2026-04-20T07:46:33Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -176,16 +176,16 @@
     "description": "Conformance Tests for MCP",
     "stars": 63,
     "updatedAt": "2026-04-15T19:35:22Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
     "name": "modelcontextprotocol/access",
     "repo": "https://github.com/modelcontextprotocol/access",
     "description": "Infrastructure as Code for MCP access management",
-    "stars": 35,
-    "updatedAt": "2026-04-22T11:09:57Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 36,
+    "updatedAt": "2026-04-23T02:34:28Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -194,7 +194,7 @@
     "description": "Transports Working Group",
     "stars": 14,
     "updatedAt": "2026-04-15T00:04:09Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -203,7 +203,7 @@
     "description": "Infrastructure as Code for MCP domains / DNS management",
     "stars": 10,
     "updatedAt": "2026-04-13T05:48:18Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -212,7 +212,7 @@
     "description": "Status: Experimental. This repository provides a multi-language reference implementation of the proposed interceptor extension for the Model Context Protocol (MCP), as described in SEP-1763.",
     "stars": 9,
     "updatedAt": "2026-04-11T10:28:28Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
@@ -221,322 +221,322 @@
     "description": "Incubation space for the MCP Triggers & Events Working Group",
     "stars": 4,
     "updatedAt": "2026-04-23T00:55:44Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "official"
   },
   {
-    "name": "mastra-ai/mastra",
-    "repo": "https://github.com/mastra-ai/mastra",
-    "description": "From the team behind Gatsby, Mastra is a framework for building AI-powered applications and agents with a modern TypeScript stack.",
-    "stars": 23230,
-    "updatedAt": "2026-04-23T01:20:22Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "lobehub/lobehub",
+    "repo": "https://github.com/lobehub/lobehub",
+    "description": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team de",
+    "stars": 75507,
+    "updatedAt": "2026-04-23T05:55:12Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "viktorbezdek/awesome-github-projects",
-    "repo": "https://github.com/viktorbezdek/awesome-github-projects",
-    "description": "Curated list of GitHub projects I starred over the years",
-    "stars": 783,
-    "updatedAt": "2026-04-23T01:09:42Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "BasedHardware/omi",
+    "repo": "https://github.com/BasedHardware/omi",
+    "description": "AI that sees your screen, listens to your conversations and tells you what to do",
+    "stars": 12013,
+    "updatedAt": "2026-04-23T05:54:48Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "appium/appium-mcp",
-    "repo": "https://github.com/appium/appium-mcp",
-    "description": "Appium MCP on Steroids!",
-    "stars": 325,
-    "updatedAt": "2026-04-23T01:21:03Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "nearai/ironclaw",
+    "repo": "https://github.com/nearai/ironclaw",
+    "description": "IronClaw is OpenClaw inspired implementation in Rust focused on privacy and security",
+    "stars": 11919,
+    "updatedAt": "2026-04-23T05:50:41Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "gsscsd/big_model_radar",
-    "repo": "https://github.com/gsscsd/big_model_radar",
-    "description": "MCP server discovered by autonomous scanner.",
-    "stars": 289,
-    "updatedAt": "2026-04-23T01:22:52Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "github/gh-aw",
+    "repo": "https://github.com/github/gh-aw",
+    "description": "GitHub Agentic Workflows",
+    "stars": 4355,
+    "updatedAt": "2026-04-23T05:52:33Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "marcusquinn/aidevops",
-    "repo": "https://github.com/marcusquinn/aidevops",
-    "description": "Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results",
-    "stars": 208,
-    "updatedAt": "2026-04-23T01:16:55Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "Chevey339/kelivo",
+    "repo": "https://github.com/Chevey339/kelivo",
+    "description": "A Flutter LLM Chat Client. Support Mobile & Desktop.",
+    "stars": 2356,
+    "updatedAt": "2026-04-23T05:42:21Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "kagenti/kagenti",
-    "repo": "https://github.com/kagenti/kagenti",
-    "description": "Main Kagenti repo - installer, UI and docs",
+    "name": "pixeltable/pixeltable",
+    "repo": "https://github.com/pixeltable/pixeltable",
+    "description": "Data Infrastructure providing a declarative, incremental approach for multimodal AI workloads.",
+    "stars": 1549,
+    "updatedAt": "2026-04-23T05:55:37Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "apecloud/ApeRAG",
+    "repo": "https://github.com/apecloud/ApeRAG",
+    "description": "ApeRAG: Production-ready GraphRAG with multi-modal indexing, AI agents, MCP support, and scalable K8s deployment",
+    "stars": 1147,
+    "updatedAt": "2026-04-23T05:50:06Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "docker/mcp-registry",
+    "repo": "https://github.com/docker/mcp-registry",
+    "description": "Official Docker MCP registry ",
+    "stars": 475,
+    "updatedAt": "2026-04-23T05:57:23Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "agntcy/slim",
+    "repo": "https://github.com/agntcy/slim",
+    "description": "Secure Low-Latency Interactive Messaging",
     "stars": 187,
-    "updatedAt": "2026-04-23T01:16:29Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:51:22Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "hashgraph-online/ai-plugin-scanner",
-    "repo": "https://github.com/hashgraph-online/ai-plugin-scanner",
-    "description": "Security and best-practices scanner for AI Plugins, covering Codex, Claude, Opencode, Gemini & more. Scores trust for plugins 0-100.",
-    "stars": 168,
-    "updatedAt": "2026-04-23T01:20:19Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "Vigil-SOC/vigil",
+    "repo": "https://github.com/Vigil-SOC/vigil",
+    "description": "Vigil - an ever improving 100% OpenSource AI system for security",
+    "stars": 133,
+    "updatedAt": "2026-04-23T05:38:25Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "different-ai-studio/teamclaw",
-    "repo": "https://github.com/different-ai-studio/teamclaw",
-    "description": "TeamClaw, AI Agent Desktop Workspace",
-    "stars": 74,
-    "updatedAt": "2026-04-23T01:12:26Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "everruns/bashkit",
+    "repo": "https://github.com/everruns/bashkit",
+    "description": "Virtual Bash interpreter with a virtual file system for multi-tenant environments.",
+    "stars": 127,
+    "updatedAt": "2026-04-23T05:50:37Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "oculairmedia/Letta-MCP-server",
-    "repo": "https://github.com/oculairmedia/Letta-MCP-server",
-    "description": "MCP server to manage letta server and comunicate with agents",
-    "stars": 69,
-    "updatedAt": "2026-04-23T01:09:15Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "jmagly/aiwg",
+    "repo": "https://github.com/jmagly/aiwg",
+    "description": "Cognitive architecture for AI-augmented software development. Specialized agents, structured workflows, and multi-platform deployment. Claude Code · Codex · Copilot · Cursor · Factory · Warp · Windsurf.",
+    "stars": 121,
+    "updatedAt": "2026-04-23T05:43:28Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "tomohiro-owada/gmn",
-    "repo": "https://github.com/tomohiro-owada/gmn",
-    "description": "A lightweight, non-interactive Gemini CLI written in Go — a love letter to Google's Gemini CLI",
-    "stars": 68,
-    "updatedAt": "2026-04-23T01:22:00Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "DemonDamon/AgenticX",
+    "repo": "https://github.com/DemonDamon/AgenticX",
+    "description": "AgenticX is a unified, production-ready multi-agent platform — Python SDK + CLI (agx) + Studio server + Machi desktop app. Features Meta-Agent orchestration, 15+ LLM providers, MCP Hub, hierarchical memory, avatar & grou",
+    "stars": 114,
+    "updatedAt": "2026-04-23T05:51:39Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "ManUtopiK/awesome-stars",
-    "repo": "https://github.com/ManUtopiK/awesome-stars",
-    "description": "⭑ A curated list of my GitHub stars! ⭑",
-    "stars": 39,
-    "updatedAt": "2026-04-23T01:23:24Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "cloud-barista/cb-tumblebug",
+    "repo": "https://github.com/cloud-barista/cb-tumblebug",
+    "description": "Cloud-Barista Multi-Cloud Infra Management Framework",
+    "stars": 80,
+    "updatedAt": "2026-04-23T05:55:10Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "utensil/awesome-stars",
-    "repo": "https://github.com/utensil/awesome-stars",
-    "description": "A curated list of my GitHub stars!",
-    "stars": 31,
-    "updatedAt": "2026-04-23T01:18:42Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "shuotao/REVIT_MCP_study",
+    "repo": "https://github.com/shuotao/REVIT_MCP_study",
+    "description": "LEARN HOW TO BUILD UP YOUR REVIT MCP",
+    "stars": 64,
+    "updatedAt": "2026-04-23T05:56:38Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "galaxyproject/galaxy-mcp",
-    "repo": "https://github.com/galaxyproject/galaxy-mcp",
-    "description": "MCP server discovered by autonomous scanner.",
-    "stars": 27,
-    "updatedAt": "2026-04-23T01:13:07Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "vox-deorum/vox-deorum",
+    "repo": "https://github.com/vox-deorum/vox-deorum",
+    "description": "LLM-enhanced AI system for Civilization V upon the Community Patch + Vox Populi.",
+    "stars": 64,
+    "updatedAt": "2026-04-23T05:51:59Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "sdsrss/code-graph-mcp",
-    "repo": "https://github.com/sdsrss/code-graph-mcp",
-    "description": "AST knowledge graph MCP server for Claude Code — semantic search, call graph traversal, HTTP route tracing, impact analysis. Auto-indexes 10 languages via Tree-sitter.",
+    "name": "ever-works/awesome-mcp-servers",
+    "repo": "https://github.com/ever-works/awesome-mcp-servers",
+    "description": "A curated list of the best MCP Servers, featuring top solutions, libraries, tools, and more. - https://mcpserver.works",
+    "stars": 57,
+    "updatedAt": "2026-04-23T05:38:26Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "babikov/doka-site",
+    "repo": "https://github.com/babikov/doka-site",
+    "description": "Doka is a desktop AI agent for Windows and Mac. It searches the web, reads pages, works with your files, runs terminal commands, and shows every step it takes — all locally, for free, without sending your data anywhere.",
+    "stars": 34,
+    "updatedAt": "2026-04-23T05:54:56Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "DollhouseMCP/mcp-server",
+    "repo": "https://github.com/DollhouseMCP/mcp-server",
+    "description": "A Free, Open Source MCP server for dynamic custom persona management with public a GitHub collection of personas, skills, templates, and other elements for AI models.",
+    "stars": 32,
+    "updatedAt": "2026-04-23T05:36:27Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "drvoss/everything-copilot-cli",
+    "repo": "https://github.com/drvoss/everything-copilot-cli",
+    "description": "The definitive guide & configuration system for GitHub Copilot CLI — agents, skills, rules, multi-AI orchestration, and more",
     "stars": 26,
-    "updatedAt": "2026-04-23T01:14:58Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:45:15Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "kzndotsh/stars",
-    "repo": "https://github.com/kzndotsh/stars",
-    "description": "My endless obsession for finding new shit.",
-    "stars": 25,
-    "updatedAt": "2026-04-23T01:10:44Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "tech-andgar/awesome-stars",
-    "repo": "https://github.com/tech-andgar/awesome-stars",
-    "description": "A curated list of my GitHub stars by stargazed",
-    "stars": 22,
-    "updatedAt": "2026-04-23T01:10:17Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "dnnsmnstrr/awesome-stars",
-    "repo": "https://github.com/dnnsmnstrr/awesome-stars",
-    "description": "⭐️ My GitHub Stars in an Awesome List",
-    "stars": 21,
-    "updatedAt": "2026-04-23T01:08:38Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "missuo/awesome-stars",
-    "repo": "https://github.com/missuo/awesome-stars",
-    "description": "MCP server discovered by autonomous scanner.",
+    "name": "ScarletMercy/chcode",
+    "repo": "https://github.com/ScarletMercy/chcode",
+    "description": "Terminal-based AI coding agent — 5000+ lines, 13 tools, session persistence, git-aware workflow. Built with LangChain + Typer + Rich.",
     "stars": 20,
-    "updatedAt": "2026-04-23T01:10:49Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:46:41Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "rochacbruno/my-awesome-stars",
-    "repo": "https://github.com/rochacbruno/my-awesome-stars",
-    "description": "MCP server discovered by autonomous scanner.",
-    "stars": 17,
-    "updatedAt": "2026-04-23T01:17:31Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "ChronoAIProject/NyxID",
+    "repo": "https://github.com/ChronoAIProject/NyxID",
+    "description": "Connect AI agents to any API, anywhere. Securely. Open-source gateway that proxies requests, injects credentials automatically, punches through NAT to reach localhost services, and wraps REST APIs as MCP tools. Per-agent",
+    "stars": 18,
+    "updatedAt": "2026-04-23T05:53:46Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "itsbrex/my-awesome-stars",
-    "repo": "https://github.com/itsbrex/my-awesome-stars",
-    "description": "A curated list of my GitHub stars!",
-    "stars": 15,
-    "updatedAt": "2026-04-23T01:17:01Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "myrialabs/clopen",
+    "repo": "https://github.com/myrialabs/clopen",
+    "description": "All-in-one web workspace for Claude Code & OpenCode",
+    "stars": 18,
+    "updatedAt": "2026-04-23T05:41:29Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "srid/awesome-stars",
-    "repo": "https://github.com/srid/awesome-stars",
-    "description": "My starred repos",
-    "stars": 15,
-    "updatedAt": "2026-04-23T01:11:24Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "RohanMuppa/brightspace-mcp-server",
+    "repo": "https://github.com/RohanMuppa/brightspace-mcp-server",
+    "description": "MCP server for Brightspace (D2L). Check grades, due dates, assignments, announcements, rosters, syllabus & course content via Claude, ChatGPT, Cursor, Windsurf, or any MCP client. Works with any school. npm: npx brightsp",
+    "stars": 18,
+    "updatedAt": "2026-04-23T05:37:36Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "geekdada/awesome-stars",
-    "repo": "https://github.com/geekdada/awesome-stars",
-    "description": "A curated list of my GitHub stars by stargazed",
-    "stars": 15,
-    "updatedAt": "2026-04-23T01:08:44Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "name": "cervonwong/ILSpy-MCP",
+    "repo": "https://github.com/cervonwong/ILSpy-MCP",
+    "description": "ILSpy MCP Server (Model Context Protocol) for AI-assisted reverse-engineering of .NET binaries for autonomous Malware Analysis and Reverse Engineering.",
+    "stars": 16,
+    "updatedAt": "2026-04-23T05:40:43Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "ever-works/awesome-vector-databases",
-    "repo": "https://github.com/ever-works/awesome-vector-databases",
-    "description": "A curated list of vector database solutions, libraries, and resources for AI applications - https://vectordb.works",
-    "stars": 14,
-    "updatedAt": "2026-04-23T01:18:51Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "komputer-ai/komputer-ai",
-    "repo": "https://github.com/komputer-ai/komputer-ai",
-    "description": "Distributed Claude AI agents on Kubernetes - scalable, stateless, fully open source",
-    "stars": 14,
-    "updatedAt": "2026-04-23T01:18:24Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "matyo91/awesome-stars",
-    "repo": "https://github.com/matyo91/awesome-stars",
-    "description": "🌟 A curated list of my GitHub stars!",
-    "stars": 14,
-    "updatedAt": "2026-04-23T01:12:59Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "theredstring/redstring",
-    "repo": "https://github.com/theredstring/redstring",
-    "description": "Redstring is a semantic knowledge graph application that bridges human and machine intelligences through a recursive graph interface built on W3C Semantic Web standards with robust knowledge discovery. It uses RDF, OWL, ",
-    "stars": 12,
-    "updatedAt": "2026-04-23T01:12:45Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "svg153/awesome-stars",
-    "repo": "https://github.com/svg153/awesome-stars",
-    "description": "MCP server discovered by autonomous scanner.",
+    "name": "Huskyauto/VisionClaw-Agent-Public-Release",
+    "repo": "https://github.com/Huskyauto/VisionClaw-Agent-Public-Release",
+    "description": "Open-source multi-tenant AI agent platform — 14 specialized agents, 195+ tools, 37+ AI models. Self-hosted. Fork and deploy your own AI operations team.",
     "stars": 11,
-    "updatedAt": "2026-04-23T01:14:50Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:57:32Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "zpratt/lousy-agents",
-    "repo": "https://github.com/zpratt/lousy-agents",
-    "description": "Bootstrap projects with pre-configured instructions, tests, and linters that guide AI coding agents to produce reliable code",
+    "name": "kreuzberg-dev/kreuzcrawl",
+    "repo": "https://github.com/kreuzberg-dev/kreuzcrawl",
+    "description": "High-performance web crawling engine with bindings for 11 languages",
+    "stars": 11,
+    "updatedAt": "2026-04-23T05:37:20Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "timunbasah3/awesome-mcp",
+    "repo": "https://github.com/timunbasah3/awesome-mcp",
+    "description": "🚀 Discover and explore a curated list of MCP servers, tools, and resources for AI assistants, enhancing your development and productivity.",
     "stars": 10,
-    "updatedAt": "2026-04-23T01:15:12Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:39:38Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "pstanton237/awesome-stars",
-    "repo": "https://github.com/pstanton237/awesome-stars",
-    "description": "A curated list of my GitHub stars by stargazed",
-    "stars": 10,
-    "updatedAt": "2026-04-23T01:11:33Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "Bd-Mutant7/GitNexus",
-    "repo": "https://github.com/Bd-Mutant7/GitNexus",
-    "description": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph w",
-    "stars": 9,
-    "updatedAt": "2026-04-23T01:11:18Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "Nsbx/awesome-stars",
-    "repo": "https://github.com/Nsbx/awesome-stars",
-    "description": "My Awesome List generated by : https://github.com/abhijithvijayan/stargazed",
-    "stars": 9,
-    "updatedAt": "2026-04-23T01:08:43Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "ang3lo-azevedo/my-awesome-stars",
-    "repo": "https://github.com/ang3lo-azevedo/my-awesome-stars",
-    "description": " A curated list of my GitHub stars! ",
-    "stars": 7,
-    "updatedAt": "2026-04-23T01:10:50Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "loonghao/dcc-mcp-core",
-    "repo": "https://github.com/loonghao/dcc-mcp-core",
-    "description": "Core library for DCC Model Context Protocol (MCP) providing common utilities and base classes.",
-    "stars": 6,
-    "updatedAt": "2026-04-23T01:20:26Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
-    "source": "community"
-  },
-  {
-    "name": "redhat-performance/BugZooka",
-    "repo": "https://github.com/redhat-performance/BugZooka",
+    "name": "aleksUIX/vastlint",
+    "repo": "https://github.com/aleksUIX/vastlint",
     "description": "MCP server discovered by autonomous scanner.",
-    "stars": 6,
-    "updatedAt": "2026-04-23T01:11:06Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "stars": 9,
+    "updatedAt": "2026-04-23T05:43:45Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   },
   {
-    "name": "Technetium1/stars",
-    "repo": "https://github.com/Technetium1/stars",
-    "description": "My stars. View raw for full list.",
+    "name": "Wynelson94/longhand",
+    "repo": "https://github.com/Wynelson94/longhand",
+    "description": "Lossless local memory for Claude Code. The full, unabbreviated version. Every tool call, every file edit, every thinking block — stored verbatim on your machine. Persistent memory without tokens.",
+    "stars": 8,
+    "updatedAt": "2026-04-23T05:56:00Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "genoshide/wallet-mcp",
+    "repo": "https://github.com/genoshide/wallet-mcp",
+    "description": "Multi-chain wallet generator & manager — MCP server for AI agents. Generate, fund, sweep Solana/EVM wallet groups via Claude, OpenClaw, Telegram, Discord.",
+    "stars": 8,
+    "updatedAt": "2026-04-23T05:53:02Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "rufolangus/AAOSP",
+    "repo": "https://github.com/rufolangus/AAOSP",
+    "description": "Agentic Android Open Source Project (AAOSP) — Android fork with native LLM system service, MCP-aware apps, and an agent-driven launcher. On-device Qwen 2.5 via llama.cpp. Apps declare tools in their manifest. The OS runs",
+    "stars": 8,
+    "updatedAt": "2026-04-23T05:43:37Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "aj47/dotagents-mono",
+    "repo": "https://github.com/aj47/dotagents-mono",
+    "description": "Your AI team. One voice away. Desktop app + open .agents protocol.",
+    "stars": 7,
+    "updatedAt": "2026-04-23T05:42:36Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "engkimo/open-morphic",
+    "repo": "https://github.com/engkimo/open-morphic",
+    "description": "A composite ai framework for agentic AI",
+    "stars": 7,
+    "updatedAt": "2026-04-23T05:40:49Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
+    "source": "community"
+  },
+  {
+    "name": "elumine-dev/kotlin-jump",
+    "repo": "https://github.com/elumine-dev/kotlin-jump",
+    "description": "Kotlin navigation in VS Code that actually feels instant.",
     "stars": 5,
-    "updatedAt": "2026-04-23T01:20:27Z",
-    "verifiedAt": "2026-04-23T01:24:08.551Z",
+    "updatedAt": "2026-04-23T05:41:54Z",
+    "verifiedAt": "2026-04-23T05:58:07.496Z",
     "source": "community"
   }
 ]
