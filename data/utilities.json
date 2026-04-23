@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Cursor",
+    "category": "Coding",
+    "desc": "AI-first code editor with codebase-aware chat, inline edits, and agent mode. The dominant IDE for AI-assisted development.",
+    "url": "https://cursor.com",
+    "hot": true
+  },
+  {
+    "name": "Windsurf",
+    "category": "Coding",
+    "desc": "Agentic IDE by Codeium with Cascade multi-file agent, deep context awareness, and flow state UX.",
+    "url": "https://codeium.com/windsurf",
+    "hot": true
+  },
+  {
+    "name": "GitHub Copilot",
+    "category": "Coding",
+    "desc": "Microsoft's AI pair programmer with inline completions, chat, and agent-mode PR automation across all major IDEs.",
+    "url": "https://github.com/features/copilot",
+    "hot": true
+  },
+  {
+    "name": "v0",
+    "category": "Coding",
+    "desc": "Vercel's UI generation tool that turns prompts into production-ready React + Tailwind components instantly.",
+    "url": "https://v0.dev",
+    "hot": true
+  },
+  {
+    "name": "Bolt",
+    "category": "Coding",
+    "desc": "StackBlitz's browser-based full-stack agent that scaffolds and runs entire apps from a single prompt.",
+    "url": "https://bolt.new",
+    "hot": true
+  },
+  {
+    "name": "Replit Agent",
+    "category": "Coding",
+    "desc": "Cloud IDE with an AI agent that builds, runs, deploys, and debugs apps end-to-end in the browser.",
+    "url": "https://replit.com",
+    "hot": false
+  },
+  {
+    "name": "Devin",
+    "category": "Coding",
+    "desc": "Cognition's autonomous software engineer that handles full development tasks from issue to merged PR.",
+    "url": "https://devin.ai",
+    "hot": true
+  },
+  {
+    "name": "Claude Code",
+    "category": "Coding",
+    "desc": "Anthropic's terminal-native agentic coding tool with skills/harness framework, MCP support, and deep codebase understanding.",
+    "url": "https://claude.ai/code",
+    "hot": true
+  },
+  {
+    "name": "Perplexity",
+    "category": "Research",
+    "desc": "AI answer engine with real-time web search, source citations, and deep research mode for comprehensive reports.",
+    "url": "https://perplexity.ai",
+    "hot": true
+  },
+  {
+    "name": "NotebookLM",
+    "category": "Research",
+    "desc": "Google's AI research assistant that grounds answers in your uploaded sources (PDFs, docs, slides) with full citations.",
+    "url": "https://notebooklm.google",
+    "hot": true
+  },
+  {
+    "name": "Elicit",
+    "category": "Research",
+    "desc": "AI research assistant for academic literature: searches papers, extracts data tables, and synthesises findings.",
+    "url": "https://elicit.com",
+    "hot": false
+  },
+  {
+    "name": "Consensus",
+    "category": "Research",
+    "desc": "AI-powered academic search that finds scientific consensus across millions of research papers.",
+    "url": "https://consensus.app",
+    "hot": false
+  },
+  {
+    "name": "Midjourney",
+    "category": "Design",
+    "desc": "Leading text-to-image model known for high aesthetic quality, used widely in creative and product design workflows.",
+    "url": "https://midjourney.com",
+    "hot": true
+  },
+  {
+    "name": "Runway",
+    "category": "Design",
+    "desc": "AI video generation and editing platform with text-to-video, inpainting, and motion brush tools.",
+    "url": "https://runwayml.com",
+    "hot": true
+  },
+  {
+    "name": "Gamma",
+    "category": "Design",
+    "desc": "AI presentation and document builder that generates beautiful decks from a prompt or outline in seconds.",
+    "url": "https://gamma.app",
+    "hot": true
+  },
+  {
+    "name": "Figma AI",
+    "category": "Design",
+    "desc": "AI features inside Figma: auto-layout suggestions, design copy generation, and prototype-from-prompt.",
+    "url": "https://figma.com",
+    "hot": false
+  },
+  {
+    "name": "Notion AI",
+    "category": "Productivity",
+    "desc": "AI writing and Q&A assistant built into Notion workspaces — summarise, translate, draft, and query your docs.",
+    "url": "https://notion.so/product/ai",
+    "hot": true
+  },
+  {
+    "name": "Claude",
+    "category": "Productivity",
+    "desc": "Anthropic's frontier AI assistant with long context, deep reasoning, Projects memory, and strong writing/code skills.",
+    "url": "https://claude.ai",
+    "hot": true
+  },
+  {
+    "name": "ChatGPT",
+    "category": "Productivity",
+    "desc": "OpenAI's flagship AI assistant with GPT-4o, voice mode, image generation, and plugin ecosystem.",
+    "url": "https://chatgpt.com",
+    "hot": true
+  },
+  {
+    "name": "Gemini",
+    "category": "Productivity",
+    "desc": "Google's multimodal AI assistant with 1M token context, deep Google Workspace integration, and Gemini 2.0 capabilities.",
+    "url": "https://gemini.google.com",
+    "hot": true
+  },
+  {
+    "name": "Vercel",
+    "category": "Infrastructure",
+    "desc": "Deployment platform for Next.js and frontend apps with AI SDK, edge functions, and instant preview URLs.",
+    "url": "https://vercel.com",
+    "hot": true
+  },
+  {
+    "name": "Supabase",
+    "category": "Infrastructure",
+    "desc": "Open-source Firebase alternative with Postgres, vector search (pgvector), edge functions, and AI assistant.",
+    "url": "https://supabase.com",
+    "hot": true
+  },
+  {
+    "name": "Modal",
+    "category": "Infrastructure",
+    "desc": "Serverless GPU cloud for running AI model inference, fine-tuning jobs, and batch pipelines with Python-native API.",
+    "url": "https://modal.com",
+    "hot": true
+  },
+  {
+    "name": "Replicate",
+    "category": "Infrastructure",
+    "desc": "Run open-source AI models via API — Llama, Stable Diffusion, Whisper, and hundreds more with one-line calls.",
+    "url": "https://replicate.com",
+    "hot": false
+  },
+  {
+    "name": "Cloudflare AI",
+    "category": "Infrastructure",
+    "desc": "Run inference at the edge globally with Workers AI, plus vector DB (Vectorize) and AI Gateway for cost tracking.",
+    "url": "https://developers.cloudflare.com/ai",
+    "hot": false
+  }
+]

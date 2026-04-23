@@ -3,7 +3,7 @@
     "name": "Function calling with JSON schema",
     "category": "LLM Integration",
     "whatItDoes": "Lets an LLM return structured arguments that match a predefined JSON schema for deterministic tool execution.",
-    "practicalUseCase": "A support bot can call a ticket API with validated fields instead of generating free-form text.",
+    "practicalUseCase": "A support bot calls a ticket API with validated fields instead of generating free-form text.",
     "sourceName": "OpenAI Platform Docs",
     "sourceUrl": "https://platform.openai.com/docs/guides/function-calling",
     "verificationLevel": "official"
@@ -12,16 +12,52 @@
     "name": "Structured outputs",
     "category": "LLM Integration",
     "whatItDoes": "Constrains model responses to a strict output schema so downstream systems can parse results reliably.",
-    "practicalUseCase": "An extraction pipeline can always receive valid JSON for invoice fields without custom regex cleanup.",
+    "practicalUseCase": "An extraction pipeline always receives valid JSON for invoice fields without custom regex cleanup.",
     "sourceName": "OpenAI Platform Docs",
     "sourceUrl": "https://platform.openai.com/docs/guides/structured-outputs",
     "verificationLevel": "official"
   },
   {
+    "name": "Multi-modal inputs",
+    "category": "LLM Integration",
+    "whatItDoes": "Sends images, audio, video, or documents alongside text to a vision-capable model for richer understanding.",
+    "practicalUseCase": "A quality control app scans product photos and flags defects without a separate CV pipeline.",
+    "sourceName": "Anthropic Vision Docs",
+    "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/vision",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Tool use chaining",
+    "category": "LLM Integration",
+    "whatItDoes": "Sequences multiple tool calls within a single agent turn so complex workflows resolve in one pass.",
+    "practicalUseCase": "A research agent searches, fetches a page, and summarises results before returning to the user.",
+    "sourceName": "Anthropic Tool Use",
+    "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Extended context utilisation",
+    "category": "LLM Integration",
+    "whatItDoes": "Loads entire codebases, books, or long documents into a 1M+ token context for deep reasoning without chunking.",
+    "practicalUseCase": "A due-diligence assistant ingests a full M&A data room and answers questions across all documents at once.",
+    "sourceName": "Google Gemini 1.5 Pro",
+    "sourceUrl": "https://deepmind.google/technologies/gemini/pro/",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Reasoning models (chain-of-thought)",
+    "category": "LLM Integration",
+    "whatItDoes": "Uses models that reason step-by-step internally before answering, improving accuracy on hard logical or math tasks.",
+    "practicalUseCase": "A code reviewer catches subtle concurrency bugs by following the model's explicit reasoning trace.",
+    "sourceName": "OpenAI o3 Docs",
+    "sourceUrl": "https://platform.openai.com/docs/guides/reasoning",
+    "verificationLevel": "official"
+  },
+  {
     "name": "Embeddings-based semantic search",
     "category": "Retrieval",
-    "whatItDoes": "Converts text into vectors so semantically similar documents can be retrieved by nearest-neighbor search.",
-    "practicalUseCase": "A docs assistant can find the right troubleshooting article even when wording differs from the user query.",
+    "whatItDoes": "Converts text into vectors so semantically similar documents are retrieved by nearest-neighbour search.",
+    "practicalUseCase": "A docs assistant finds the right troubleshooting article even when wording differs from the user query.",
     "sourceName": "OpenAI Embeddings Guide",
     "sourceUrl": "https://platform.openai.com/docs/guides/embeddings",
     "verificationLevel": "official"
@@ -30,7 +66,7 @@
     "name": "RAG with chunking and citation",
     "category": "Retrieval",
     "whatItDoes": "Retrieves relevant document chunks and injects them into prompts while keeping source references for answers.",
-    "practicalUseCase": "An internal policy assistant can answer leave questions and cite the exact handbook section used.",
+    "practicalUseCase": "An internal policy assistant answers leave questions and cites the exact handbook section used.",
     "sourceName": "LangChain RAG Tutorial",
     "sourceUrl": "https://python.langchain.com/docs/tutorials/rag/",
     "verificationLevel": "community-verified"
@@ -39,16 +75,124 @@
     "name": "Hybrid retrieval (BM25 + dense vectors)",
     "category": "Retrieval",
     "whatItDoes": "Combines sparse lexical search and dense semantic search to improve recall across exact terms and paraphrases.",
-    "practicalUseCase": "A legal search app can match exact clause IDs and also find conceptually similar precedent language.",
-    "sourceName": "Pinecone Hybrid Search Guide",
+    "practicalUseCase": "A legal search app matches exact clause IDs and also finds conceptually similar precedent language.",
+    "sourceName": "Pinecone Hybrid Search",
     "sourceUrl": "https://docs.pinecone.io/guides/search/hybrid-search",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "GraphRAG",
+    "category": "Retrieval",
+    "whatItDoes": "Builds a knowledge graph from documents and uses graph traversal alongside vector search for richer context.",
+    "practicalUseCase": "A biomedical assistant follows drug-protein-disease relationship chains that flat vector search would miss.",
+    "sourceName": "Microsoft GraphRAG",
+    "sourceUrl": "https://microsoft.github.io/graphrag/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Re-ranking with cross-encoders",
+    "category": "Retrieval",
+    "whatItDoes": "Re-scores initial retrieval candidates using a more accurate cross-encoder model to push the best results to the top.",
+    "practicalUseCase": "An e-commerce search returns truly relevant products at rank 1 even when the embedding retriever over-retrieves.",
+    "sourceName": "Cohere Rerank",
+    "sourceUrl": "https://docs.cohere.com/docs/reranking",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "ReAct tool-use prompting",
+    "category": "Agent Design",
+    "whatItDoes": "Alternates reasoning and actions so the model decides when to call tools and when to answer directly.",
+    "practicalUseCase": "A research agent searches the web, inspects results, and synthesises a grounded response.",
+    "sourceName": "ReAct Paper",
+    "sourceUrl": "https://arxiv.org/abs/2210.03629",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Conversation memory summarisation",
+    "category": "Agent Design",
+    "whatItDoes": "Compresses prior turns into concise state summaries to preserve context while controlling token growth.",
+    "practicalUseCase": "A customer success agent remembers account history over long chats without exceeding context limits.",
+    "sourceName": "LangChain Memory Docs",
+    "sourceUrl": "https://python.langchain.com/docs/concepts/memory/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Multi-agent orchestration",
+    "category": "Agent Design",
+    "whatItDoes": "Coordinates specialised agents (planner, coder, reviewer) under an orchestrator for complex parallel workflows.",
+    "practicalUseCase": "A software factory spawns separate agents for spec writing, coding, and testing, then merges results.",
+    "sourceName": "Anthropic Multi-Agent",
+    "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/agents",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Reflection and self-critique loops",
+    "category": "Agent Design",
+    "whatItDoes": "Has the model review and critique its own output before finalising, catching errors without human review.",
+    "practicalUseCase": "A code-writing agent spots its own off-by-one errors after a reflection prompt before submitting the PR.",
+    "sourceName": "Reflexion Paper",
+    "sourceUrl": "https://arxiv.org/abs/2303.11366",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Parallel agent execution",
+    "category": "Agent Design",
+    "whatItDoes": "Dispatches independent subtasks to concurrent agents and merges results, cutting wall-clock time dramatically.",
+    "practicalUseCase": "A report generator runs five research agents in parallel and assembles their findings in one pass.",
+    "sourceName": "Claude Code Superpowers",
+    "sourceUrl": "https://claude.ai/code",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Long-horizon task planning",
+    "category": "Agent Design",
+    "whatItDoes": "Decomposes a high-level goal into an ordered task list that persists across sessions, surviving context resets.",
+    "practicalUseCase": "A project agent builds a full SaaS MVP over multiple days by checking off persisted milestones each session.",
+    "sourceName": "OpenAI Agents SDK",
+    "sourceUrl": "https://platform.openai.com/docs/guides/agents",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "LLM-as-judge evaluation",
+    "category": "Evaluation",
+    "whatItDoes": "Uses a capable LLM to score or compare model outputs against a rubric, replacing slow human annotation at scale.",
+    "practicalUseCase": "A chat product runs nightly evals where GPT-4o grades helpfulness and safety across 10,000 conversations.",
+    "sourceName": "Judging LLM-as-a-Judge",
+    "sourceUrl": "https://arxiv.org/abs/2306.05685",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Regression harness for prompts",
+    "category": "Evaluation",
+    "whatItDoes": "Runs a fixed golden dataset through prompt changes to catch quality regressions before they reach production.",
+    "practicalUseCase": "A team ships prompt updates confidently because the CI pipeline fails if accuracy drops more than 2%.",
+    "sourceName": "Braintrust Evals",
+    "sourceUrl": "https://www.braintrust.dev/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Tracing and observability",
+    "category": "Evaluation",
+    "whatItDoes": "Records every LLM call, tool invocation, and token count in a structured trace for debugging and cost tracking.",
+    "practicalUseCase": "An ops team drills into a user-reported bad answer and sees exactly which retrieval step returned the wrong chunk.",
+    "sourceName": "LangSmith",
+    "sourceUrl": "https://docs.smith.langchain.com/",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Automated red-teaming",
+    "category": "Evaluation",
+    "whatItDoes": "Generates adversarial prompts automatically and scores model robustness against jailbreaks and policy violations.",
+    "practicalUseCase": "A safety team stress-tests a new model release overnight without hand-crafting thousands of attack prompts.",
+    "sourceName": "Anthropic Red Teaming",
+    "sourceUrl": "https://www.anthropic.com/research/red-teaming-language-models",
     "verificationLevel": "official"
   },
   {
     "name": "Prompt caching",
     "category": "Cost & Latency",
     "whatItDoes": "Reuses cached prompt prefixes so repeated requests reduce token processing cost and response time.",
-    "practicalUseCase": "A multi-turn app with a long system prompt can cut costs when many users share the same context block.",
+    "practicalUseCase": "A multi-turn app with a long system prompt cuts costs when many users share the same context block.",
     "sourceName": "Anthropic Prompt Caching",
     "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
     "verificationLevel": "official"
@@ -57,162 +201,180 @@
     "name": "Batch API processing",
     "category": "Cost & Latency",
     "whatItDoes": "Submits large volumes of offline requests in one batch job to process data more cheaply at scale.",
-    "practicalUseCase": "A content team can classify 100,000 product descriptions overnight instead of sending real-time calls.",
-    "sourceName": "OpenAI Batch API Guide",
+    "practicalUseCase": "A content team classifies 100,000 product descriptions overnight instead of sending real-time calls.",
+    "sourceName": "OpenAI Batch API",
     "sourceUrl": "https://platform.openai.com/docs/guides/batch",
     "verificationLevel": "official"
+  },
+  {
+    "name": "Token budget management",
+    "category": "Cost & Latency",
+    "whatItDoes": "Sets hard token limits per request and routes to cheaper models when the task doesn't need frontier capability.",
+    "practicalUseCase": "A high-volume classifier uses a small model for 90% of requests and escalates to large only for edge cases.",
+    "sourceName": "Anthropic Token Counting",
+    "sourceUrl": "https://docs.anthropic.com/en/docs/build-with-claude/token-counting",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Intelligent model routing",
+    "category": "Cost & Latency",
+    "whatItDoes": "Classifies incoming requests by complexity and routes each to the cheapest model that can handle it reliably.",
+    "practicalUseCase": "Simple FAQ queries go to Haiku while architectural design questions route to Opus, halving monthly spend.",
+    "sourceName": "OpenRouter",
+    "sourceUrl": "https://openrouter.ai/docs",
+    "verificationLevel": "community-verified"
   },
   {
     "name": "Streaming token responses",
     "category": "UX Engineering",
     "whatItDoes": "Delivers model output incrementally as tokens are generated so users see progress immediately.",
-    "practicalUseCase": "A chat UI can show answers in real time to reduce perceived latency on long completions.",
+    "practicalUseCase": "A chat UI shows answers in real time to reduce perceived latency on long completions.",
     "sourceName": "OpenAI Streaming Guide",
     "sourceUrl": "https://platform.openai.com/docs/guides/streaming-responses",
     "verificationLevel": "official"
   },
   {
-    "name": "Conversation memory summarization",
-    "category": "Agent Design",
-    "whatItDoes": "Compresses prior turns into concise state summaries to preserve context while controlling token growth.",
-    "practicalUseCase": "A customer success agent can remember account history over long chats without exceeding context limits.",
-    "sourceName": "LangChain Memory Docs",
-    "sourceUrl": "https://python.langchain.com/docs/concepts/memory/",
+    "name": "Progressive disclosure for AI outputs",
+    "category": "UX Engineering",
+    "whatItDoes": "Shows a short answer by default with an expandable reasoning trace or sources panel for power users.",
+    "practicalUseCase": "A medical app surfaces a concise recommendation first, with the full evidence chain one click away.",
+    "sourceName": "Nielsen Norman Group",
+    "sourceUrl": "https://www.nngroup.com/articles/progressive-disclosure/",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "ReAct tool-use prompting",
-    "category": "Agent Design",
-    "whatItDoes": "Alternates reasoning and actions so the model can decide when to call tools and when to answer directly.",
-    "practicalUseCase": "A research agent can search the web, inspect results, and then synthesize a grounded response.",
-    "sourceName": "ReAct Paper",
-    "sourceUrl": "https://arxiv.org/abs/2210.03629",
+    "name": "Confidence indicators",
+    "category": "UX Engineering",
+    "whatItDoes": "Annotates AI outputs with calibrated uncertainty signals so users know when to double-check.",
+    "practicalUseCase": "A legal assistant marks low-confidence clauses in red so lawyers focus review effort efficiently.",
+    "sourceName": "Anthropic Model Card",
+    "sourceUrl": "https://www.anthropic.com/claude",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Output guardrails",
+    "category": "Safety",
+    "whatItDoes": "Validates or filters model output against policy rules before delivering it to users, blocking harmful content.",
+    "practicalUseCase": "A children's platform rejects any response containing violence or adult themes before rendering it.",
+    "sourceName": "NVIDIA NeMo Guardrails",
+    "sourceUrl": "https://github.com/NVIDIA/NeMo-Guardrails",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Prompt injection defense",
+    "category": "Safety",
+    "whatItDoes": "Detects and neutralises adversarial instructions embedded in user content that try to hijack the agent.",
+    "practicalUseCase": "A web-browsing agent ignores hidden instructions on malicious pages that say Ignore previous instructions.",
+    "sourceName": "OWASP LLM Top 10",
+    "sourceUrl": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "Constitutional AI / RLAIF",
+    "category": "Safety",
+    "whatItDoes": "Trains models to critique and revise their own outputs against a set of principles, reducing harmful outputs.",
+    "practicalUseCase": "A fine-tuned assistant refuses harmful requests reliably without needing a large human-labelled refusal dataset.",
+    "sourceName": "Anthropic Constitutional AI",
+    "sourceUrl": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Fine-tuning pipelines",
+    "category": "MLOps",
+    "whatItDoes": "Adapts a base model to a specific domain or task using curated examples, improving accuracy and reducing prompt length.",
+    "practicalUseCase": "A legal firm fine-tunes a model on contract language so it drafts clauses in their house style without lengthy prompts.",
+    "sourceName": "OpenAI Fine-tuning",
+    "sourceUrl": "https://platform.openai.com/docs/guides/fine-tuning",
+    "verificationLevel": "official"
+  },
+  {
+    "name": "Prompt version control",
+    "category": "MLOps",
+    "whatItDoes": "Stores prompts in a versioned registry so teams can roll back, diff, and audit changes like code.",
+    "practicalUseCase": "When a prompt update degrades user satisfaction, an engineer rolls back to v3 in one command.",
+    "sourceName": "PromptLayer",
+    "sourceUrl": "https://promptlayer.com/",
+    "verificationLevel": "community-verified"
+  },
+  {
+    "name": "A/B testing models and prompts",
+    "category": "MLOps",
+    "whatItDoes": "Splits traffic between prompt or model variants and tracks outcome metrics to pick the statistically better option.",
+    "practicalUseCase": "A product team discovers that a shorter prompt variant increases task completion rate by 8% before full rollout.",
+    "sourceName": "Braintrust",
+    "sourceUrl": "https://www.braintrust.dev/",
     "verificationLevel": "community-verified"
   },
   {
     "name": "OpenAPI-to-tool conversion",
     "category": "Integration",
     "whatItDoes": "Transforms OpenAPI specs into callable tool definitions so agents can invoke REST APIs safely.",
-    "practicalUseCase": "An operations assistant can trigger shipping API endpoints using validated request parameters.",
+    "practicalUseCase": "An operations assistant triggers shipping API endpoints using validated request parameters.",
     "sourceName": "OpenAI Cookbook",
     "sourceUrl": "https://cookbook.openai.com/examples/function_calling_with_an_openapi_spec",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "Model context protocol server integration",
+    "name": "MCP server implementation",
     "category": "Integration",
-    "whatItDoes": "Connects agents to standardized MCP servers so tools and data sources are discovered through a common interface.",
-    "practicalUseCase": "A developer assistant can access Git, tickets, and docs through one protocol instead of custom connectors.",
-    "sourceName": "Model Context Protocol Spec",
-    "sourceUrl": "https://modelcontextprotocol.io/specification/2025-06-18",
+    "whatItDoes": "Wraps any data source or service as a Model Context Protocol server so AI clients can query it natively.",
+    "practicalUseCase": "A team wraps their internal wiki as an MCP server so Claude Code can read it during coding sessions.",
+    "sourceName": "MCP Official Docs",
+    "sourceUrl": "https://modelcontextprotocol.io/",
     "verificationLevel": "official"
   },
   {
-    "name": "Guardrails with schema and policy checks",
-    "category": "Safety",
-    "whatItDoes": "Applies input and output validators to block unsafe content and enforce response format constraints.",
-    "practicalUseCase": "A healthcare intake assistant can reject responses that include prohibited medical advice patterns.",
-    "sourceName": "Guardrails AI Docs",
-    "sourceUrl": "https://www.guardrailsai.com/docs",
+    "name": "Webhook-driven AI pipelines",
+    "category": "Integration",
+    "whatItDoes": "Triggers AI processing jobs automatically when external events fire, without polling or manual invocation.",
+    "practicalUseCase": "A GitHub webhook triggers an AI code review agent on every pull request opened against the main branch.",
+    "sourceName": "n8n AI Workflows",
+    "sourceUrl": "https://n8n.io/",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "Prompt injection defense for RAG",
-    "category": "Safety",
-    "whatItDoes": "Implements retrieval filtering and instruction hierarchy so malicious documents cannot override system behavior.",
-    "practicalUseCase": "An enterprise chatbot can ignore embedded 'ignore previous instructions' text in uploaded files.",
-    "sourceName": "OWASP LLM Top 10",
-    "sourceUrl": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "PII detection and redaction",
-    "category": "Safety",
-    "whatItDoes": "Identifies sensitive personal data in text and masks it before storage, logging, or model calls.",
-    "practicalUseCase": "A contact-center transcript pipeline can redact phone numbers and SSNs before analytics processing.",
-    "sourceName": "Microsoft Presidio",
-    "sourceUrl": "https://microsoft.github.io/presidio/",
+    "name": "Skills packaging (agentskills.io standard)",
+    "category": "Harness Engineering",
+    "whatItDoes": "Packages reusable agent behaviours as structured markdown skill files with trigger conditions and SOPs.",
+    "practicalUseCase": "A team writes one debugging skill and deploys it across Claude Code, Cursor, and Copilot with no changes.",
+    "sourceName": "Claude Code Superpowers",
+    "sourceUrl": "https://claude.ai/code",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "Human-in-the-loop approval gates",
-    "category": "Operations",
-    "whatItDoes": "Requires explicit human approval for high-risk actions while allowing automation for low-risk tasks.",
-    "practicalUseCase": "A finance agent can draft wire transfers but must wait for manager approval before execution.",
-    "sourceName": "LangGraph Human-in-the-loop",
-    "sourceUrl": "https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/",
+    "name": "Context injection patterns",
+    "category": "Harness Engineering",
+    "whatItDoes": "Loads only the minimum relevant context into each agent turn using lazy discovery instead of upfront dumps.",
+    "practicalUseCase": "An agent starts each task with a 500-token context and fetches additional tool schemas only when needed.",
+    "sourceName": "Harness Engineering Guide",
+    "sourceUrl": "https://zhuanlan.zhihu.com/p/2025639164599608541",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "Evaluation with custom test sets",
-    "category": "Evaluation",
-    "whatItDoes": "Runs repeatable benchmarks against domain-specific prompts and expected outputs to track quality over time.",
-    "practicalUseCase": "A legal drafting assistant can be regression-tested on clause rewrite quality before each release.",
-    "sourceName": "OpenAI Evals Framework",
-    "sourceUrl": "https://github.com/openai/evals",
+    "name": "Feedback loop design",
+    "category": "Harness Engineering",
+    "whatItDoes": "Builds explicit success/failure signals back into the agent loop so it can self-correct without human intervention.",
+    "practicalUseCase": "A code-writing agent runs its own tests and re-prompts itself on failure until the suite is green.",
+    "sourceName": "Hermes Agent",
+    "sourceUrl": "https://github.com/NousResearch/hermes-agent",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "LLM-as-judge scoring",
-    "category": "Evaluation",
-    "whatItDoes": "Uses a separate evaluator model and rubric to grade relevance, faithfulness, or style at scale.",
-    "practicalUseCase": "A marketing copy generator can auto-score outputs for brand tone adherence before publishing.",
-    "sourceName": "LangSmith Evaluation Concepts",
-    "sourceUrl": "https://docs.smith.langchain.com/evaluation/concepts",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "Tracing and observability for agents",
-    "category": "Operations",
-    "whatItDoes": "Captures tool calls, prompts, latencies, and token usage so failures can be diagnosed quickly.",
-    "practicalUseCase": "An SRE can trace why an agent failed by inspecting the exact tool call and prompt sequence.",
-    "sourceName": "OpenTelemetry",
-    "sourceUrl": "https://opentelemetry.io/docs/",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "Rate limiting and retry backoff",
-    "category": "Reliability",
-    "whatItDoes": "Controls request frequency and retries transient failures with exponential backoff to prevent outages.",
-    "practicalUseCase": "A high-traffic chat API can avoid cascading failures during provider throttling events.",
-    "sourceName": "AWS Retry with Backoff Pattern",
-    "sourceUrl": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "Idempotent tool execution",
-    "category": "Reliability",
-    "whatItDoes": "Ensures repeated action requests with the same idempotency key do not duplicate side effects.",
-    "practicalUseCase": "A payment assistant can safely retry charge creation without double-billing the customer.",
-    "sourceName": "Stripe Idempotent Requests",
-    "sourceUrl": "https://docs.stripe.com/api/idempotent_requests",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "Long-document parsing with OCR",
-    "category": "Document AI",
-    "whatItDoes": "Extracts machine-readable text and structure from scanned PDFs and images for downstream LLM workflows.",
-    "practicalUseCase": "An insurance intake workflow can digitize uploaded claim forms before data extraction.",
-    "sourceName": "Tesseract OCR Docs",
-    "sourceUrl": "https://tesseract-ocr.github.io/tessdoc/",
+    "name": "Self-improving agents",
+    "category": "Harness Engineering",
+    "whatItDoes": "Agents update their own skill files when they discover a better procedure, creating a compounding improvement loop.",
+    "practicalUseCase": "An agent notices its summarisation skill misses bullet lists and patches the skill before the next run.",
+    "sourceName": "Hermes Agent",
+    "sourceUrl": "https://github.com/NousResearch/hermes-agent",
     "verificationLevel": "community-verified"
   },
   {
-    "name": "JSON mode output parsing",
-    "category": "LLM Integration",
-    "whatItDoes": "Requests JSON-only responses and validates payloads before handing data to application services.",
-    "practicalUseCase": "A lead-qualification bot can return strict JSON fields consumed directly by a CRM webhook.",
-    "sourceName": "OpenAI JSON Mode Guide",
-    "sourceUrl": "https://platform.openai.com/docs/guides/text-generation/json-mode",
-    "verificationLevel": "official"
-  },
-  {
-    "name": "Canary rollout for model versions",
-    "category": "MLOps",
-    "whatItDoes": "Routes a small traffic percentage to a new model version before full deployment to limit blast radius.",
-    "practicalUseCase": "A production assistant can test a new model on 5% of traffic and compare error rates before rollout.",
-    "sourceName": "Kubernetes Canary Deployment",
-    "sourceUrl": "https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/#canary-deployments",
-    "verificationLevel": "official"
+    "name": "Harness composition",
+    "category": "Harness Engineering",
+    "whatItDoes": "Assembles multiple constraint layers (permissions, memory, tools, feedback) into a single deployable agent harness.",
+    "practicalUseCase": "A company ships a compliant internal AI assistant by composing an off-the-shelf harness with their security policies.",
+    "sourceName": "Harness Engineering Deep Dive",
+    "sourceUrl": "https://zhuanlan.zhihu.com/p/2014014859164026634",
+    "verificationLevel": "community-verified"
   }
 ]
