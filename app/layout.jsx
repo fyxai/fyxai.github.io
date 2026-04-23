@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen bg-grid grid-bg">
+        <div className="min-h-screen">
           <Navbar />
           <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
         </div>

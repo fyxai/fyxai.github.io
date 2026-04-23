@@ -1,157 +1,224 @@
+'use client';
 import Link from 'next/link';
-import { Flame, Rocket, Trophy, Users, Sparkles, Compass, ArrowRight } from 'lucide-react';
+import {
+  Sparkles, Cpu, GitBranch, Wrench, Newspaper, ScrollText,
+  ArrowRight, ExternalLink, Clock,
+} from 'lucide-react';
 import news from '../data/news.json';
 import mcp from '../data/mcp.json';
 import skills from '../data/skills.json';
 import projects from '../data/projects.json';
 import prompts from '../data/prompts.json';
-import clawhub from '../data/clawhub.json';
+import utilities from '../data/utilities.json';
 
-const quickLinks = [
-  ['/news', 'AI News'],
-  ['/mcp', 'MCP Registry'],
-  ['/skills', 'AI Skills'],
-  ['/projects', 'Projects'],
-  ['/prompts', 'Prompt Registry'],
-];
+const promptCount = Array.isArray(prompts) ? prompts.length : (prompts.tools?.length || 0);
 
-const communityPulse = [
+const SECTIONS = [
   {
-    title: 'Trending Skill Themes',
-    desc: 'Agent workflow orchestration, prompt observability, and real-time tool-use are showing the highest momentum this week.',
-    icon: Flame,
     href: '/skills',
+    label: 'AI Skills',
+    desc: 'Production engineering techniques with verifiable sources',
+    count: skills.length,
+    unit: 'skills',
+    Icon: Sparkles,
+    glow: 'rgba(167,139,250,0.12)',
+    border: 'rgba(167,139,250,0.25)',
+    text: '#c4b5fd',
   },
   {
-    title: 'Build Showcase Focus',
-    desc: 'Builders are shipping autonomous pipelines + practical utilities first, then layering fancy UX after workflows prove value.',
-    icon: Rocket,
-    href: '/projects',
+    href: '/mcp',
+    label: 'MCP Registry',
+    desc: 'Model Context Protocol servers & SDKs, sorted by stars',
+    count: mcp.length,
+    unit: 'repos',
+    Icon: Cpu,
+    glow: 'rgba(34,211,238,0.12)',
+    border: 'rgba(34,211,238,0.25)',
+    text: '#67e8f9',
   },
   {
-    title: 'Prompt Intelligence',
-    desc: 'Prompt registries are shifting from static dumps to versioned snapshots with source links and change tracking.',
-    icon: Sparkles,
+    href: '/harness',
+    label: 'Harness Engineering',
+    desc: 'Agent design frameworks, skills packaging, feedback loops',
+    count: null,
+    unit: '2026 hot',
+    Icon: GitBranch,
+    glow: 'rgba(52,211,153,0.12)',
+    border: 'rgba(52,211,153,0.25)',
+    text: '#6ee7b7',
+  },
+  {
+    href: '/utilities',
+    label: 'Hot AI Tools',
+    desc: 'Curated tools across coding, research, design, infra',
+    count: utilities.length,
+    unit: 'tools',
+    Icon: Wrench,
+    glow: 'rgba(251,146,60,0.1)',
+    border: 'rgba(251,146,60,0.22)',
+    text: '#fdba74',
+  },
+  {
+    href: '/news',
+    label: 'AI News',
+    desc: 'Live feed from top AI sources, auto-updated every 4h',
+    count: null,
+    unit: 'live',
+    Icon: Newspaper,
+    glow: 'rgba(56,189,248,0.1)',
+    border: 'rgba(56,189,248,0.22)',
+    text: '#7dd3fc',
+  },
+  {
     href: '/prompts',
+    label: 'Prompt Registry',
+    desc: 'Versioned prompt profiles with source change tracking',
+    count: promptCount || null,
+    unit: promptCount ? 'prompts' : 'registry',
+    Icon: ScrollText,
+    glow: 'rgba(244,114,182,0.1)',
+    border: 'rgba(244,114,182,0.22)',
+    text: '#f9a8d4',
   },
 ];
 
-const weeklyChallenge = {
-  title: 'Community Challenge of the Week',
-  subtitle: 'Ship a tiny autonomous agent that delivers measurable value in under 24 hours.',
-  bullets: [
-    'Pick one repetitive workflow (alerts, docs, triage, reporting).',
-    'Add source-traceable outputs (links, timestamps, versions).',
-    'Publish a before/after metric (time saved, errors reduced, or cost lowered).',
-  ],
+const cleanTitle = (s = '') =>
+  s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/<[^>]*>/g, '').trim();
+
+const fmtDate = (t) => {
+  const d = new Date(t);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 };
 
 export default function HomePage() {
-  const stats = [
-    { label: 'News Items', value: news.length },
-    { label: 'MCP Entries', value: mcp.length },
-    { label: 'Skill Signals', value: skills.length },
-    { label: 'Projects', value: projects.length },
-    { label: 'Prompt Profiles', value: Array.isArray(prompts) ? prompts.length : (prompts.tools?.length || 0) },
-  ];
+  const recentNews = news.slice(0, 3);
 
   return (
-    <section className="space-y-8 py-10">
-      <div className="card mx-auto max-w-5xl text-center">
-        <p className="text-xs uppercase tracking-[0.2em] text-cyan-300">Autonomous Web Presence</p>
-        <h1 className="mt-4 text-3xl font-bold md:text-5xl">The coding part of this website is 100% completed by AI autonomously.</h1>
-        <p className="mx-auto mt-4 max-w-2xl text-slate-300">Continuously updated with fresh AI insights, practical tools, and high-signal project intelligence. Now featuring Prompt Radar for multi-tool prompt change tracking every 4 hours.</p>
+    <section className="space-y-12 py-6">
 
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
-          {stats.map((s) => (
-            <span key={s.label} className="rounded-full border border-cyan-400/30 px-3 py-1 text-xs text-slate-200">
-              {s.label}: <span className="text-cyan-300">{s.value}</span>
-            </span>
+      {/* ── Hero ─────────────────────────────────────────── */}
+      <div className="card relative overflow-hidden">
+        {/* ambient spot */}
+        <div style={{
+          position: 'absolute', top: '-40%', right: '-10%',
+          width: '55%', paddingBottom: '55%',
+          background: 'radial-gradient(circle, rgba(34,211,238,0.06) 0%, transparent 65%)',
+          pointerEvents: 'none',
+        }} />
+
+        <p className="text-xs font-medium uppercase tracking-[0.22em] text-cyan-400">
+          Autonomous AI Hub
+        </p>
+        <h1 className="mt-3 text-4xl font-bold tracking-tight text-white md:text-5xl">
+          FYXAI
+        </h1>
+        <p className="mt-3 max-w-2xl text-slate-400 leading-relaxed">
+          Continuously updated AI engineering intelligence — skills, MCP ecosystem, harness frameworks, hot tools, and live news. Built and maintained autonomously.
+        </p>
+
+        {/* Live stats */}
+        <div className="mt-6 flex flex-wrap gap-6">
+          {[
+            { v: skills.length, l: 'AI Skills' },
+            { v: mcp.length, l: 'MCP Repos' },
+            { v: utilities.length, l: 'Hot Tools' },
+            { v: news.length, l: 'News Items' },
+          ].map(({ v, l }) => (
+            <div key={l}>
+              <div className="text-2xl font-bold tabular-nums text-cyan-300">{v}</div>
+              <div className="text-xs text-slate-500 uppercase tracking-wide mt-0.5">{l}</div>
+            </div>
           ))}
+          <div>
+            <div className="flex items-center gap-1.5 text-2xl font-bold text-emerald-400">
+              <span className="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              Live
+            </div>
+            <div className="text-xs text-slate-500 uppercase tracking-wide mt-0.5">Auto-updated</div>
+          </div>
         </div>
+      </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          {quickLinks.map(([href, label]) => (
-            <Link key={href} href={href} className="rounded-lg border border-cyan-400/30 px-4 py-2 text-sm hover:border-cyan-300 hover:text-cyan-300">
-              {label}
+      {/* ── Section nav grid ─────────────────────────────── */}
+      <div>
+        <h2 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+          Explore
+        </h2>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {SECTIONS.map(({ href, label, desc, count, unit, Icon, glow, border, text }) => (
+            <Link
+              key={href}
+              href={href}
+              className="group relative overflow-hidden rounded-2xl border p-5 transition hover:-translate-y-0.5"
+              style={{
+                background: `radial-gradient(ellipse 80% 70% at 0% 0%, ${glow} 0%, rgba(6,8,22,0.9) 70%)`,
+                borderColor: 'rgba(255,255,255,0.07)',
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = border; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'; }}
+            >
+              <div className="flex items-start justify-between gap-3">
+                <Icon size={18} style={{ color: text, marginTop: '1px', flexShrink: 0 }} />
+                <span className="rounded-full border px-2 py-0.5 text-xs font-medium"
+                  style={{ borderColor: border, color: text, background: glow }}>
+                  {count != null ? `${count} ${unit}` : unit}
+                </span>
+              </div>
+              <h3 className="mt-3 font-semibold text-slate-100">{label}</h3>
+              <p className="mt-1 text-sm text-slate-400 leading-relaxed">{desc}</p>
+              <div className="mt-4 flex items-center gap-1 text-xs transition-colors"
+                style={{ color: text, opacity: 0.7 }}>
+                Browse <ArrowRight size={11} className="transition-transform group-hover:translate-x-0.5" />
+              </div>
             </Link>
           ))}
         </div>
       </div>
 
-      <div>
-        <h2 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-cyan-100">
-          <Users size={18} className="text-cyan-300" /> Community Pulse
-        </h2>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          {communityPulse.map((item) => (
-            <Link key={item.title} href={item.href} className="card block transition hover:-translate-y-1 hover:border-cyan-300/50">
-              <item.icon size={18} className="mb-2 text-cyan-300" />
-              <h3 className="font-semibold text-cyan-100">{item.title}</h3>
-              <p className="mt-2 text-sm text-slate-300">{item.desc}</p>
-              <span className="mt-3 inline-flex items-center gap-1 text-xs text-cyan-300">
-                Explore <ArrowRight size={12} />
-              </span>
+      {/* ── Latest News ──────────────────────────────────── */}
+      {recentNews.length > 0 && (
+        <div>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Latest News
+            </h2>
+            <Link href="/news"
+              className="flex items-center gap-1 text-xs text-cyan-400 hover:text-cyan-300 transition-colors">
+              All news <ArrowRight size={11} />
             </Link>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h2 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-cyan-100">
-          <Flame size={18} className="text-orange-300" /> This Week on ClawHub
-        </h2>
-        <p className="mb-4 text-xs text-slate-400">Updated: {new Date(clawhub.updatedAt).toLocaleString('en-US', { timeZone: 'UTC' })} UTC</p>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          {clawhub.sections.map((sec) => (
-            <article key={sec.name} className="card">
-              <h3 className="mb-3 font-semibold text-cyan-100">{sec.name}</h3>
-              <ul className="space-y-2">
-                {sec.items.map((it) => (
-                  <li key={it.slug} className="text-sm">
-                    <a href={it.url} target="_blank" rel="noreferrer" className="text-cyan-300 hover:text-cyan-200">{it.title || it.slug}</a>
-                    <span className="ml-2 text-xs text-slate-400">score {it.score ?? '-'}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
-        </div>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {clawhub.buzzwords.map((w) => (
-            <span key={w} className="rounded-full border border-slate-700 px-2 py-1 text-xs text-slate-300">#{w}</span>
-          ))}
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <article className="card">
-          <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-cyan-100">
-            <Trophy size={16} className="text-amber-300" /> {weeklyChallenge.title}
-          </h3>
-          <p className="mb-3 text-sm text-slate-300">{weeklyChallenge.subtitle}</p>
-          <ul className="list-disc space-y-1 pl-5 text-sm text-slate-300">
-            {weeklyChallenge.bullets.map((b) => (
-              <li key={b}>{b}</li>
+          </div>
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+            {recentNews.map((item) => (
+              <a
+                key={item.url}
+                href={item.url}
+                target="_blank"
+                rel="noreferrer"
+                className="card group flex flex-col gap-2 hover:-translate-y-0.5"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-2 py-0.5 text-xs text-cyan-300">
+                    {item.source || 'AI News'}
+                  </span>
+                  {item.publishedAt && (
+                    <span className="flex items-center gap-1 text-xs text-slate-500">
+                      <Clock size={10} />
+                      {fmtDate(item.publishedAt)}
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm font-medium text-slate-200 leading-snug line-clamp-3">
+                  {cleanTitle(item.title)}
+                </p>
+                <span className="mt-auto flex items-center gap-1 text-xs text-slate-500 group-hover:text-cyan-400 transition-colors">
+                  Read article <ExternalLink size={10} />
+                </span>
+              </a>
             ))}
-          </ul>
-        </article>
-
-        <article className="card">
-          <h3 className="mb-2 flex items-center gap-2 text-lg font-semibold text-cyan-100">
-            <Compass size={16} className="text-emerald-300" /> Build Path (Recommended)
-          </h3>
-          <ol className="list-decimal space-y-1 pl-5 text-sm text-slate-300">
-            <li>Start with one concrete pain point and one success metric.</li>
-            <li>Wire data source + automation first, UI second.</li>
-            <li>Add safety checks, source links, and rollback hooks.</li>
-            <li>Publish weekly changelog so improvements are visible.</li>
-          </ol>
-          <Link href="/projects" className="mt-3 inline-flex items-center gap-1 text-xs text-cyan-300 hover:text-cyan-200">
-            View active projects <ArrowRight size={12} />
-          </Link>
-        </article>
-      </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
