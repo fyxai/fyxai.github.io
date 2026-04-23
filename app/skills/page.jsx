@@ -1,40 +1,57 @@
 import skills from '../../data/skills.json';
 import { CardGrid, InfoCard } from '../../components/Cards';
+import { Badge } from '../../components/Badge';
+import { FilterBar } from '../../components/FilterBar';
+import { SectionHeader } from '../../components/SectionHeader';
 
-export const metadata = { title: 'Skills | FYXAI' };
+export const metadata = { title: 'AI Skills | FYXAI' };
 
-const verificationStyles = {
-  official: 'border-emerald-400/40 bg-emerald-500/10 text-emerald-200',
-  'community-verified': 'border-cyan-400/40 bg-cyan-500/10 text-cyan-200',
-};
+const CATEGORIES = [
+  'LLM Integration',
+  'Retrieval',
+  'Agent Design',
+  'Evaluation',
+  'Cost & Latency',
+  'UX Engineering',
+  'Safety',
+  'MLOps',
+  'Integration',
+  'Harness Engineering',
+];
 
 export default function SkillsPage() {
   return (
     <section>
-      <div className="mb-7">
-        <h1 className="text-3xl font-bold text-cyan-200">Production AI Skills</h1>
-        <p className="mt-2 max-w-3xl text-sm text-slate-300">
-          Concrete capabilities with practical implementation value and verifiable documentation.
-        </p>
-      </div>
+      <SectionHeader
+        title="AI Engineering Skills"
+        count={skills.length}
+        description="Production-ready capabilities with verifiable documentation. Covers LLM integration, retrieval, agents, evaluation, safety, and harness engineering."
+      />
 
-      <CardGrid>
-        {skills.map((item) => (
-          <InfoCard key={item.name} title={item.name} subtitle={item.category} href={item.sourceUrl}>
-            <p className="text-sm text-slate-200">{item.whatItDoes}</p>
-            <p className="mt-3 text-sm text-slate-300">Use case: {item.practicalUseCase}</p>
-
-            <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-              <span
-                className={`rounded-full border px-2 py-1 font-medium ${verificationStyles[item.verificationLevel] || 'border-slate-500/40 bg-slate-500/10 text-slate-200'}`}
-              >
-                {item.verificationLevel}
-              </span>
-              <span className="text-slate-400">Source: {item.sourceName}</span>
-            </div>
-          </InfoCard>
-        ))}
-      </CardGrid>
+      <FilterBar
+        items={skills}
+        categories={CATEGORIES}
+        searchFields={['name', 'whatItDoes', 'practicalUseCase']}
+        categoryField="category"
+      >
+        {(filtered) => (
+          <CardGrid>
+            {filtered.map((item) => (
+              <InfoCard key={item.name} title={item.name} href={item.sourceUrl}>
+                <div className="mb-3 flex flex-wrap gap-1.5">
+                  <Badge variant="category">{item.category}</Badge>
+                  <Badge variant={item.verificationLevel === 'official' ? 'official' : 'community'}>
+                    {item.verificationLevel}
+                  </Badge>
+                </div>
+                <p className="text-sm text-slate-200">{item.whatItDoes}</p>
+                <p className="mt-3 text-xs text-slate-400">↳ {item.practicalUseCase}</p>
+                <p className="mt-3 text-xs text-slate-500">via {item.sourceName}</p>
+              </InfoCard>
+            ))}
+          </CardGrid>
+        )}
+      </FilterBar>
     </section>
   );
 }
